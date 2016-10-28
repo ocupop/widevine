@@ -1,0 +1,14 @@
+.DS-Store
+.sass-cache
+.bundle
+.jekyll-metadata
+
+_site
+
+# Packages
+bower_components
+node_modules
+
+
+# TB
+notes.txt

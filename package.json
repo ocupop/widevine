@@ -1,0 +1,21 @@
+{
+  "name": "repo-name",
+  "version": "0.1.0",
+  "description": "Project Description",
+  "private": true,
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ocupop",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "main-bower-files": "^2.13.1",
+    "require-dir": "^0.3.0"
+  }
+}

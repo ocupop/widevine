@@ -1,0 +1,23 @@
+<head>
+  <meta name="google" content="notranslate" />
+  <meta http-equiv="Content-Language" content="en_US" />
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fav and Touch Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Modernizr -->
+  <script src='js/modernizr.min.js'></script>
+
+  <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Javascript -->
+  {% include scripts.html %}
+</head>
