@@ -1,0 +1,34 @@
+@mixin transition($duration: 0.3s, $property: all, $effect: ease-in-out) {
+  -webkit-transition: $property $duration $effect;
+  -moz-transition: $property $duration $effect;
+  transition: $property $duration $effect;
+}
+
+@mixin animation($effect: fadeIn,  $duration: 0.5s, $delay: 0s) {
+  -webkit-animation-name: $effect;
+  animation-name: $effect;
+
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+   -webkit-animation-delay: ($delay);
+  -moz-animation-delay: ($delay);
+  animation-delay: ($delay);
+}
+
+@mixin palette($bg: red, $color: yellow) {
+  background-color: $bg !important;
+  fill: $bg !important;
+  color: $color !important;
+  h1, h2, h3, h4, .lead {
+    color: $color !important;
+    small {
+      color: $color !important;
+    }
+  }
+  hr {
+    border-color: lighten($color, 10%) !important;
+  }
+}

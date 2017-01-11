@@ -1,0 +1,15 @@
+// Color Palette
+// -------------------------
+
+$gray-darker:            #222222;
+$gray-dark:              #272729;
+$gray:                   #757575;
+$gray-light:             #e9e9e3;
+$gray-lighter:           #eeeeee;
+
+$body-bg:               #ffffff;
+$text-color:            #404041;
+$brand-primary:         #72b341;
+
+$link-color:            $brand-primary;
+$link-hover-color:      darken($link-color, 15%);
