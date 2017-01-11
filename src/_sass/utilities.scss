@@ -24,12 +24,3 @@ img.pull-left {
 img.pull-right {
   margin-left: 12px;
 }
-
-// Borders
-$border-width: 1px;
-.border { border: 0 solid $hr-border; }
-.border-all { border-width: $border-width; }
-.border-top { border-top-width: $border-width; }
-.border-right { border-right-width: $border-width; }
-.border-bottom { border-bottom-width: $border-width;}
-.border-left { border-left-width: $border-width; }

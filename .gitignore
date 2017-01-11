@@ -4,6 +4,7 @@
 .jekyll-metadata
 
 _site
+src/libs
 
 # Packages
 bower_components
