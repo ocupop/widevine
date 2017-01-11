@@ -2,7 +2,7 @@
   "name": "repo-name",
   "version": "0.0.0",
   "authors": [
-    "Tom Beck <dev@ocupop.com>"
+    "Ocupop Development <dev@ocupop.com>"
   ],
   "description": "Project description",
   "main": "",
@@ -18,12 +18,35 @@
     "tests"
   ],
   "dependencies": {
-    "waypoints": "^4.0.0",
     "animate.css": "^3.5.2",
-    "flexboxgrid": "^6.3.2"
+    "jquery-behaviors": "tiff/jquery-behaviors",
+    "underscore": "^1.8.3",
+    "mixitup": "^2.1.11",
+    "underscore": "^1.8.3",
+    "waypoints": "^4.0.0",
+    "lunr.js": "lunr#^0.7.2"
   },
   "devDependencies": {
   },
   "overrides": {
+    "lunr.js": {
+      "main": ["lunr.min.js"]
+    },
+    "mixitup": {
+      "main": [
+        "build/jquery.mixitup.min.js"
+      ]
+    },
+    "jquery-behaviors": {
+      "main": [
+        "behaviors.js"
+      ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.min.js",
+        "lib/shortcuts/inview.min.js"
+      ]
+    }
   }
 }
