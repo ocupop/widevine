@@ -5,6 +5,19 @@ description: ''
 url: "http://client_url"
 permalink: /:title
 
+# Facebook and Twitter share details
+# Facebook share images should be at least 1200 x 630 pixels for the best display on high resolution devices. At the minimum, you should use images that are 600 x 315 pixels to display link page posts with larger images. Images can be up to 8MB in size.
+# Images for this Card should be at least 280px in width, and at least 150px in height. Image must be less than 1MB in size.
+facebook:
+  title:
+  description:
+  featured_image:
+twitter:
+  username:
+  title:
+  featured_image:
+  image_alt_text:
+
 # Build settings
 safe: false
 source: src

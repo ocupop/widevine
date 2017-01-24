@@ -8,6 +8,27 @@
 
   <!-- Fav and Touch Icons -->
   <link rel="icon" type="image/png" href="favicon.png">
+   
+   {% if site.facebook.title %}
+   <meta property="og:title" content="{{ site.facebook.title }}">
+   <meta property="og:description" content="{{ site.facebook.description }}">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+   <meta property="og:image" content="{{ site.facebook.featured_image }}">
+   <meta property="og:image:type" content="image/jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="600">
+   {% endif %}
+   
+   {% if site.twitter.title %}
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:site" content="{{ site.twitter.username }}">
+   <meta name="twitter:creator" content="{{ site.twitter.username }}">
+   <meta name="twitter:title" content="{{ site.twitter.title }}">
+   <meta name="twitter:description" content="{{ site.twitter.description }}">
+   <meta name="twitter:image" content="{{ site.twitter.featured_image }}">
+   <meta name="twitter:image:alt" content="{{ site.twitter.image_alt_text }}">
+  {% endif %}
 
   <!-- Modernizr -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
