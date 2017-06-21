@@ -15,3 +15,21 @@ Client Name
 
 
 ============
+
+###Mirror this template:
+New repository must be created prior
+
+https://help.github.com/articles/duplicating-a-repository/
+
+Create a bare clone
+`git clone --bare git@bitbucket.org:ocupop/jekyll-project.git`
+
+Push mirror to new repository
+`cd jekyll-project.git`
+`git push --mirror git@bitbucket.org:ocupop/repo-name`
+
+Remove temporary local instance
+` cd ../`
+`rm -rf jekyll-project.git`
+
+
