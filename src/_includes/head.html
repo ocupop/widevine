@@ -9,41 +9,21 @@
   <!-- FACEBOOK SHARE -->
   <!-- Use images that are at least 1200 x 630 pixels for the best display on high resolution devices. At the minimum, you should use images that are 600 x 315 pixels to display link page posts with larger images. Images can be up to 8MB in size. -->
   
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
+  {% if site.facebook.title %}
+  <meta property="og:title" content="{{ site.facebook.title }}">
+  <meta property="og:description" content="{{ site.facebook.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | prepend: site.url }}">
-  <meta property="og:image" content="{{ site.facebook_share_image }}">
+  <meta property="og:image" content="{{ site.facebook.featured_image }}">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:height" content="600">
+  {% endif %}
   
   
   <!-- TWITTER CARD SHARE -->
   <!-- Images for this Card should be at least 280px in width, and at least 150px in height. Image must be less than 1MB in size. -->
   
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@ocupop">
-  <meta name="twitter:creator" content="@jhamlett">
-  <meta name="twitter:title" content="This is the title of your share">
-  <meta name="twitter:description" content="his a textual description of your share">
-  <meta name="twitter:image" content="http://ocupopdev.com/socials/twitter-share-280-150.png">
-  <meta name="twitter:image:alt" content="This is an alt tag for your shared image">
-
-  <!-- Fav and Touch Icons -->
-  <link rel="icon" type="image/png" href="favicon.png">
-   
-   {% if site.facebook.title %}
-   <meta property="og:title" content="{{ site.facebook.title }}">
-   <meta property="og:description" content="{{ site.facebook.description }}">
-   <meta property="og:type" content="website">
-   <meta property="og:url" content="{{ page.url | prepend: site.url }}">
-   <meta property="og:image" content="{{ site.facebook.featured_image }}">
-   <meta property="og:image:type" content="image/jpg">
-   <meta property="og:image:width" content="1200">
-   <meta property="og:image:height" content="600">
-   {% endif %}
-   
    {% if site.twitter.title %}
    <meta name="twitter:card" content="summary_large_image">
    <meta name="twitter:site" content="{{ site.twitter.username }}">
@@ -53,6 +33,9 @@
    <meta name="twitter:image" content="{{ site.twitter.featured_image }}">
    <meta name="twitter:image:alt" content="{{ site.twitter.image_alt_text }}">
   {% endif %}
+
+  <!-- Fav and Touch Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- Modernizr -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
