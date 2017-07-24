@@ -49,6 +49,28 @@ module.exports = {
       config: '_config.yml'
     }
   },
+  sass: {
+    src:  srcAssets + '/scss/**/*.{sass,scss}',
+    dest: developmentAssets + '/css',
+    options: {
+      noCache: true,
+      compass: false,
+      bundleExec: true,
+      sourcemap: true
+    }
+  },
+  autoprefixer: {
+    browsers: [
+      'last 2 versions',
+      'safari 5',
+      'ie 8',
+      'ie 9',
+      'opera 12.1',
+      'ios 6',
+      'android 4'
+    ],
+    cascade: true
+  },
   watch: {
     jekyll: [
       '_config.yml',
@@ -63,6 +85,7 @@ module.exports = {
       src + '/**/*.{html,markdown,md,yml,json,txt,xml}',
       src + '/*'
     ],
+    sass: srcAssets + '/scss/**/*',
     styles:  srcAssets + '/styles/**/*.css',
     scripts: srcAssets + '/javascripts/**/*.js',
     images:  srcAssets + '/images/**/*',
