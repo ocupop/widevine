@@ -3,8 +3,7 @@
 .bundle
 .jekyll-metadata
 
-_site
-src/libs
+build
 
 # Packages
 bower_components
