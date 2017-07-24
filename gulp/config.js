@@ -1,21 +1,3 @@
-// var src               = 'src';
-// var srcAssets         = 'src/_assets';
-// var bowerAssets       = 'bower_components';
-
-
-// module.exports = {
-//   bower: {
-//     debugging: true,
-//     includeDev: true,
-//     dest: src + '/libs',
-//     paths: {
-//       bowerDirectory: bowerAssets,
-//       bowerrc: './.bowerrc',
-//       bowerJson: './bower.json'
-//     }
-//   }
-// };
-
 var src               = 'src';
 var build             = 'build';
 var development       = 'build/development';
@@ -71,6 +53,23 @@ module.exports = {
     ],
     cascade: true
   },
+  browserify: {
+    // Enable source maps
+    debug: true,
+    // Additional file extensions to make optional
+    extensions: ['.coffee', '.hbs'],
+    // A separate bundle will be generated for each
+    // bundle config in the list below
+    bundleConfigs: [{
+      entries:    './' + srcAssets + '/scripts/main.js',
+      dest:       developmentAssets + '/js',
+      outputName: 'main.js'
+    }, {
+      entries:    './' + srcAssets + '/scripts/head.js',
+      dest:       developmentAssets + '/js',
+      outputName: 'head.js'
+    }]
+  },
   watch: {
     jekyll: [
       '_config.yml',
@@ -87,7 +86,7 @@ module.exports = {
     ],
     sass: srcAssets + '/scss/**/*',
     styles:  srcAssets + '/styles/**/*.css',
-    scripts: srcAssets + '/javascripts/**/*.js',
+    scripts: srcAssets + '/scripts/**/*.js',
     images:  srcAssets + '/images/**/*',
     sprites: srcAssets + '/images/**/*.png',
     svg:     'vectors/*.svg'

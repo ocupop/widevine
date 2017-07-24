@@ -19,18 +19,17 @@
   ],
   "dependencies": {
     "animate.css": "^3.5.2",
-    "jquery-behaviors": "tiff/jquery-behaviors",
     "underscore": "^1.8.3",
     "mixitup": "^2.1.11",
-    "underscore": "^1.8.3",
     "waypoints": "^4.0.0",
     "lunr.js": "lunr#^0.7.2"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "overrides": {
     "lunr.js": {
-      "main": ["lunr.min.js"]
+      "main": [
+        "lunr.min.js"
+      ]
     },
     "mixitup": {
       "main": [

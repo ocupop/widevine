@@ -13,3 +13,7 @@ $brand-primary:         #72b341;
 
 $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%);
+
+body {
+  background: red;
+}
