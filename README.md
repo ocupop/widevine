@@ -36,4 +36,5 @@ Remove temporary local instance
 ``` 
 cd ../
 rm -rf jekyll-project.git
+git clone git@bitbucket.org:ocupop/repo-name
 ```
