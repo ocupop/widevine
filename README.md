@@ -6,7 +6,6 @@ Client Name
 2. Install dependencies: `bundle install`
 3. Install Node packages: `npm install`
 4. Install components: `bower install`
-5. Isolate Bower assets: `gulp bower`
 
 ##Daily Startup
 1. `cd` to project directory
