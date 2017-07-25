@@ -6,6 +6,12 @@
 @import "animations";
 @import "fonts";
 
+// Import layout / global styles
+@import "layout/page_header";
+@import "layout/page_content";
+@import "layout/page_footer";
+
 // Import additional elements or project specific styles
 @import "elements/canvas";
 @import "elements/blockquotes";
+@import "elements/wufoo";
