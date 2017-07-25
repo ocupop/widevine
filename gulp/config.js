@@ -70,6 +70,10 @@ module.exports = {
       outputName: 'head.js'
     }]
   },
+  images: {
+    src:  srcAssets + '/img/**/*',
+    dest: developmentAssets + '/img'
+  },
   watch: {
     jekyll: [
       '_config.yml',

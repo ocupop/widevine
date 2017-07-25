@@ -13,3 +13,8 @@ $brand-primary:         #72b341;
 
 $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%);
+
+// Media Queries
+$screen-md-max:           1199px;
+$screen-sm-max:           1023px;
+$screen-xs-max:           767px;
