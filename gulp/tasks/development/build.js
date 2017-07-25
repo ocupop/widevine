@@ -12,7 +12,7 @@ gulp.task('build', function(callback) {
     // 'styles', // used for postCSS if necessary
     'scripts',
     'images',
-    // 'copy:fonts'
+    'copy:fonts'
   ],
   // 'base64',
   callback);

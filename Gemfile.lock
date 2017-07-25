@@ -5,6 +5,10 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     colorator (1.1.0)
     ffi (1.9.14)
+    fontcustom (2.0.0)
+      json (~> 1.4)
+      listen (>= 1.0, < 4.0)
+      thor (~> 0.14)
     forwardable-extended (2.6.0)
     jekyll (3.3.1)
       addressable (~> 2.4)
@@ -23,6 +27,7 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
+    json (1.8.6)
     kramdown (1.13.2)
     liquid (3.0.6)
     listen (3.0.8)
@@ -38,11 +43,13 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.23)
+    thor (0.19.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  fontcustom
   jekyll
   jekyll-sitemap
 

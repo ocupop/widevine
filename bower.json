@@ -20,9 +20,10 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "underscore": "^1.8.3",
-    "mixitup": "^2.1.11",
-    "waypoints": "^4.0.0",
-    "lunr.js": "lunr#^0.7.2"
+    "mixitup": "^3.2.1",
+    "waypoints": "^4.0.1",
+    "lunr.js": "lunr#^0.7.2",
+    "jquery": "^3.2.1"
   },
   "devDependencies": {},
   "overrides": {
@@ -34,11 +35,6 @@
     "mixitup": {
       "main": [
         "build/jquery.mixitup.min.js"
-      ]
-    },
-    "jquery-behaviors": {
-      "main": [
-        "behaviors.js"
       ]
     },
     "waypoints": {

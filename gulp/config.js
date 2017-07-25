@@ -1,3 +1,4 @@
+var clientName        = "Ocupop";
 var src               = 'src';
 var build             = 'build';
 var development       = 'build/development';
@@ -73,6 +74,17 @@ module.exports = {
   images: {
     src:  srcAssets + '/img/**/*',
     dest: developmentAssets + '/img'
+  },
+  iconfonts: {
+    fontName: clientName,
+    src:  srcAssets + '/icons/*',
+    dest: srcAssets + '/fonts'
+  },
+  copyfonts: {
+    development: {
+      src:  srcAssets + '/fonts/*',
+      dest: developmentAssets + '/fonts'
+    }
   },
   watch: {
     jekyll: [
