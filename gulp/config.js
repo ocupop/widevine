@@ -75,6 +75,33 @@ module.exports = {
     src:  srcAssets + '/img/**/*',
     dest: developmentAssets + '/img'
   },
+  sprites: {
+    src: srcAssets + '/svg/*.svg',
+    dest: src,
+    options: {
+      mode: 'symbols',
+      baseSize: 16,
+      selector: "icon-%f",
+      layout: 'diagonal',
+      svgId: "svg-%f",
+      cssFile:  '_assets/scss/_sprite.scss',
+      svgPath: '/assets/svg/%f',
+      pngPath: '/assets/png/%f',
+      svg: {
+        sprite: "_assets/img/sprite.svg",
+        defs: "_assets/img/defs.svg",
+        symbols: "_assets/img/symbols.svg"
+      },
+      preview: {
+        sprite: 'docs/sprite.html',
+        defs: 'docs/defs.html',
+        symbols: 'docs/symbols.html'
+      },
+      templates: {
+        css: require("fs").readFileSync(srcAssets + '/scss/tpl/_sprite_template.scss', "utf-8")
+      }
+    }
+  },
   iconfonts: {
     fontName: clientName,
     src:  srcAssets + '/icons/*',
