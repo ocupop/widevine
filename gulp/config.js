@@ -76,32 +76,61 @@ module.exports = {
     dest: developmentAssets + '/img'
   },
   sprites: {
-    src: srcAssets + '/svg/*.svg',
+    src: srcAssets + '/svg/**/*.svg',
     dest: src,
     options: {
-      mode: 'symbols',
-      baseSize: 16,
-      selector: "icon-%f",
-      layout: 'diagonal',
-      svgId: "svg-%f",
-      cssFile:  '_assets/scss/_sprite.scss',
-      svgPath: '/assets/svg/%f',
-      pngPath: '/assets/png/%f',
-      svg: {
-        sprite: "_assets/img/sprite.svg",
-        defs: "_assets/img/defs.svg",
-        symbols: "_assets/img/symbols.svg"
+      shape: {
+        dimension: {     // Set maximum dimensions
+          maxWidth: 32,
+          maxHeight: 32
+        },
+        spacing: {
+          padding: 10     // Add padding
+        }
       },
-      preview: {
-        sprite: 'docs/sprite.html',
-        defs: 'docs/defs.html',
-        symbols: 'docs/symbols.html'
-      },
-      templates: {
-        css: require("fs").readFileSync(srcAssets + '/scss/tpl/_sprite_template.scss', "utf-8")
+      mode: {
+        css: {
+          dest: './',
+          layout: 'diagonal',
+          sprite: '_assets/img/sprite.svg',
+          bust: false,
+          render: {
+            scss: {
+              dest: '_assets/scss/_sprite.scss',
+              template: src + '/docs/_templates/_sprite_template.scss'
+            }
+          }
+        }
       }
     }
   },
+  // sprites: {
+  //   src: srcAssets + '/svg/*.svg',
+  //   dest: src,
+  //   options: {
+  //     mode: 'symbols',
+  //     baseSize: 16,
+  //     selector: "%f",
+  //     layout: 'diagonal',
+  //     svgId: "svg-%f",
+  //     cssFile:  '_assets/scss/_sprite.scss',
+  //     svgPath: '/assets/svg/%f',
+  //     pngPath: '/assets/png/%f',
+  //     svg: {
+  //       sprite: "_assets/img/sprite.svg",
+  //       defs: "_assets/img/defs.svg",
+  //       symbols: "_assets/img/symbols.svg"
+  //     },
+  //     preview: {
+  //       sprite: 'docs/sprite.html',
+  //       defs: 'docs/defs.html',
+  //       symbols: 'docs/symbols.html'
+  //     },
+  //     templates: {
+  //       css: require("fs").readFileSync(srcAssets + '/scss/tpl/_sprite_template.scss', "utf-8")
+  //     }
+  //   }
+  // },
   iconfonts: {
     fontName: clientName,
     src:  srcAssets + '/icons/*',
@@ -111,6 +140,27 @@ module.exports = {
     development: {
       src:  srcAssets + '/fonts/*',
       dest: developmentAssets + '/fonts'
+    }
+  },
+  optimize: {
+    css: {
+      src:  developmentAssets + '/css/*.css',
+      dest: productionAssets + '/css/',
+      options: {}
+    },
+    js: {
+      src:  developmentAssets + '/js/*.js',
+      dest: productionAssets + '/js/',
+      options: {}
+    },
+    images: {
+      src:  developmentAssets + '/images/**/*.{jpg,jpeg,png,gif}',
+      dest: productionAssets + '/images/',
+      options: {
+        optimizationLevel: 3,
+        progessive: true,
+        interlaced: true
+      }
     }
   },
   watch: {
@@ -131,7 +181,10 @@ module.exports = {
     styles:  srcAssets + '/styles/**/*.css',
     scripts: srcAssets + '/scripts/**/*.js',
     images:  srcAssets + '/images/**/*',
-    sprites: srcAssets + '/images/**/*.png',
+    sprites: [
+      srcAssets + '/svg/**/*.svg',
+      src + '/docs/_templates/*',
+    ],
     svg:     'vectors/*.svg'
   }
 };

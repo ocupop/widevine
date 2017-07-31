@@ -32,3 +32,36 @@
     border-color: lighten($color, 10%) !important;
   }
 }
+
+
+
+/**
+ * The following variable and function originate from the sass-mq library.
+ * If you have already included it, you can eliminate the below
+ * https://github.com/sass-mq/sass-mq/blob/master/_mq.scss
+ */
+
+/// Base font size on the `<body>` element
+/// @type Number (unit)
+$mq-base-font-size: 16px !default;
+
+/// Convert pixels to ems
+///
+/// @param {Number} $px - value to convert
+/// @param {Number} $base-font-size ($mq-base-font-size) - `<body>` font size
+///
+/// @example scss
+///  $font-size-in-ems: mq-px2em(16px);
+///  p { font-size: mq-px2em(16px); }
+///
+/// @requires $mq-base-font-size
+/// @returns {Number}
+@function mq-px2em($px, $base-font-size: $mq-base-font-size) {
+    @if unitless($px) {
+        @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
+        @return mq-px2em($px + 0px); // That may fail.
+    } @else if unit($px) == em {
+        @return $px;
+    }
+    @return ($px / $base-font-size) * 1em;
+}

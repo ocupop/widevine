@@ -1,17 +1,19 @@
+// This template is used to create the sprite specific scss partial during the 'gulp sprites' task.
 .<%=common %> {
-    font-size: <%= baseSize %>px;
-    &:before {
-      content:' ';
-      vertical-align:middle;
-      display: inline-block;
-      background-image: url("<%=svgPath%>");
-      background-repeat: no-repeat;
-      background-size: <%= relWidth %>em <%= relHeight %>em;
+  display: inline-block;
+  font-size: <%= baseSize %>px;
+  &:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("<%=svgPath%>");
+    background-repeat: no-repeat;
+    background-size: <%= relWidth %>em <%= relHeight %>em;
 
-      .no-svg & {
-        background-image: url("<%=pngPath%>");
-      }
+    .no-svg & {
+      background-image: url("<%=pngPath%>");
     }
+  }
 }
 
 

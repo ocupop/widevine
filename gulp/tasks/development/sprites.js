@@ -1,5 +1,5 @@
 var gulp        = require('gulp');
-var svgSprite   = require("gulp-svg-sprites");
+var svgSprite   = require("gulp-svg-sprite");
 var config      = require('../../config').sprites;
 
 
