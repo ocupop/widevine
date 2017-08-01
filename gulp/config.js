@@ -97,7 +97,7 @@ module.exports = {
           render: {
             scss: {
               dest: '_assets/scss/_sprite.scss',
-              template: src + '/docs/_templates/_sprite_template.scss'
+              template: 'resources/templates/_sprite_template.scss'
             }
           }
         }
@@ -127,7 +127,7 @@ module.exports = {
   //       symbols: 'docs/symbols.html'
   //     },
   //     templates: {
-  //       css: require("fs").readFileSync(srcAssets + '/scss/tpl/_sprite_template.scss', "utf-8")
+  //       css: require("fs").readFileSync('resources/templates/_sprites_template.scss', "utf-8")
   //     }
   //   }
   // },
