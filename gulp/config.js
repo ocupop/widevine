@@ -20,9 +20,15 @@ module.exports = {
       files: [
         developmentAssets + '/css/*.css',
         developmentAssets + '/js/*.js',
-        developmentAssets + '/images/**',
+        developmentAssets + '/img/**',
         developmentAssets + '/fonts/*'
       ]
+    },
+    production: {
+      server: {
+        baseDir: [production]
+      },
+      port: 9998
     }
   },
   delete: {
@@ -33,6 +39,11 @@ module.exports = {
       src:    src,
       dest:   development,
       config: '_config.yml'
+    },
+    production: {
+      src:    src,
+      dest:   production,
+      config: '_config.yml,_config.production.yml'
     }
   },
   sass: {
@@ -143,6 +154,10 @@ module.exports = {
     development: {
       src:  srcAssets + '/fonts/*',
       dest: developmentAssets + '/fonts'
+    },
+    production: {
+      src:  developmentAssets + '/fonts/*',
+      dest: productionAssets + '/fonts'
     }
   },
   optimize: {
@@ -165,6 +180,53 @@ module.exports = {
         interlaced: true
       }
     }
+  },
+  base64: {
+    src: developmentAssets + '/css/*.css',
+    dest: developmentAssets + '/css',
+    options: {
+      baseDir: build,
+      extensions: ['png'],
+      maxImageSize: 20 * 1024, // bytes
+      debug: false
+    }
+  },
+  scsslint: {
+    src: [
+      srcAssets + '/scss/**/*.{sass,scss}',
+      // '!' + srcAssets + '/scss/base/_sprites.scss'
+      ],
+      options: {
+        bundleExec: true
+      }
+  },
+  jshint: {
+    src: srcAssets + '/scripts/*.js'
+  },
+  revision: {
+    src: {
+      assets: [
+        productionAssets + '/css/*.css',
+        productionAssets + '/js/*.js',
+        productionAssets + '/img/**/*'
+      ],
+      base: production
+    },
+    dest: {
+      assets: production,
+      manifest: {
+        name: 'manifest.json',
+        path: productionAssets
+      }
+    }
+  },
+  collect: {
+    src: [
+      productionAssets + '/manifest.json',
+      production + '/**/*.{html,xml,txt,json,css,js}',
+      '!' + production + '/feed.xml'
+    ],
+    dest: production
   },
   watch: {
     jekyll: [
