@@ -11,7 +11,10 @@ module.exports = {
   browsersync: {
     development: {
       server: {
-        baseDir: [development, build, src]
+        baseDir: [development, build, src],
+        serveStaticOptions: {
+          extensions: ['html']
+        }
       },
       port: 9999,
       files: [

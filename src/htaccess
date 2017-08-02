@@ -3,7 +3,8 @@ layout: null
 permalink: .htaccess
 ---
 
-# Add specific settings - DOes not work on Cloudcannon hosting
+# Add specific settings - Does not work on Cloudcannon hosting
 
-
-
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
