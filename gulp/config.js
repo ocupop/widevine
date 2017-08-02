@@ -4,8 +4,9 @@ var build             = 'build';
 var development       = 'build/development';
 var production        = 'build/production';
 var srcAssets         = 'src/_assets';
-var developmentAssets = 'build/assets';
+var buildAssets       = 'build/assets';
 var productionAssets  = 'build/production/assets';
+var developmentAssets = 'src/assets';
 
 module.exports = {
   browsersync: {
@@ -18,10 +19,10 @@ module.exports = {
       },
       port: 9999,
       files: [
-        developmentAssets + '/css/*.css',
-        developmentAssets + '/js/*.js',
-        developmentAssets + '/img/**',
-        developmentAssets + '/fonts/*'
+        buildAssets + '/css/*.css',
+        buildAssets + '/js/*.js',
+        buildAssets + '/img/**',
+        buildAssets + '/fonts/*'
       ]
     },
     production: {
@@ -32,13 +33,13 @@ module.exports = {
     }
   },
   delete: {
-    src: [developmentAssets]
+    src: [buildAssets, developmentAssets]
   },
   jekyll: {
     development: {
       src:    src,
       dest:   development,
-      config: '_config.yml'
+      config: '_config.yml,_config.development.yml'
     },
     production: {
       src:    src,
@@ -47,8 +48,9 @@ module.exports = {
     }
   },
   sass: {
-    src:  srcAssets + '/scss/**/*.{sass,scss}',
-    dest: developmentAssets + '/css',
+    src:   srcAssets + '/scss/**/*.{sass,scss}',
+    dest:  developmentAssets + '/css',
+    build: buildAssets + '/css',
     options: {
       noCache: true,
       compass: false,
@@ -78,16 +80,19 @@ module.exports = {
     bundleConfigs: [{
       entries:    './' + srcAssets + '/scripts/main.js',
       dest:       developmentAssets + '/js',
+      build:      buildAssets + '/js',
       outputName: 'main.js'
     }, {
       entries:    './' + srcAssets + '/scripts/head.js',
       dest:       developmentAssets + '/js',
+      build:      buildAssets + '/js',
       outputName: 'head.js'
     }]
   },
   images: {
     src:  srcAssets + '/img/**/*',
-    dest: developmentAssets + '/img'
+    dest: developmentAssets + '/img',
+    build: buildAssets + '/img'
   },
   sprites: {
     src: srcAssets + '/svg/**/*.svg',
@@ -153,26 +158,26 @@ module.exports = {
   copyfonts: {
     development: {
       src:  srcAssets + '/fonts/*',
-      dest: developmentAssets + '/fonts'
+      dest: buildAssets + '/fonts'
     },
     production: {
-      src:  developmentAssets + '/fonts/*',
+      src:  buildAssets + '/fonts/*',
       dest: productionAssets + '/fonts'
     }
   },
   optimize: {
     css: {
-      src:  developmentAssets + '/css/*.css',
+      src:  buildAssets + '/css/*.css',
       dest: productionAssets + '/css/',
       options: {}
     },
     js: {
-      src:  developmentAssets + '/js/*.js',
+      src:  buildAssets + '/js/*.js',
       dest: productionAssets + '/js/',
       options: {}
     },
     images: {
-      src:  developmentAssets + '/images/**/*.{jpg,jpeg,png,gif}',
+      src:  buildAssets + '/images/**/*.{jpg,jpeg,png,gif}',
       dest: productionAssets + '/images/',
       options: {
         optimizationLevel: 3,
@@ -182,8 +187,8 @@ module.exports = {
     }
   },
   base64: {
-    src: developmentAssets + '/css/*.css',
-    dest: developmentAssets + '/css',
+    src: buildAssets + '/css/*.css',
+    dest: buildAssets + '/css',
     options: {
       baseDir: build,
       extensions: ['png'],
@@ -231,7 +236,8 @@ module.exports = {
   watch: {
     jekyll: [
       '_config.yml',
-      '_config.build.yml',
+      '_config.development.yml',
+      '_config.production.yml',
       'stopwords.txt',
       src + '/_data/**/*.{json,yml,csv}',
       src + '/_includes/**/*.{html,xml}',

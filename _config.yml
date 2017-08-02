@@ -21,7 +21,6 @@ twitter:
 # Build settings
 safe: false
 source: src
-destination: build
 include: ["_pages"]
 exclude: ["_assets"]
 

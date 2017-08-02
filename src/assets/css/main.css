@@ -1,0 +1,367 @@
+/**
+ * The following variable and function originate from the sass-mq library.
+ * If you have already included it, you can eliminate the below
+ * https://github.com/sass-mq/sass-mq/blob/master/_mq.scss
+ */
+.clearfix, .content {
+  *zoom: 1; }
+  .clearfix:before, .content:before, .clearfix:after, .content:after {
+    display: table;
+    content: ""; }
+  .clearfix:after, .content:after {
+    clear: both; }
+
+.content {
+  position: relative;
+  padding: 20px; }
+
+img.pull-left {
+  margin-right: 12px; }
+
+img.pull-right {
+  margin-left: 12px; }
+
+@-webkit-keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+.card:nth-child(1) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+.card:nth-child(2) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+.card:nth-child(3) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+.card:nth-child(4) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+.card:nth-child(5) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+.card:nth-child(6) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s; }
+.card:nth-child(7) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
+.card:nth-child(8) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s; }
+.card:nth-child(9) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s; }
+.card:nth-child(10) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+.card:nth-child(11) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s; }
+.card:nth-child(12) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s; }
+.card:nth-child(13) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s; }
+.card:nth-child(14) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s; }
+.card:nth-child(15) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
+.card:nth-child(16) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s; }
+.card:nth-child(17) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s; }
+.card:nth-child(18) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s; }
+.card:nth-child(19) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s; }
+.card:nth-child(20) {
+  -webkit-animation-name: cardSlideIn;
+  animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+@font-face {
+  font-family: "project_name";
+  src: url("/fonts/${custom-font-name}.eot?i6fit0");
+  src: url("/fonts/${custom-font-name}.eot?i6fit0#iefix") format("embedded-opentype"), url("/fonts/${custom-font-name}.ttf?i6fit0") format("truetype"), url("/fonts/${custom-font-name}.woff?i6fit0") format("woff"), url("/fonts/${custom-font-name}.svg?i6fit0#${custom-font-name}") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change /img/fonts */
+  font-family: '${custom-font-name}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*
+ .icon-example:before {
+   content: "\e900";
+ }
+*/
+canvas {
+  width: 200px;
+  height: 200px; }
+
+blockquote {
+  display: block;
+  position: relative;
+  z-index: 1;
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-style: italic;
+  line-height: 1.2;
+  color: #404041;
+  text-align: justify; }
+  blockquote em {
+    z-index: 9; }
+
+blockquote::before {
+  display: block;
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 200px;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 0.1);
+  /*Positioning*/
+  position: absolute;
+  left: -60px;
+  top: -60px;
+  z-index: -1; }
+
+blockquote::after {
+  display: block;
+  content: "\201D";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 200px;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 0.1);
+  /*Positioning*/
+  position: absolute;
+  right: -30px;
+  top: -webkit-calc(100% - 90px);
+  top: calc(100% - 90px);
+  z-index: -1; }
+
+blockquote a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #72b341; }
+
+blockquote a:hover {
+  color: #222222; }
+
+.wufoo {
+  padding-top: 20px; }
+  .wufoo label {
+    display: none; }
+  .wufoo ul {
+    list-style: none;
+    padding: 0; }
+  .wufoo input.text {
+    display: block;
+    height: 45px;
+    width: 100%;
+    padding: 6px 20px;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #000;
+    vertical-align: middle;
+    background-color: #eeeeee;
+    background-image: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    border: none;
+    border-left: 10px solid #72b341; }
+  .wufoo textarea {
+    background: #eeeeee;
+    padding: 20px;
+    border: none;
+    border-left: 10px solid #72b341;
+    height: 130px;
+    width: 100%; }
+  .wufoo #saveForm {
+    border: none;
+    margin-top: 30px; }
+  .wufoo ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #000;
+    font-family: 'Open Sans', helvetica, arial, sans-serif; }
+  .wufoo :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #000;
+    opacity: 1;
+    font-family: 'Open Sans', helvetica, arial, sans-serif; }
+  .wufoo ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #000;
+    opacity: 1;
+    font-family: 'Open Sans', helvetica, arial, sans-serif; }
+  .wufoo :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #000;
+    font-family: 'Open Sans', helvetica, arial, sans-serif; }
+
+body {
+  background-color: purple; }
+
+
