@@ -3,6 +3,7 @@
 .bundle
 .jekyll-metadata
 
+_site
 build
 
 # Packages
