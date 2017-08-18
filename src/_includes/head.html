@@ -10,6 +10,7 @@
   <!-- Use images that are at least 1200 x 630 pixels for the best display on high resolution devices. At the minimum, you should use images that are 600 x 315 pixels to display link page posts with larger images. Images can be up to 8MB in size. -->
   
   {% if site.facebook.title %}
+  <meta property="fb:app_id" content="{{ site.facebook.appid }}">
   <meta property="og:title" content="{{ site.facebook.title }}">
   <meta property="og:description" content="{{ site.facebook.description }}">
   <meta property="og:type" content="website">
@@ -30,6 +31,7 @@
    <meta name="twitter:creator" content="{{ site.twitter.username }}">
    <meta name="twitter:title" content="{{ site.twitter.title }}">
    <meta name="twitter:description" content="{{ site.twitter.description }}">
+   <meta name="twitter:text:description" content="{{ site.twitter.description }}">
    <meta name="twitter:image" content="{{ site.twitter.featured_image }}">
    <meta name="twitter:image:alt" content="{{ site.twitter.image_alt_text }}">
   {% endif %}
