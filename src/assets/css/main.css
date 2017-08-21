@@ -21,6 +21,145 @@ img.pull-left {
 img.pull-right {
   margin-left: 12px; }
 
+@font-face {
+  font-family: "project_name";
+  src: url("/fonts/${custom-font-name}.eot?i6fit0");
+  src: url("/fonts/${custom-font-name}.eot?i6fit0#iefix") format("embedded-opentype"), url("/fonts/${custom-font-name}.ttf?i6fit0") format("truetype"), url("/fonts/${custom-font-name}.woff?i6fit0") format("woff"), url("/fonts/${custom-font-name}.svg?i6fit0#${custom-font-name}") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change /img/fonts */
+  font-family: '${custom-font-name}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*
+ .icon-example:before {
+   content: "\e900";
+ }
+*/
+canvas {
+  width: 200px;
+  height: 200px; }
+
+blockquote {
+  display: block;
+  position: relative;
+  z-index: 1;
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-style: italic;
+  line-height: 1.2;
+  color: #404041;
+  text-align: justify; }
+  blockquote em {
+    z-index: 9; }
+
+blockquote::before {
+  display: block;
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 200px;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 0.1);
+  /*Positioning*/
+  position: absolute;
+  left: -60px;
+  top: -60px;
+  z-index: -1; }
+
+blockquote::after {
+  display: block;
+  content: "\201D";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 200px;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 0.1);
+  /*Positioning*/
+  position: absolute;
+  right: -30px;
+  top: -webkit-calc(100% - 90px);
+  top: calc(100% - 90px);
+  z-index: -1; }
+
+blockquote a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #72b341; }
+
+blockquote a:hover {
+  color: #222222; }
+
+.wufoo {
+  padding-top: 20px; }
+  .wufoo label {
+    display: none; }
+  .wufoo ul {
+    list-style: none;
+    padding: 0; }
+  .wufoo input.text {
+    display: block;
+    height: 45px;
+    width: 100%;
+    padding: 6px 20px;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #000;
+    vertical-align: middle;
+    background-color: #eeeeee;
+    background-image: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    border: none;
+    border-left: 10px solid #72b341; }
+  .wufoo textarea {
+    background: #eeeeee;
+    padding: 20px;
+    border: none;
+    border-left: 10px solid #72b341;
+    height: 130px;
+    width: 100%; }
+  .wufoo #saveForm {
+    border: none;
+    margin-top: 30px; }
+  .wufoo ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #000;
+    font-family: 'Open Sans', helvetica, arial, sans-serif; }
+  .wufoo :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #000;
+    opacity: 1;
+    font-family: 'Open Sans', helvetica, arial, sans-serif; }
+  .wufoo ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #000;
+    opacity: 1;
+    font-family: 'Open Sans', helvetica, arial, sans-serif; }
+  .wufoo :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #000;
+    font-family: 'Open Sans', helvetica, arial, sans-serif; }
+
 @-webkit-keyframes cardSlideIn {
   from {
     opacity: 0;
@@ -221,145 +360,6 @@ img.pull-right {
   animation-fill-mode: both;
   -webkit-animation-delay: 2s;
   animation-delay: 2s; }
-
-@font-face {
-  font-family: "project_name";
-  src: url("/fonts/${custom-font-name}.eot?i6fit0");
-  src: url("/fonts/${custom-font-name}.eot?i6fit0#iefix") format("embedded-opentype"), url("/fonts/${custom-font-name}.ttf?i6fit0") format("truetype"), url("/fonts/${custom-font-name}.woff?i6fit0") format("woff"), url("/fonts/${custom-font-name}.svg?i6fit0#${custom-font-name}") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change /img/fonts */
-  font-family: '${custom-font-name}' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-/*
- .icon-example:before {
-   content: "\e900";
- }
-*/
-canvas {
-  width: 200px;
-  height: 200px; }
-
-blockquote {
-  display: block;
-  position: relative;
-  z-index: 1;
-  /*Font*/
-  font-family: Georgia, serif;
-  font-size: 32px;
-  font-style: italic;
-  line-height: 1.2;
-  color: #404041;
-  text-align: justify; }
-  blockquote em {
-    z-index: 9; }
-
-blockquote::before {
-  display: block;
-  content: "\201C";
-  /*Unicode for Left Double Quote*/
-  /*Font*/
-  font-family: Georgia, serif;
-  font-size: 200px;
-  font-weight: bold;
-  color: rgba(34, 34, 34, 0.1);
-  /*Positioning*/
-  position: absolute;
-  left: -60px;
-  top: -60px;
-  z-index: -1; }
-
-blockquote::after {
-  display: block;
-  content: "\201D";
-  /*Unicode for Left Double Quote*/
-  /*Font*/
-  font-family: Georgia, serif;
-  font-size: 200px;
-  font-weight: bold;
-  color: rgba(34, 34, 34, 0.1);
-  /*Positioning*/
-  position: absolute;
-  right: -30px;
-  top: -webkit-calc(100% - 90px);
-  top: calc(100% - 90px);
-  z-index: -1; }
-
-blockquote a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #72b341; }
-
-blockquote a:hover {
-  color: #222222; }
-
-.wufoo {
-  padding-top: 20px; }
-  .wufoo label {
-    display: none; }
-  .wufoo ul {
-    list-style: none;
-    padding: 0; }
-  .wufoo input.text {
-    display: block;
-    height: 45px;
-    width: 100%;
-    padding: 6px 20px;
-    margin: 15px 0;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: #000;
-    vertical-align: middle;
-    background-color: #eeeeee;
-    background-image: none;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-    border: none;
-    border-left: 10px solid #72b341; }
-  .wufoo textarea {
-    background: #eeeeee;
-    padding: 20px;
-    border: none;
-    border-left: 10px solid #72b341;
-    height: 130px;
-    width: 100%; }
-  .wufoo #saveForm {
-    border: none;
-    margin-top: 30px; }
-  .wufoo ::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: #000;
-    font-family: 'Open Sans', helvetica, arial, sans-serif; }
-  .wufoo :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #000;
-    opacity: 1;
-    font-family: 'Open Sans', helvetica, arial, sans-serif; }
-  .wufoo ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #000;
-    opacity: 1;
-    font-family: 'Open Sans', helvetica, arial, sans-serif; }
-  .wufoo :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: #000;
-    font-family: 'Open Sans', helvetica, arial, sans-serif; }
 
 body {
   background-color: purple; }

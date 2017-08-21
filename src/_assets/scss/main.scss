@@ -3,8 +3,9 @@
 @import "variables";
 @import "mixins";
 @import "utilities";
-@import "animations";
 @import "fonts";
+
+
 
 // Import layout / global styles
 @import "layout/page_header";
@@ -15,6 +16,9 @@
 @import "elements/canvas";
 @import "elements/blockquotes";
 @import "elements/wufoo";
+
+// Animations
+@import "animations";
 
 body {
   background-color: purple;

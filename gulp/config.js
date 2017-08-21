@@ -5,10 +5,21 @@ var development       = 'build/development';
 var production        = 'build/production';
 var srcAssets         = 'src/_assets';
 var buildAssets       = 'build/assets';
+var bowerAssets       = 'bower_components';
 var productionAssets  = 'build/production/assets';
 var developmentAssets = 'src/assets';
 
 module.exports = {
+  bower: {
+    debugging: true,
+    includeDev: true,
+    dest: srcAssets + '/vendor',
+    paths: {
+      bowerDirectory: bowerAssets,
+      bowerrc: './.bowerrc',
+      bowerJson: './bower.json'
+    }
+  },
   browsersync: {
     development: {
       server: {
