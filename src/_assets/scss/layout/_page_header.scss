@@ -3,14 +3,14 @@
 }
 
 // Media Queries
-@media(max-width: $screen-md-max) {
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $screen-sm-min) {}
 
-}
+// Medium devices (tablets, 768px and up)
+@media (min-width: $screen-md-min) {}
 
-@media(max-width: $screen-sm-max) {
+// Large devices (desktops, 992px and up)
+@media (min-width: $screen-lg-min) {}
 
-}
-
-@media(max-width: $screen-xs-max) {
-
-}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: $screen-xl-min) {}
