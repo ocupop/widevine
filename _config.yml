@@ -25,6 +25,7 @@ twitter:
 safe: false
 source: src
 include: ["_pages"]
+include: ["_sandbox"]
 exclude: ["_assets"]
 
 
