@@ -8,9 +8,11 @@
 
   <!-- FACEBOOK SHARE -->
   <!-- Use images that are at least 1200 x 630 pixels for the best display on high resolution devices. At the minimum, you should use images that are 600 x 315 pixels to display link page posts with larger images. Images can be up to 8MB in size. -->
-  
-  {% if site.facebook.title %}
+
+  {% if site.facebook.appid %}
   <meta property="fb:app_id" content="{{ site.facebook.appid }}">
+  {% endif %}
+  {% if site.facebook.title %}
   <meta property="og:title" content="{{ site.facebook.title }}">
   <meta property="og:description" content="{{ site.facebook.description }}">
   <meta property="og:type" content="website">
