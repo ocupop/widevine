@@ -60,7 +60,8 @@
     "run-sequence": "^2.1.0",
     "slugify": "^1.1.0",
     "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.9.0"
+    "watchify": "^3.9.0",
+    "webfontloader": "^1.6.28"
   },
   "dependencies": {
     "gulp-fontcustom": "^0.1.2"

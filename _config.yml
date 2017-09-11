@@ -21,11 +21,29 @@ twitter:
   image_alt_text:
   description:
 
+
+# Collections
+collections:
+  pages:
+    output: true
+    layout: default
+    permalink: /:path
+  examples:
+    output: true
+    layout: default
+    permalink: /examples/:path
+
+# defaults:
+#   - 
+#     scope:
+#       type: 'examples'
+#     values:
+#       layout: default
+#       variable_name: value
+
 # Build settings
 safe: false
 source: src
-include: ["_pages"]
-include: ["_sandbox"]
 exclude: ["_assets"]
 
 

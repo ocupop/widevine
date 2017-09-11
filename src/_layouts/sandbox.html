@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-2">
+        <div class="content">
+          <ul class="nav flex-column">
+            {% for example in site.examples %}
+              {% unless example.url == '/examples/' %}
+              <li class="nav-item"><a class="nav-link{% if example.url == page.url %} active{% endif %}" href="{{ example.url }}">{{ example.title }}</a></li>
+              {% endunless %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-10">
+        <div class="content">{{ content }}</div>
+      </div>
+    </div>
+  </div>
+</section>
