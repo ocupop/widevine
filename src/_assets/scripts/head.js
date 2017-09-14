@@ -1,4 +1,4 @@
-// require('modernizr');
+require('modernizr');
 
 var WebFont = require('webfontloader');
 

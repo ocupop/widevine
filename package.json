@@ -14,7 +14,7 @@
   "author": "Ocupop",
   "license": "MIT",
   "browser": {
-    "modernizr": "./src/_assets/scripts/modernizr-custom.js",
+    "modernizr": "./src/_assets/vendor/modernizr-custom.js",
     "jquery": "./bower_components/jquery/dist/jquery.js"
   },
   "browserify-shim": {

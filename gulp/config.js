@@ -176,6 +176,10 @@ module.exports = {
       dest: productionAssets + '/fonts'
     }
   },
+  modernizr: {
+    src: srcAssets +'/scripts/*.js',
+    dest: srcAssets + '/vendor'
+  },
   optimize: {
     css: {
       src:  buildAssets + '/css/*.css',

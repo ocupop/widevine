@@ -10,6 +10,7 @@ gulp.task('build', function(callback) {
     'jekyll',
     'sass',
     // 'styles', // used for postCSS if necessary
+    'modernizr',
     'scripts',
     'images',
     'copy:fonts'
