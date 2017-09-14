@@ -5,7 +5,7 @@ description: ''
 url: "http://client_url"
 permalink: /:title
 
-analytics_code: UA-105682615-1 # accessible via dev@ocupop.com
+analytics_code: UA-000000000-1 # accessible via dev@ocupop.com
 
 # Facebook and Twitter share details
 # App ID required for Facebook if site is using Facebook Ad Services. Must be set up in dev.facebook account
