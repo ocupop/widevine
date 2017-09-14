@@ -5,6 +5,8 @@ description: ''
 url: "http://client_url"
 permalink: /:title
 
+analytics_code: UA-105682615-1 # accessible via dev@ocupop.com
+
 # Facebook and Twitter share details
 # App ID required for Facebook if site is using Facebook Ad Services. Must be set up in dev.facebook account
 # Facebook share images should be at least 1200 x 630 pixels for the best display on high resolution devices. At the minimum, you should use images that are 600 x 315 pixels to display link page posts with larger images. Images can be up to 8MB in size.
