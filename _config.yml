@@ -26,10 +26,6 @@ twitter:
 
 # Collections
 collections:
-  pages:
-    output: true
-    layout: default
-    permalink: /:path
   examples:
     output: true
     layout: default
