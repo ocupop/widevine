@@ -15,5 +15,8 @@
   "strict": false,
   "trailing": true,
   "smarttabs": true,
-  "validthis": true
+  "validthis": true,
+  "globals": {
+    "$": false
+  }
 }
