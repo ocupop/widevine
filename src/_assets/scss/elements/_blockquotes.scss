@@ -1,8 +1,8 @@
-blockquote{
+blockquote {
   display:block;
   position: relative;
   z-index: 1;
-  /*Font*/
+  //Font
   font-family: Georgia, serif;
   font-size: 32px;
   font-style: italic;
@@ -15,9 +15,9 @@ blockquote{
   }
 }
 
-blockquote::before{
+blockquote::before {
   display: block;
-  content: "\201C"; /*Unicode for Left Double Quote*/
+  content: "\201C"; //Unicode for Left Double Quote
   
   /*Font*/
   font-family: Georgia, serif;
@@ -32,17 +32,17 @@ blockquote::before{
   z-index: -1;
 }
 
-blockquote::after{
+blockquote::after {
   display: block;
-  content: "\201D"; /*Unicode for Left Double Quote*/
+  content: "\201D"; //Unicode for Left Double Quote
   
-  /*Font*/
+  //Font
   font-family: Georgia, serif;
   font-size: 200px;
   font-weight: bold;
   color: rgba($gray-darker, 0.1);
   
-  /*Positioning*/
+  //Positioning
   position: absolute;
   right: -30px;
   top: calc(100% - 90px);
@@ -55,8 +55,8 @@ blockquote a{
   color: $brand-primary;
 }
 
-blockquote a:hover{
- color: $gray-darker;
+blockquote a:hover {
+  color: $gray-darker;
 }
 
 
