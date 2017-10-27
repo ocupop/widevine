@@ -1,23 +1,17 @@
-/**
- * The following variable and function originate from the sass-mq library.
- * If you have already included it, you can eliminate the below
- * https://github.com/sass-mq/sass-mq/blob/master/_mq.scss
- */
 .clearfix, .content {
-  *zoom: 1; }
-  .clearfix:before, .content:before, .clearfix:after, .content:after {
-    display: table;
-    content: ""; }
-  .clearfix:after, .content:after {
+  zoom: 1; }
+  .clearfix::before, .content::before, .clearfix::after, .content::after {
+    content: '';
+    display: table; }
+  .clearfix::after, .content::after {
     clear: both; }
 
 .content {
-  position: relative;
-  padding: 20px; }
+  padding: 20px;
+  position: relative; }
 
 img.pull-left {
   margin-right: 12px; }
-
 img.pull-right {
   margin-left: 12px; }
 
@@ -27,8 +21,8 @@ img.pull-right {
   src: url("/fonts/${custom-font-name}.eot?i6fit0#iefix") format("embedded-opentype"), url("/fonts/${custom-font-name}.ttf?i6fit0") format("truetype"), url("/fonts/${custom-font-name}.woff?i6fit0") format("woff"), url("/fonts/${custom-font-name}.svg?i6fit0#${custom-font-name}") format("svg");
   font-weight: normal;
   font-style: normal; }
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change /img/fonts */
+[class^="icon-"],
+[class*=" icon-"] {
   font-family: '${custom-font-name}' !important;
   speak: none;
   font-style: normal;
@@ -36,296 +30,285 @@ img.pull-right {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/*
- .icon-example:before {
-   content: "\e900";
- }
-*/
 canvas {
   height: 200px;
   width: 200px; }
 
 blockquote {
+  color: #404041;
   display: block;
-  position: relative;
-  z-index: 1;
   font-family: Georgia, serif;
   font-size: 32px;
   font-style: italic;
   line-height: 1.2;
-  color: #404041;
-  text-align: justify; }
+  position: relative;
+  text-align: justify;
+  z-index: 1; }
+  blockquote::before {
+    color: rgba(34, 34, 34, 0.1);
+    content: '\201C';
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 200px;
+    font-weight: bold;
+    left: -60px;
+    position: absolute;
+    top: -60px;
+    z-index: -1; }
+  blockquote::after {
+    color: rgba(34, 34, 34, 0.1);
+    content: '\201D';
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 200px;
+    font-weight: bold;
+    position: absolute;
+    right: -30px;
+    top: -webkit-calc(100% - 90px);
+    top: calc(100% - 90px);
+    z-index: -1; }
+  blockquote a {
+    color: #72b341;
+    cursor: pointer;
+    text-decoration: none; }
+    blockquote a:hover {
+      color: #222222; }
   blockquote em {
     z-index: 9; }
 
-blockquote::before {
-  display: block;
-  content: "\201C";
-  /*Font*/
-  font-family: Georgia, serif;
-  font-size: 200px;
-  font-weight: bold;
-  color: rgba(34, 34, 34, 0.1);
-  /*Positioning*/
-  position: absolute;
-  left: -60px;
-  top: -60px;
-  z-index: -1; }
-
-blockquote::after {
-  display: block;
-  content: "\201D";
-  font-family: Georgia, serif;
-  font-size: 200px;
-  font-weight: bold;
-  color: rgba(34, 34, 34, 0.1);
-  position: absolute;
-  right: -30px;
-  top: -webkit-calc(100% - 90px);
-  top: calc(100% - 90px);
-  z-index: -1; }
-
-blockquote a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #72b341; }
-
-blockquote a:hover {
-  color: #222222; }
-
 .bg-video {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
   min-height: 475px;
   min-width: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .bg-video video {
+    height: auto;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%); }
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    z-index: -100; }
 
 @-webkit-keyframes cardSlideIn {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
     visibility: visible; }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+            transform: translate3d(0, 0, 0); } }
+
 @keyframes cardSlideIn {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
     visibility: visible; }
   to {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+            transform: translate3d(0, 0, 0); } }
 .card:nth-child(1) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s; }
+          animation-delay: 0.1s; }
 .card:nth-child(2) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s; }
+          animation-delay: 0.2s; }
 .card:nth-child(3) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s; }
+          animation-delay: 0.3s; }
 .card:nth-child(4) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s; }
+          animation-delay: 0.4s; }
 .card:nth-child(5) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s; }
+          animation-delay: 0.5s; }
 .card:nth-child(6) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s; }
+          animation-delay: 0.6s; }
 .card:nth-child(7) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s; }
+          animation-delay: 0.7s; }
 .card:nth-child(8) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s; }
+          animation-delay: 0.8s; }
 .card:nth-child(9) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s; }
+          animation-delay: 0.9s; }
 .card:nth-child(10) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1s;
-  animation-delay: 1s; }
+          animation-delay: 1s; }
 .card:nth-child(11) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1.1s;
-  animation-delay: 1.1s; }
+          animation-delay: 1.1s; }
 .card:nth-child(12) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1.2s;
-  animation-delay: 1.2s; }
+          animation-delay: 1.2s; }
 .card:nth-child(13) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1.3s;
-  animation-delay: 1.3s; }
+          animation-delay: 1.3s; }
 .card:nth-child(14) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s; }
+          animation-delay: 1.4s; }
 .card:nth-child(15) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1.5s;
-  animation-delay: 1.5s; }
+          animation-delay: 1.5s; }
 .card:nth-child(16) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1.6s;
-  animation-delay: 1.6s; }
+          animation-delay: 1.6s; }
 .card:nth-child(17) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1.7s;
-  animation-delay: 1.7s; }
+          animation-delay: 1.7s; }
 .card:nth-child(18) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1.8s;
-  animation-delay: 1.8s; }
+          animation-delay: 1.8s; }
 .card:nth-child(19) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 1.9s;
-  animation-delay: 1.9s; }
+          animation-delay: 1.9s; }
 .card:nth-child(20) {
   -webkit-animation-name: cardSlideIn;
-  animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
   -webkit-animation-delay: 2s;
-  animation-delay: 2s; }
+          animation-delay: 2s; }
 
 

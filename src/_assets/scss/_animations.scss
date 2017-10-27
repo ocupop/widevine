@@ -1,56 +1,29 @@
-@mixin animation($effect: fadeIn,  $duration: 0.5s, $delay: 0s) {
-  -webkit-animation-name: $effect;
+@mixin animation($effect: fadeIn, $duration: .5s, $delay: 0s) {
   animation-name: $effect;
-
-  -webkit-animation-duration: $duration;
   animation-duration: $duration;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-
-   -webkit-animation-delay: ($delay);
-  -moz-animation-delay: ($delay);
   animation-delay: ($delay);
 }
 
 // CARD SLIDE IN
-@-webkit-keyframes cardSlideIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 @keyframes cardSlideIn {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
 
   to {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 
 .card {
     // Loop through the cards and delay the loading animation.
   @for $i from 1 through 20 {
-    &:nth-child(#{$i}) { 
-      @include animation(cardSlideIn, 0.8s, 0.1s * $i);
+    &:nth-child(#{$i}) {
+      @include animation(cardSlideIn, .8s, .1s * $i);
     }
   }
-  
 }
-

@@ -217,7 +217,8 @@ module.exports = {
       // '!' + srcAssets + '/scss/base/_sprites.scss'
       ],
       options: {
-        bundleExec: true
+        bundleExec: true,
+        config: './scss-lint.yml'
       }
   },
   jshint: {

@@ -1,62 +1,59 @@
 blockquote {
-  display:block;
-  position: relative;
-  z-index: 1;
-  //Font
+  color: $text-color;
+  display: block;
   font-family: Georgia, serif;
   font-size: 32px;
   font-style: italic;
   line-height: 1.2;
-  color: $text-color;
+  position: relative;
   text-align: justify;
+  z-index: 1;
+
+  &::before {
+    color: rgba($gray-darker, .1);
+    content: '\201C'; //Unicode for Left Double Quote
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 200px;
+    font-weight: bold;
+
+    //Positioning
+    left: -60px;
+    position: absolute;
+    top: -60px;
+    z-index: -1;
+  }
+
+  &::after {
+    color: rgba($gray-darker, .1);
+    content: '\201D'; //Unicode for Left Double Quote
+    display: block;
+
+    //font
+    font-family: Georgia, serif;
+    font-size: 200px;
+    font-weight: bold;
+
+    //Positioning
+    position: absolute;
+    right: -30px;
+    top: calc(100% - 90px);
+    z-index: -1;
+  }
+
+  a {
+    color: $brand-primary;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: $gray-darker;
+    }
+  }
 
   em {
     z-index: 9;
   }
-}
-
-blockquote::before {
-  display: block;
-  content: "\201C"; //Unicode for Left Double Quote
-  
-  /*Font*/
-  font-family: Georgia, serif;
-  font-size: 200px;
-  font-weight: bold;
-  color: rgba($gray-darker, 0.1);
-  
-  /*Positioning*/
-  position: absolute;
-  left: -60px;
-  top: -60px;
-  z-index: -1;
-}
-
-blockquote::after {
-  display: block;
-  content: "\201D"; //Unicode for Left Double Quote
-  
-  //Font
-  font-family: Georgia, serif;
-  font-size: 200px;
-  font-weight: bold;
-  color: rgba($gray-darker, 0.1);
-  
-  //Positioning
-  position: absolute;
-  right: -30px;
-  top: calc(100% - 90px);
-  z-index: -1;
-}
-
-blockquote a{
-  text-decoration: none;
-  cursor: pointer;
-  color: $brand-primary;
-}
-
-blockquote a:hover {
-  color: $gray-darker;
 }
 
 
