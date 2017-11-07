@@ -5,7 +5,9 @@ Client Name
 1. Install Bundler: `gem install bundler`
 2. Install dependencies: `bundle install`
 3. Install Node packages: `npm install`
-4. Install components: `bower install`
+
+##Adding Angular Application
+1. Use angular-cli to create new application and pass in the appropriate prefix: `ng new <app-name> --prefix <client prefix>`
 
 ##Daily Startup
 1. `cd` to project directory
@@ -28,7 +30,7 @@ Push mirror to new repository
 
 ```
 cd jekyll-project.git
-git push --mirror git@bitbucket.org:ocupop/repo-name
+git push --mirror git@bitbucket.org:ocupop/<repo-name>
 ```
 
 Remove temporary local instance
@@ -36,5 +38,5 @@ Remove temporary local instance
 ``` 
 cd ../
 rm -rf jekyll-project.git
-git clone git@bitbucket.org:ocupop/repo-name
+git clone git@bitbucket.org:ocupop/<repo-name>
 ```
