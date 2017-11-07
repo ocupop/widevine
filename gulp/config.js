@@ -142,6 +142,13 @@ module.exports = {
       dest: productionAssets + '/css'
     }
   },
+  modernizr: {
+    src: [
+      srcAssets +'/scripts/*.js',
+      '!' + srcAssets +'/scripts/modernizr-custom.js'
+    ],
+    dest: srcAssets + '/scripts'
+  },
   optimize: {
     css: {
       src:  buildAssets + '/css/*.css',
@@ -184,7 +191,7 @@ module.exports = {
       }
   },
   jshint: {
-    src: srcAssets + '/scripts/*.js'
+    src: [ srcAssets +'/scripts/*.js', '!'+ srcAssets +'/scripts/modernizr-custom.js']
   },
   revision: {
     src: {

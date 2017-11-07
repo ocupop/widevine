@@ -7,7 +7,6 @@ gulp.task('build', function(callback) {
   [
     'jekyll',
     'sass',
-    'modernizr',
     'scripts',
     'images',
     'copy:fonts',
@@ -15,5 +14,6 @@ gulp.task('build', function(callback) {
     // 'shopify:assets'
   ],
   'base64',
+  'modernizr',
   callback);
 });

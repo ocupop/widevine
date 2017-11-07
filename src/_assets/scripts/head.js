@@ -8,10 +8,10 @@ WebFont.load({
   },
   // typekit: { id: '' },
   loading: function() {
-    console.log("LOADING FONTS");
+    window.console.log('LOADING FONTS');
   },
   active: function() {
-    console.log("ACTIVE FONTS");
+    window.console.log('ACTIVE FONTS');
   },
   inactive: function() {},
   fontloading: function(familyName, fvd) {},
