@@ -1,0 +1,24 @@
+.bg-video {
+  align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  min-height: 475px;
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  video {
+    height: auto;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    z-index: -100;
+  }
+}

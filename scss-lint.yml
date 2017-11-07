@@ -12,16 +12,18 @@ linters:
   DuplicateProperty:
     enabled: true
   EmptyLineBetweenBlocks:
-    enabled: true
+    enabled: false
   EmptyRule:
-    enabled: true
+    enabled: false
   HexLength:
     style: 'long'
   HexValidation:
     enabled: true
   IdWithExtraneousSelector:
-    enabled: true
+    enabled: false
   IdSelector:
+    enabled: false
+  ImportantRule:
     enabled: false
   Indentation:
     enabled: true
@@ -32,9 +34,11 @@ linters:
   NameFormat:
     enabled: true
   NestingDepth:
-    max_depth: 5
+    max_depth: 6
   PlacehodlerInExtend:
     enabled: true
+  PropertySortOrder:
+    enabled: false
   PropertySpelling:
     enabled: true
     extra_properties:

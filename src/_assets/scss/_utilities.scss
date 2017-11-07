@@ -1,28 +1,33 @@
 
 .clearfix {
-  *zoom: 1;
-  &:before,
-  &:after {
+  zoom: 1;
+
+  &::before,
+  &::after {
+    content: '';
     display: table;
-    content: "";
   }
-  &:after {
+
+  &::after {
     clear: both;
   }
 }
 
 // Spacing
 .content {
-  position: relative;
-  padding: 20px;
   @extend .clearfix;
+  padding: 20px;
+  position: relative;
 }
 
-img.pull-left {
-  margin-right: 12px;
-}
-img.pull-right {
-  margin-left: 12px;
+img {
+  &.pull-left {
+    margin-right: 12px;
+  }
+
+  &.pull-right {
+    margin-left: 12px;
+  }
 }
 
 
