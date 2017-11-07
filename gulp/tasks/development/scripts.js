@@ -7,9 +7,7 @@ var bundleLogger = require('../../utils/bundleLogger');
 var handleErrors = require('../../utils/handleErrors');
 var config       = require('../../config').browserify;
 
-/**
- * Run JavaScript through Browserify
- */
+// Run JavaScript through Browserify
 gulp.task('scripts', function(callback) {
 
   browsersync.notify('Compiling JavaScript');
@@ -43,7 +41,6 @@ gulp.task('scripts', function(callback) {
         .pipe(source(bundleConfig.outputName))
         // Specify the output destination
         .pipe(gulp.dest(bundleConfig.dest))
-        .pipe(gulp.dest(bundleConfig.build))
         .on('end', reportFinished);
     };
 

@@ -1,15 +1,13 @@
 var gulp   = require('gulp');
 var config = require('../../config').watch;
 
-/**
- * Start browsersync task and then watch files for changes
- */
+// Start browsersync task and then watch files for changes
 gulp.task('watch', ['browsersync'], function() {
-  gulp.watch(config.jekyll,  ['jekyll-rebuild']);
-  gulp.watch(config.scripts, ['scripts', 'jshint', 'modernizr']);
-  gulp.watch(config.sass,  ['sass', 'scsslint']);
-  // gulp.watch(config.styles,  ['styles', 'lint-styles']);
-  gulp.watch(config.images,  ['images']);
-  // gulp.watch(config.svg,     ['copy:fonts']);
-  gulp.watch(config.sprites, ['sprites']);
+  gulp.watch(config.jekyll,    ['jekyll-rebuild']);
+  gulp.watch(config.scripts,   ['scripts', 'shopify:assets', 'cloudcannon:assets', 'jshint']);
+  gulp.watch(config.sass,      ['sass', 'base64', 'shopify:assets', 'cloudcannon:assets', 'scsslint']);
+  gulp.watch(config.images,    ['images', 'shopify:assets', 'cloudcannon:assets']);
+  gulp.watch(config.iconfonts, ['copy:fonts']);
+  gulp.watch(config.sprites,   ['sprites']);
+  // gulp.watch(config.assets,    ['shopify:assets', 'cloudcannon:assets']);
 });

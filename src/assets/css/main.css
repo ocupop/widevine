@@ -102,64 +102,6 @@ blockquote a {
 blockquote a:hover {
   color: #222222; }
 
-.wufoo {
-  padding-top: 20px; }
-  .wufoo label {
-    display: none; }
-  .wufoo ul {
-    list-style: none;
-    padding: 0; }
-  .wufoo input.text {
-    display: block;
-    height: 45px;
-    width: 100%;
-    padding: 6px 20px;
-    margin: 15px 0;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: #000;
-    vertical-align: middle;
-    background-color: #eeeeee;
-    background-image: none;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
-    border: none;
-    border-left: 10px solid #72b341; }
-  .wufoo textarea {
-    background: #eeeeee;
-    padding: 20px;
-    border: none;
-    border-left: 10px solid #72b341;
-    height: 130px;
-    width: 100%; }
-  .wufoo #saveForm {
-    border: none;
-    margin-top: 30px; }
-  .wufoo ::-webkit-input-placeholder {
-    /* WebKit browsers */
-    color: #000;
-    font-family: 'Open Sans', helvetica, arial, sans-serif; }
-  .wufoo :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #000;
-    opacity: 1;
-    font-family: 'Open Sans', helvetica, arial, sans-serif; }
-  .wufoo ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #000;
-    opacity: 1;
-    font-family: 'Open Sans', helvetica, arial, sans-serif; }
-  .wufoo :-ms-input-placeholder {
-    /* Internet Explorer 10+ */
-    color: #000;
-    font-family: 'Open Sans', helvetica, arial, sans-serif; }
-
 @-webkit-keyframes cardSlideIn {
   from {
     opacity: 0;

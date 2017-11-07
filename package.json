@@ -1,7 +1,7 @@
 {
-  "name": "repo-name",
+  "name": "project-template",
   "version": "0.1.0",
-  "description": "Project Description",
+  "description": "project-description",
   "private": true,
   "main": "gulpfile.js",
   "repository": {
@@ -14,19 +14,33 @@
   "author": "Ocupop",
   "license": "MIT",
   "browser": {
-    "modernizr": "./src/_assets/vendor/modernizr-custom.js",
-    "jquery": "./bower_components/jquery/dist/jquery.js"
-  },
-  "browserify-shim": {
-    "modernizr": "Modernizr",
-    "jquery": "$"
+    "modernizr": "./src/_assets/scripts/modernizr-custom.js",
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+    "mixitup": "./node_modules/mixitup/dist/mixitup.min.js"
   },
   "browserify": {
     "transform": [
       "browserify-shim"
     ]
   },
+  "browserify-shim": {
+    "modernizr": "Modernizr",
+    "jquery": "$",
+    "bootstrap": {
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "mixitup": {
+      "exports": "mixitup",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+  },
   "devDependencies": {
+    "@angular/cli": "^1.4.9",
     "browser-sync": "^2.18.13",
     "browserify": "^14.4.0",
     "browserify-shim": "^3.8.14",
@@ -37,6 +51,7 @@
     "gulp-changed": "^3.1.0",
     "gulp-csso": "^3.0.0",
     "gulp-filter": "^5.0.0",
+    "gulp-flatten": "^0.3.1",
     "gulp-imagemin": "^3.3.0",
     "gulp-jshint": "^2.0.4",
     "gulp-modernizr": "^1.0.0-alpha",
@@ -52,6 +67,7 @@
     "gulp-svg-sprites": "^4.1.2",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
+    "jquery-browserify": "^1.8.1",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
     "main-bower-files": "^2.13.1",
@@ -64,6 +80,11 @@
     "webfontloader": "^1.6.28"
   },
   "dependencies": {
-    "gulp-fontcustom": "^0.1.2"
+    "bootstrap": "^4.0.0-beta.2",
+    "gulp-fontcustom": "^0.1.2",
+    "jquery": "^3.2.1",
+    "lunr": "^2.1.4",
+    "mixitup": "^3.2.1",
+    "popper.js": "^1.12.6"
   }
 }

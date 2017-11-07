@@ -5,21 +5,10 @@ var development       = 'build/development';
 var production        = 'build/production';
 var srcAssets         = 'src/_assets';
 var buildAssets       = 'build/assets';
-var bowerAssets       = 'bower_components';
 var productionAssets  = 'build/production/assets';
-var developmentAssets = 'src/assets';
+var shopifyTheme      = 'src/shopify/theme';
 
 module.exports = {
-  bower: {
-    debugging: true,
-    includeDev: true,
-    dest: srcAssets + '/vendor',
-    paths: {
-      bowerDirectory: bowerAssets,
-      bowerrc: './.bowerrc',
-      bowerJson: './bower.json'
-    }
-  },
   browsersync: {
     development: {
       server: {
@@ -44,7 +33,7 @@ module.exports = {
     }
   },
   delete: {
-    src: [buildAssets, developmentAssets]
+    src: [buildAssets]
   },
   jekyll: {
     development: {
@@ -60,8 +49,7 @@ module.exports = {
   },
   sass: {
     src:   srcAssets + '/scss/**/*.{sass,scss}',
-    dest:  developmentAssets + '/css',
-    build: buildAssets + '/css',
+    dest:  buildAssets + '/css',
     options: {
       noCache: true,
       compass: false,
@@ -90,20 +78,17 @@ module.exports = {
     // bundle config in the list below
     bundleConfigs: [{
       entries:    './' + srcAssets + '/scripts/main.js',
-      dest:       developmentAssets + '/js',
-      build:      buildAssets + '/js',
+      dest:       buildAssets + '/js',
       outputName: 'main.js'
     }, {
       entries:    './' + srcAssets + '/scripts/head.js',
-      dest:       developmentAssets + '/js',
-      build:      buildAssets + '/js',
+      dest:       buildAssets + '/js',
       outputName: 'head.js'
     }]
   },
   images: {
     src:  srcAssets + '/img/**/*',
-    dest: developmentAssets + '/img',
-    build: buildAssets + '/img'
+    dest: buildAssets + '/img'
   },
   sprites: {
     src: srcAssets + '/svg/**/*.svg',
@@ -134,33 +119,14 @@ module.exports = {
       }
     }
   },
-  // sprites: {
-  //   src: srcAssets + '/svg/*.svg',
-  //   dest: src,
-  //   options: {
-  //     mode: 'symbols',
-  //     baseSize: 16,
-  //     selector: "%f",
-  //     layout: 'diagonal',
-  //     svgId: "svg-%f",
-  //     cssFile:  '_assets/scss/_sprite.scss',
-  //     svgPath: '/assets/svg/%f',
-  //     pngPath: '/assets/png/%f',
-  //     svg: {
-  //       sprite: "_assets/img/sprite.svg",
-  //       defs: "_assets/img/defs.svg",
-  //       symbols: "_assets/img/symbols.svg"
-  //     },
-  //     preview: {
-  //       sprite: 'docs/sprite.html',
-  //       defs: 'docs/defs.html',
-  //       symbols: 'docs/symbols.html'
-  //     },
-  //     templates: {
-  //       css: require("fs").readFileSync('resources/templates/_sprites_template.scss', "utf-8")
-  //     }
-  //   }
-  // },
+  shopify: {
+    src: buildAssets + '/**/*',
+    assets: shopifyTheme + '/assets'
+  },
+  cloudcannon: {
+    src: buildAssets + '/**/*',
+    dest: src + '/assets'
+  },
   iconfonts: {
     fontName: clientName,
     src:  srcAssets + '/icons/*',
@@ -169,16 +135,12 @@ module.exports = {
   copyfonts: {
     development: {
       src:  srcAssets + '/fonts/*',
-      dest: buildAssets + '/fonts'
+      dest: buildAssets + '/css'
     },
     production: {
       src:  buildAssets + '/fonts/*',
-      dest: productionAssets + '/fonts'
+      dest: productionAssets + '/css'
     }
-  },
-  modernizr: {
-    src: srcAssets +'/scripts/*.js',
-    dest: srcAssets + '/vendor'
   },
   optimize: {
     css: {
@@ -217,7 +179,8 @@ module.exports = {
       // '!' + srcAssets + '/scss/base/_sprites.scss'
       ],
       options: {
-        bundleExec: true
+        bundleExec: true,
+        config: './scss-lint.yml'
       }
   },
   jshint: {
@@ -268,9 +231,11 @@ module.exports = {
     scripts: srcAssets + '/scripts/**/*.js',
     images:  srcAssets + '/images/**/*',
     sprites: [
-      srcAssets + '/svg/**/*.svg',
-      src + '/docs/_templates/*',
+      // srcAssets + '/svg/**/*.svg',
+      // src + '/docs/_templates/*'
     ],
-    svg:     'vectors/*.svg'
+    // svg:     'vectors/*.svg',
+    iconfonts: srcAssets + '/fonts/**/*',
+    assets: buildAssets + '/**/*'
   }
 };

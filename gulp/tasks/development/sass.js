@@ -7,10 +7,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps   = require('gulp-sourcemaps');
 var config       = require('../../config');
 
-/**
- * Generate CSS from SCSS
- * Build sourcemaps
- */
+// Generate CSS from SCSS
+// Build sourcemaps
 gulp.task('sass', function() {
   var sassConfig = config.sass.options;
 
@@ -28,6 +26,5 @@ gulp.task('sass', function() {
     .pipe(filter) // Don’t write sourcemaps of sourcemaps
     .pipe(sourcemaps.write('.', { includeContent: false, sourceRoot: 'app/_assets/scss' }))
     .pipe(filter.restore) // Restore original files
-    .pipe(gulp.dest(config.sass.dest))
-    .pipe(gulp.dest(config.sass.build));
+    .pipe(gulp.dest(config.sass.dest));
 });

@@ -3,6 +3,8 @@ var fontcustom = require('gulp-fontcustom');
 var slugify = require('slugify');
 var config = require('../../config').iconfonts;
 
+// Build font family with icon files
+// **** NEEDS REFACTOR *********
 gulp.task('iconfonts', function() {
   gulp.src(config.src)
   .pipe(fontcustom({
