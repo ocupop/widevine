@@ -6,9 +6,19 @@ var production        = 'build/production';
 var srcAssets         = 'src/_assets';
 var buildAssets       = 'build/assets';
 var productionAssets  = 'build/production/assets';
-var shopifyTheme      = 'src/shopify/theme';
+var shopifyTheme      = 'shopify/theme';
 
 module.exports = {
+  bower: {
+    debugging: true,
+    includeDev: true,
+    dest: srcAssets + '/vendor',
+    paths: {
+      bowerDirectory: 'bower_components',
+      bowerrc: './.bowerrc',
+      bowerJson: './bower.json'
+    }
+  },
   browsersync: {
     development: {
       server: {
@@ -50,6 +60,10 @@ module.exports = {
   sass: {
     src:   srcAssets + '/scss/**/*.{sass,scss}',
     dest:  buildAssets + '/css',
+    vendor: {
+      src: srcAssets + '/scss/vendor/*',
+      dest: buildAssets + '/css/vendor'
+    },
     options: {
       noCache: true,
       compass: false,
@@ -70,6 +84,10 @@ module.exports = {
     cascade: true
   },
   browserify: {
+    vendor: {
+      src: srcAssets + '/scripts/vendor/*',
+      dest: buildAssets + '/js/vendor'
+    },
     // Enable source maps
     debug: true,
     // Additional file extensions to make optional
@@ -84,6 +102,10 @@ module.exports = {
       entries:    './' + srcAssets + '/scripts/head.js',
       dest:       buildAssets + '/js',
       outputName: 'head.js'
+    }, {
+      entries:    './' + srcAssets + '/scripts/shop.js',
+      dest:       buildAssets + '/js',
+      outputName: 'shop.js'
     }]
   },
   images: {
@@ -142,13 +164,6 @@ module.exports = {
       dest: productionAssets + '/css'
     }
   },
-  modernizr: {
-    src: [
-      srcAssets +'/scripts/*.js',
-      '!' + srcAssets +'/scripts/modernizr-custom.js'
-    ],
-    dest: srcAssets + '/scripts'
-  },
   optimize: {
     css: {
       src:  buildAssets + '/css/*.css',
@@ -191,7 +206,7 @@ module.exports = {
       }
   },
   jshint: {
-    src: [ srcAssets +'/scripts/*.js', '!'+ srcAssets +'/scripts/modernizr-custom.js']
+    src: srcAssets + '/scripts/*.js'
   },
   revision: {
     src: {

@@ -5,6 +5,7 @@ var source       = require('vinyl-source-stream');
 var watchify     = require('watchify');
 var bundleLogger = require('../../utils/bundleLogger');
 var handleErrors = require('../../utils/handleErrors');
+var changed      = require('gulp-changed');
 var config       = require('../../config').browserify;
 
 // Run JavaScript through Browserify
@@ -70,4 +71,11 @@ gulp.task('scripts', function(callback) {
 
   // Start bundling with Browserify for each bundleConfig specified
   config.bundleConfigs.forEach(browserifyThis);
+});
+
+// Copy vendor scripts
+gulp.task('scripts:vendor', function() {
+  return gulp.src(config.vendor.src)
+    .pipe(changed(config.vendor.dest)) // Ignore unchanged files
+    .pipe(gulp.dest(config.vendor.dest));
 });

@@ -8,12 +8,12 @@ gulp.task('build', function(callback) {
     'jekyll',
     'sass',
     'scripts',
+    'scripts:vendor',
     'images',
     'copy:fonts',
     'cloudcannon:assets',
-    // 'shopify:assets'
+    'shopify:assets'
   ],
   'base64',
-  'modernizr',
   callback);
 });

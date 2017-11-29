@@ -1,6 +1,5 @@
 var gulp        = require('gulp');
 var changed     = require('gulp-changed');
-var flatten     = require('gulp-flatten');
 var config      = require('../../config').cloudcannon;
 
 // Copy and flatten assets to work with Shopify
