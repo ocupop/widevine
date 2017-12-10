@@ -6,37 +6,11 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FACEBOOK SHARE -->
-  <!-- Use images that are at least 1200 x 630 pixels for the best display on high resolution devices. At the minimum, you should use images that are 600 x 315 pixels to display link page posts with larger images. Images can be up to 8MB in size. -->
+  <!-- Adding feed.xml: https://github.com/jekyll/jekyll-feed -->
+  {% feed_meta %}
 
-  {% if site.facebook.appid %}
-  <meta property="fb:app_id" content="{{ site.facebook.appid }}">
-  {% endif %}
-  {% if site.facebook.title %}
-  <meta property="og:title" content="{{ site.facebook.title }}">
-  <meta property="og:description" content="{{ site.facebook.description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url | prepend: site.url }}">
-  <meta property="og:image" content="{{ site.facebook.featured_image }}">
-  <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="600">
-  {% endif %}
-  
-  
-  <!-- TWITTER CARD SHARE -->
-  <!-- Images for this Card should be at least 280px in width, and at least 150px in height. Image must be less than 1MB in size. -->
-  
-   {% if site.twitter.title %}
-   <meta name="twitter:card" content="summary_large_image">
-   <meta name="twitter:site" content="{{ site.twitter.username }}">
-   <meta name="twitter:creator" content="{{ site.twitter.username }}">
-   <meta name="twitter:title" content="{{ site.twitter.title }}">
-   <meta name="twitter:description" content="{{ site.twitter.description }}">
-   <meta name="twitter:text:description" content="{{ site.twitter.description }}">
-   <meta name="twitter:image" content="{{ site.twitter.featured_image }}">
-   <meta name="twitter:image:alt" content="{{ site.twitter.image_alt_text }}">
-  {% endif %}
+  <!-- Adding SEO: https://github.com/jekyll/jekyll-seo-tag -->
+  {% seo %}
 
   <!-- Fav and Touch Icons -->
   <link rel="icon" type="image/png" href="favicon.png">

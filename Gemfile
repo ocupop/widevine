@@ -9,4 +9,6 @@ group :jekyll_plugins do
   gem 'replace_regex'
   gem 'jekyll-archives'
   gem 'jekyll-contentblocks'
+  gem 'jekyll-feed'
+  gem 'jekyll-seo-tag'
 end
