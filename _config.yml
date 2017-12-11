@@ -31,6 +31,8 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-lunr-js-search
+
 
 # feed:
 #   title: Client Name
