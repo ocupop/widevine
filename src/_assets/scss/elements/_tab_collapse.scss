@@ -1,0 +1,16 @@
+.tab-class {
+  display: none;
+}
+
+.accordion-class{
+  display: block;
+}
+
+@media (min-width: $screen-md-min) {
+  .tab-class {
+    display: flex;
+  }
+  .accordion-class {
+    display: none;
+  }
+}
