@@ -7,6 +7,5 @@ _site
 build
 
 # Packages
-bower_components
 node_modules
 
