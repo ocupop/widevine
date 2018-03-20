@@ -1,79 +1,327 @@
-/*
-Error: Undefined variable: "$screen-sm-max".
-        on line 18 of src/_assets/scss/elements/_tab_collapse.scss
-        from line 19 of src/_assets/scss/main.scss
+.clearfix, .content {
+  zoom: 1; }
+  .clearfix::before, .content::before, .clearfix::after, .content::after {
+    content: '';
+    display: table; }
+  .clearfix::after, .content::after {
+    clear: both; }
 
-13: @import 'layout/page_footer';
-14: 
-15: // Import additional elements or project specific styles
-16: @import 'elements/canvas';
-17: @import 'elements/blockquotes';
-18: @import 'elements/bg_video';
-19: @import 'elements/tab_collapse';
-20: 
-21: // Animations
-22: @import 'animations';
+.content {
+  padding: 20px;
+  position: relative; }
 
-Backtrace:
-src/_assets/scss/elements/_tab_collapse.scss:18
-src/_assets/scss/main.scss:19
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:542:in `block in run_interp_no_strip'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:540:in `map'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:540:in `run_interp_no_strip'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:547:in `run_interp'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:512:in `visit_media'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/bin/sass:22:in `load'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/bin/sass:22:in `<main>'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/bin/ruby_executable_hooks:15:in `eval'
-/Users/jonburr/.rvm/gems/ruby-2.4.0@repo-name/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$screen-sm-max\".\A         on line 18 of src/_assets/scss/elements/_tab_collapse.scss\A         from line 19 of src/_assets/scss/main.scss\A \A 13: @import 'layout/page_footer';\A 14: \A 15: // Import additional elements or project specific styles\A 16: @import 'elements/canvas';\A 17: @import 'elements/blockquotes';\A 18: @import 'elements/bg_video';\A 19: @import 'elements/tab_collapse';\A 20: \A 21: // Animations\A 22: @import 'animations';"; }
+img.pull-left {
+  margin-right: 12px; }
+img.pull-right {
+  margin-left: 12px; }
+
+@font-face {
+  font-family: "project_name";
+  src: url("/fonts/${custom-font-name}.eot?i6fit0");
+  src: url("/fonts/${custom-font-name}.eot?i6fit0#iefix") format("embedded-opentype"), url("/fonts/${custom-font-name}.ttf?i6fit0") format("truetype"), url("/fonts/${custom-font-name}.woff?i6fit0") format("woff"), url("/fonts/${custom-font-name}.svg?i6fit0#${custom-font-name}") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: '${custom-font-name}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+canvas {
+  height: 200px;
+  width: 200px; }
+
+blockquote {
+  color: #404041;
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-style: italic;
+  line-height: 1.2;
+  position: relative;
+  text-align: justify;
+  z-index: 1; }
+  blockquote::before {
+    color: rgba(34, 34, 34, 0.1);
+    content: '\201C';
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 200px;
+    font-weight: bold;
+    left: -60px;
+    position: absolute;
+    top: -60px;
+    z-index: -1; }
+  blockquote::after {
+    color: rgba(34, 34, 34, 0.1);
+    content: '\201D';
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 200px;
+    font-weight: bold;
+    position: absolute;
+    right: -30px;
+    top: -webkit-calc(100% - 90px);
+    top: calc(100% - 90px);
+    z-index: -1; }
+  blockquote a {
+    color: #72b341;
+    cursor: pointer;
+    text-decoration: none; }
+    blockquote a:hover {
+      color: #222222; }
+  blockquote em {
+    z-index: 9; }
+
+.bg-video {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 475px;
+  min-width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .bg-video video {
+    height: auto;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    z-index: -100; }
+
+.tab-class {
+  display: none; }
+
+.accordion-class {
+  display: block; }
+
+@media (min-width: 768px) {
+  .tab-class {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .accordion-class {
+    display: none; } }
+@-webkit-keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+.card:nth-child(1) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.card:nth-child(2) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.card:nth-child(3) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.card:nth-child(4) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.card:nth-child(5) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
+.card:nth-child(6) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s; }
+.card:nth-child(7) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s; }
+.card:nth-child(8) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s; }
+.card:nth-child(9) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s; }
+.card:nth-child(10) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; }
+.card:nth-child(11) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s; }
+.card:nth-child(12) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s; }
+.card:nth-child(13) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s; }
+.card:nth-child(14) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s; }
+.card:nth-child(15) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s; }
+.card:nth-child(16) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s; }
+.card:nth-child(17) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s; }
+.card:nth-child(18) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s; }
+.card:nth-child(19) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s; }
+.card:nth-child(20) {
+  -webkit-animation-name: cardSlideIn;
+          animation-name: cardSlideIn;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s; }
+
+

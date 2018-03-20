@@ -235,3 +235,34 @@
 
 
 }(window.jQuery);
+
+// Scroll to active card
+$(function () {
+  $('#myTab').on('shown.bs.collapse', function (e) {
+    var offset = $(this).find('.collapse.show').prev('.card-heading');
+    if(offset) {
+        $('html,body').animate({
+            scrollTop: $(offset).offset().top -90
+        }, 500); 
+    }
+  }); 
+});
+
+// Javascript to enable link to tab
+ var hash = document.location.hash;
+ var prefix = "tab_";
+ if (hash.includes(prefix)) {
+  var $link = $('.nav-link[href="'+hash.replace(prefix,"")+'"]').first();
+  var offset = $link.offset().top -105;
+  $link.tab('show');
+
+  // Scroll to right spot    
+  $('html,body').animate({
+      scrollTop: offset
+  }, 500); 
+ } 
+
+ // Change hash for page-reload
+ $('.nav-link').on('shown.bs.tab', function (e) {
+    window.location.hash = e.target.hash.replace("#", "#" + prefix);
+ });
