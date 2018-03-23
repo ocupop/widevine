@@ -20,6 +20,8 @@ $(document).ready(function() {
       }, 500);
   });
 
+
+  //lazy loading example
   $("img.lazy").Lazy({
     beforeLoad: function(element) {
       window.console.log('before');
@@ -37,8 +39,6 @@ $(document).ready(function() {
       window.console.log('finished');
         // called once all elements was handled
     },
-    threshold: -100
-
-
+    threshold: 0
   });
 });
