@@ -83,6 +83,7 @@
     "bootstrap": "4.0.0",
     "gulp-fontcustom": "^0.1.2",
     "jquery": "^3.2.1",
+    "jquery-lazy": "^1.7.7",
     "lunr": "^2.1.4",
     "mixitup": "^3.2.1",
     "popper.js": "^1.12.6"

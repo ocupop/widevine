@@ -15,6 +15,11 @@ img.pull-left {
 img.pull-right {
   margin-left: 12px; }
 
+.lazy {
+  width: 100%;
+  height: auto;
+  margin: 20px auto; }
+
 @font-face {
   font-family: "project_name";
   src: url("/fonts/${custom-font-name}.eot?i6fit0");
@@ -32,6 +37,9 @@ img.pull-right {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+#page-footer {
+  display: block; }
 
 canvas {
   height: 200px;
