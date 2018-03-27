@@ -1,0 +1,19 @@
+.button {
+  padding: 5px 25px;
+  border-radius: 5px;
+  background-color: $brand-primary;
+  display: inline-block;
+  text-align: center;
+  color: $white;
+  &.button-white {
+    background-color: $white;
+    color: $brand-primary;
+  }
+  &.button-teal {
+    background-color: $teal;
+    color: $white;
+  }
+  &.button-block {
+    display: block;
+  }
+}

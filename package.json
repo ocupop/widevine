@@ -1,7 +1,7 @@
 {
-  "name": "project-template",
+  "name": "widevine",
   "version": "0.1.0",
-  "description": "project-description",
+  "description": "Widevine’s DRM solution provides the capability to license, securely distribute and protect playback of content on any consumer device. Content owners, multiple service operators and digital media providers can utilize Widevine’s solutions to ensure revenue generating services keep flowing to whatever device consumers desire.",
   "private": true,
   "main": "gulpfile.js",
   "repository": {

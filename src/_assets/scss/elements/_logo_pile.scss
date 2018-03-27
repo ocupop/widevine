@@ -1,0 +1,11 @@
+.logo-pile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  img {
+    padding: 20px;
+  }
+}

@@ -1,5 +1,18 @@
 #page-footer {
   display:block;
+  background-color: $brand-primary;
+  color: $white;
+  .d-flex {
+    align-items: center;
+    justify-content: space-between;
+    background-color: $blue-dark;
+  }
+}
+
+#footernav {
+  .nav {
+    justify-content: center;
+  }
 }
 
 // Media Queries

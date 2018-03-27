@@ -1,23 +1,26 @@
 <header id="page-header">
-  <div class="container">
-    <nav id="mainnav" class="navbar navbar-expand-md navbar-light">
-      <a class="navbar-brand" href="#">{{ site.title }}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav id="mainnav" class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="#">{{ site.title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link{% if page.url == '/examples' %} active{% endif %}" href="/examples">Examples {% if page.url == '/examples/' %}<span class="sr-only">(current)</span>{% endif %}</a>
-          </li>
-        </ul>
-      </div>
-      <form class="bd-search d-flex align-items-center" action="/search" method="get">
-        <input type="search" class="form-control" id="search-query" name="q" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
-        </button>
-      </form>
-    </nav>
-  </div>
+    <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="/">Home {% if page.url == '/' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/solutions' %} active{% endif %}" href="/solutions">Solutions {% if page.url == '/solutions' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/about' %} active{% endif %}" href="/about"> About {% if page.url == '/about' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/contact' %} active{% endif %}" href="/contact">Contact {% if page.url == '/contact' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
 </header>

@@ -36,6 +36,10 @@ img {
   margin: 20px auto;
 }
 
+.bg-primary {
+  @include palette($brand-primary, $white);
+}
+
 
 // Media Queries
 // Small devices (landscape phones, 576px and up)

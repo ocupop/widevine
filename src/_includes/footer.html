@@ -1,1 +1,35 @@
-<footer id="page-footer"></footer>
+<footer id="page-footer">
+  <div class="container">
+    <nav id="footernav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/news' %} active{% endif %}" href="/">News {% if page.url == '/news' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/documentation' %} active{% endif %}" href="/documentation">Documentation {% if page.url == '/documentation' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/integration-console' %} active{% endif %}" href="/integration-console"> Integration Console {% if page.url == '/integration-console' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/client-platforms' %} active{% endif %}" href="/client-platforms">Client Platforms {% if page.url == '/client-platforms' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/terms-of-service' %} active{% endif %}" href="/terms-of-service">Terms of Service {% if page.url == '/terms-of-service' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link{% if page.url == '/privacy-policy' %} active{% endif %}" href="/privacy-policy">Privacy Policy {% if page.url == '/client-platforms' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="d-flex">
+    <span>&copy; 2018 Google</span>
+    <div class="top">
+      <a href="#mainnav">Back to Top</a>
+      <img src="http://via.placeholder.com/100x75" class="logo-footer" alt="{{ site.title }}">
+    </div>
+  </div>
+
+
+</footer>

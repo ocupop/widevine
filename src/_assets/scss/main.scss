@@ -6,6 +6,8 @@
 @import 'fonts';
 
 
+// Import base / global styles
+@import 'base/global';
 
 // Import layout / global styles
 @import 'layout/page_header';
@@ -15,7 +17,9 @@
 // Import additional elements or project specific styles
 @import 'elements/bg_video';
 @import 'elements/blockquotes';
-@import 'elements/canvas';
+@import 'elements/buttons';
+@import 'elements/hero';
+@import 'elements/logo_pile';
 @import 'elements/tab_collapse';
 
 // Animations

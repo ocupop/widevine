@@ -1,5 +1,8 @@
 #page-header {
-
+  background-color: $brand-primary;
+  .nav-link {
+    color: $white;
+  }
 }
 
 // Media Queries

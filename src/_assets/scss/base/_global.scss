@@ -1,0 +1,17 @@
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  clear: both;
+  overflow: hidden;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:focus {
+    outline: none;
+  }
+}
