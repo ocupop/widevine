@@ -19,6 +19,7 @@
 @import 'elements/bg_video';
 @import 'elements/blockquotes';
 @import 'elements/buttons';
+@import 'elements/collapsable';
 @import 'elements/hero';
 @import 'elements/logo_pile';
 @import 'elements/overlay';
@@ -26,6 +27,8 @@
 @import 'elements/tab_collapse';
 
 // Import view specific styles
+@import 'views/about';
+@import 'views/contact';
 @import 'views/drm';
 @import 'views/home';
 @import 'views/news';

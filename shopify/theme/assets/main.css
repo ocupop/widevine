@@ -21,8 +21,13 @@ img.pull-right {
   margin: 20px auto; }
 
 .lead {
-  font-size: 22px;
+  font-size: 21px;
   margin-bottom: 30px; }
+
+.divider {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid #9e9e9e; }
 
 .bg-image {
   background-size: cover;
@@ -47,6 +52,38 @@ img.pull-right {
       color: #fff !important; }
   .bg-primary hr {
     border-color: white !important; }
+
+.bg-gray-light {
+  background-color: #9e9e9e !important;
+  fill: #9e9e9e !important;
+  color: #fff !important; }
+  .bg-gray-light h1,
+  .bg-gray-light h2,
+  .bg-gray-light h3,
+  .bg-gray-light h4,
+  .bg-gray-light .lead {
+    color: #fff !important; }
+    .bg-gray-light h1 small,
+    .bg-gray-light h2 small,
+    .bg-gray-light h3 small,
+    .bg-gray-light h4 small,
+    .bg-gray-light .lead small {
+      color: #fff !important; }
+  .bg-gray-light hr {
+    border-color: white !important; }
+
+.bg-gradient-diagonal {
+  color: #fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6ab2ff+0,3ff2c1+100 */
+  background: #6ab2ff;
+  /* Old browsers */
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #6ab2ff 0%, #3ff2c1 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #6ab2ff 0%, #3ff2c1 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ab2ff', endColorstr='#3ff2c1',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
 
 @font-face {
   font-family: "project_name";
@@ -86,15 +123,13 @@ section {
 h1, h2, h3, h4, h5, h6 {
   color: #0e4168; }
 
-h1 {
-  font-family: 'Saira Condensed', sans-serif;
-  color: #0e4168;
-  font-weight: 600;
-  font-size: 35px; }
-
-h2, h3 {
+h1, h2, h3 {
   font-family: 'Saira', sans-serif;
+  color: #0e4168;
   font-weight: 600; }
+
+h1 {
+  font-size: 35px; }
 
 h2 {
   font-size: 35px; }
@@ -115,19 +150,19 @@ p {
 #page-header {
   background-color: #0e4168; }
   #page-header .navbar-brand {
-    width: 217px; }
+    width: 190px; }
   #page-header .nav-item {
     padding: 0 15px; }
   #page-header .nav-link {
     color: #fff;
     font-family: 'Saira';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 0 6px 0;
     text-transform: uppercase; }
     #page-header .nav-link.active {
       font-weight: 600;
-      border-bottom: 4px solid #fff; }
+      border-bottom: 5px solid #fff; }
 
 #mainnav {
   padding-top: 0;
@@ -239,7 +274,7 @@ blockquote {
     z-index: 9; }
 
 .button {
-  padding: 10px 30px;
+  padding: 9px 35px;
   border-radius: 7px;
   background-color: #0e4168;
   display: inline-block;
@@ -260,8 +295,47 @@ blockquote {
   .button.button-block {
     display: block; }
   .button.button-lg {
-    padding-left: 50px;
-    padding-right: 50px; }
+    padding-left: 70px;
+    padding-right: 70px; }
+
+.collapsable {
+  list-style-type: none;
+  padding-left: 0; }
+  .collapsable li {
+    margin-bottom: 30px;
+    position: relative; }
+    .collapsable li span {
+      display: block;
+      background-color: #0e4168;
+      padding: 10px 20px;
+      color: #fff;
+      font-family: 'Saira', sans-serif;
+      font-weight: 600; }
+      .collapsable li span::after {
+        content: '+';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 44px;
+        height: 44px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: #fff;
+        background-color: #062233;
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif; }
+    .collapsable li .collapse-content {
+      background-color: #fff;
+      padding: 20px;
+      color: #0e4168;
+      font-size: 14px; }
 
 .hero {
   display: -webkit-box;
@@ -275,7 +349,7 @@ blockquote {
   background-position: center center;
   background-repeat: no-repeat; }
   .hero h1 {
-    font-size: 43px; }
+    font-family: "Saira Condensed", sans-serif; }
 
 .logo-pile {
   display: -webkit-box;
@@ -297,8 +371,6 @@ blockquote {
 
 .overlay {
   color: #fff; }
-  .overlay h1, .overlay h2, .overlay h3, .overlay h4, .overlay h5, .overlay h6 {
-    color: #fff; }
   .overlay::before {
     content: '';
     position: absolute;
@@ -308,6 +380,12 @@ blockquote {
     opacity: .85;
     width: 100%;
     height: 100%; }
+  .overlay h1, .overlay h2, .overlay h3, .overlay h4, .overlay h5, .overlay h6 {
+    color: #fff; }
+  .overlay hr {
+    border-top: 1px solid #fff;
+    margin-top: 30px;
+    margin-bottom: 30px; }
   .overlay.overlay-blue-light::before {
     background-color: #6ab2ff; }
   .overlay.overlay-primary::before {
@@ -328,11 +406,17 @@ blockquote {
   #solution-nav .nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px; }
   #solution-nav .nav-link {
     color: #0e4168;
     font-family: 'Saira', sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    padding-left: 0;
+    padding-right: 0; }
+    #solution-nav .nav-link.active {
+      border-bottom: 5px solid #0e4168; }
 
 .tab-class {
   display: none; }
@@ -348,6 +432,69 @@ blockquote {
 
   .accordion-class {
     display: none; } }
+.stat {
+  border: 1px solid #6ab2ff;
+  text-align: center;
+  font-family: 'Saira';
+  padding: 20px; }
+
+#company hr {
+  border-top: 1px solid; }
+#company img {
+  width: 400px;
+  display: block;
+  margin: 0 auto; }
+
+#help img {
+  width: 200px;
+  display: block;
+  margin: 0 auto 30px auto; }
+#help .address-wrapper {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%; }
+#help .height-100 {
+  height: 100%; }
+#help .address address {
+  font-size: 18px; }
+#help .address img {
+  width: 70px;
+  margin: 0 auto 20px 0; }
+#help .address strong {
+  font-family: 'Saira';
+  font-weight: 600; }
+
+.events-list {
+  list-style-type: none;
+  padding-left: 0; }
+  .events-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    font-family: 'Saira', sans-serif;
+    font-weight: 600; }
+    .events-list li:last-of-type {
+      border-bottom: 0; }
+    .events-list li .button {
+      text-transform: none; }
+
 #features img {
   width: 250px; }
 #features hr {
@@ -358,6 +505,11 @@ blockquote {
   text-transform: none;
   font-family: 'Saira Condensed', sans-serif;
   font-weight: 600; }
+
+#ecosystem {
+  background-image: url("/assets/img/bg-ecosystem.jpg"); }
+  #ecosystem h2 {
+    color: #fff; }
 
 #home-hero {
   background-image: url("/assets/img/bg-hero.jpg"); }
@@ -395,16 +547,20 @@ blockquote {
     border: 0; }
   .search ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #fff; }
+    color: #fff;
+    font-size: 14px; }
   .search ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #fff; }
+    color: #fff;
+    font-size: 14px; }
   .search :-ms-input-placeholder {
     /* IE 10+ */
-    color: #fff; }
+    color: #fff;
+    font-size: 14px; }
   .search :-moz-placeholder {
     /* Firefox 18- */
-    color: #fff; }
+    color: #fff;
+    font-size: 14px; }
 
 #news h2 {
   font-size: 20px; }

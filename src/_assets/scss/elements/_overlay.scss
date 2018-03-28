@@ -1,8 +1,5 @@
 .overlay {
   color: $white;
-  h1, h2, h3, h4, h5, h6 {
-    color: $white;
-  }
   &::before {
     content: '';
     position: absolute;
@@ -12,6 +9,14 @@
     opacity: .85;
     width: 100%;
     height: 100%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+  hr {
+    border-top: 1px solid $white;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   &.overlay-blue-light {
     &::before {

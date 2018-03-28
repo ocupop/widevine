@@ -2,16 +2,14 @@ h1, h2, h3, h4, h5, h6 {
   color: $brand-primary;
 }
 
-h1 {
-  font-family: 'Saira Condensed', sans-serif;
+h1, h2, h3 {
+  font-family: 'Saira', sans-serif;
   color: $brand-primary;
   font-weight: 600;
-  font-size: 35px;
 }
 
-h2, h3 {
-  font-family: 'Saira', sans-serif;
-  font-weight: 600;
+h1 {
+  font-size: 35px;
 }
 
 h2 { font-size: 35px; }

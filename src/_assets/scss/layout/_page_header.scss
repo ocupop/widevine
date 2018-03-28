@@ -1,21 +1,21 @@
 #page-header {
   background-color: $brand-primary;
   .navbar-brand {
-    width: 217px;
+    width: 190px;
   }
   .nav-item {
-    padding: 0 15px;
+    padding: 0 20px;
   }
   .nav-link {
     color: $white;
     font-family: 'Saira';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 0 6px 0;
     text-transform: uppercase;
     &.active {
       font-weight: 600;
-      border-bottom: 4px solid $white;
+      border-bottom: 5px solid $white;
     }
   }
 }
