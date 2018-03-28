@@ -1,0 +1,22 @@
+#home-hero {
+  background-image: url('/assets/img/bg-hero.jpg');
+}
+
+#benefits {
+  img {
+    margin-bottom: 30px;
+  }
+}
+
+#support {
+  padding-bottom: 0;
+  img {
+    width: 255px;
+    margin-bottom: 75px;
+  }
+  nav {
+    border-top: 1px solid $white;
+    margin-top: 25px;
+    padding: 40px 0;
+  }
+}

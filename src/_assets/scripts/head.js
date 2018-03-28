@@ -4,7 +4,7 @@ var WebFont = require('webfontloader');
 
 WebFont.load({
   google: {
-    families: ['Open Sans']
+    families: ['Saira', 'Saira Condensed', 'Open Sans']
   },
   // typekit: { id: '' },
   loading: function() {

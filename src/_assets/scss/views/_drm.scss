@@ -1,0 +1,16 @@
+#features {
+  img {
+    width: 250px;
+
+  }
+  hr {
+    border-top: 1px solid $gray-dark;
+    margin: 30px auto;
+  }
+  h3 {
+    color: $text-color;
+    text-transform: none;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 600;
+  }
+}

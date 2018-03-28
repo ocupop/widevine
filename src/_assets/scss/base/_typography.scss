@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $brand-primary;
+}
+
+h1 {
+  font-family: 'Saira Condensed', sans-serif;
+  color: $brand-primary;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+h2, h3 {
+  font-family: 'Saira', sans-serif;
+  font-weight: 600;
+}
+
+h2 { font-size: 35px; }
+
+h3 { 
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+h4 { 
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 19px; 
+  color: $blue-light;
+  font-weight: 600
+}
+
+p {
+  line-height: 2;
+}

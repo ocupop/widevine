@@ -1,0 +1,17 @@
+#solutions {
+  color: $brand-primary;
+  hr {
+    border-top: 1px solid $gray-dark;
+  }
+}
+
+#hash-nav {
+  border-left: 1px solid $text-color;
+  h3 {
+    color: $text-color;
+  }
+  .nav-link {
+    color: $text-color;
+    padding-left: 0;
+  }
+}

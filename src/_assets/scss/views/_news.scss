@@ -1,0 +1,43 @@
+.search {
+  input {
+    padding: 5px 10px;
+    color: $white;
+    width: 250px;
+    background-color: $brand-primary;
+    border: 0;
+  }
+  
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $white;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $white;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $white;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $white;
+  }
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6ab2ff+0,3ff2c1+100 */
+  background: #6ab2ff; /* Old browsers */
+  background: -moz-linear-gradient(left, #6ab2ff 0%, #3ff2c1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #6ab2ff 0%,#3ff2c1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #6ab2ff 0%,#3ff2c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ab2ff', endColorstr='#3ff2c1',GradientType=1 ); /* IE6-9 */
+}
+
+#news {
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    color: $brand-primary;
+  }
+  .post-details {
+    color: $blue-light;
+    font-family: 'Saira', sans-serif;
+  }
+}
+

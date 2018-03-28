@@ -8,6 +8,7 @@
 
 // Import base / global styles
 @import 'base/global';
+@import 'base/typography';
 
 // Import layout / global styles
 @import 'layout/page_header';
@@ -20,7 +21,15 @@
 @import 'elements/buttons';
 @import 'elements/hero';
 @import 'elements/logo_pile';
+@import 'elements/overlay';
+@import 'elements/solution_nav';
 @import 'elements/tab_collapse';
+
+// Import view specific styles
+@import 'views/drm';
+@import 'views/home';
+@import 'views/news';
+@import 'views/solutions';
 
 // Animations
 @import 'animations';

@@ -1,10 +1,17 @@
 .button {
-  padding: 5px 25px;
-  border-radius: 5px;
+  padding: 10px 30px;
+  border-radius: 7px;
   background-color: $brand-primary;
   display: inline-block;
   text-align: center;
   color: $white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Saira', sans-serif;
+  &:hover {
+    text-decoration: none;
+  }
   &.button-white {
     background-color: $white;
     color: $brand-primary;
@@ -15,5 +22,9 @@
   }
   &.button-block {
     display: block;
+  }
+  &.button-lg {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

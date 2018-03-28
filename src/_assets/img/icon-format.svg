@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 270 270" style="enable-background:new 0 0 270 270;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#0E4168;stroke-width:1.5468;stroke-miterlimit:10;}
+	.st1{fill:#72C7AE;}
+	.st2{fill:#FFFFFF;}
+</style>
+<circle class="st0" cx="135" cy="135" r="128"/>
+<circle class="st0" cx="134.7" cy="77.7" r="39.8"/>
+<circle class="st1" cx="134.7" cy="77.7" r="33.5"/>
+<polygon class="st0" points="220.7,167.5 204.3,194.9 237.1,194.9 "/>
+<g>
+	<g>
+		<polyline class="st0" points="197.7,141.5 201.9,165.2 178.3,160.7 		"/>
+		
+			<rect x="194.1" y="137.6" transform="matrix(-0.7112 0.703 -0.703 -0.7112 436.5596 102.2142)" class="st2" width="6.3" height="6.3"/>
+		
+			<rect x="174.9" y="156.6" transform="matrix(-0.7112 0.703 -0.703 -0.7112 417.01 148.2789)" class="st2" width="6.3" height="6.3"/>
+	</g>
+	<line class="st0" x1="159.3" y1="122.6" x2="201.9" y2="165.2"/>
+</g>
+<rect x="37" y="172.3" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -46.9979 348.3389)" class="st0" width="23.2" height="23.2"/>
+<g>
+	<g>
+		<polyline class="st0" points="71.7,141.5 67.5,165.2 91.1,160.7 		"/>
+		
+			<rect x="68.9" y="137.6" transform="matrix(0.7112 0.703 -0.703 0.7112 119.7938 -10.0164)" class="st2" width="6.3" height="6.3"/>
+		
+			<rect x="88.2" y="156.6" transform="matrix(0.7112 0.703 -0.703 0.7112 138.7189 -18.0481)" class="st2" width="6.3" height="6.3"/>
+	</g>
+	<line class="st0" x1="110" y1="122.6" x2="67.5" y2="165.2"/>
+</g>
+<g>
+	<g>
+		<polyline class="st0" points="149.1,178.7 135.3,198.4 121.8,178.5 		"/>
+		
+			<rect x="146.1" y="174.7" transform="matrix(-1 -5.771938e-03 5.771938e-03 -1 297.5479 356.5994)" class="st2" width="6.3" height="6.3"/>
+		
+			<rect x="119.1" y="174.6" transform="matrix(-1 -5.771938e-03 5.771938e-03 -1 243.4501 356.131)" class="st2" width="6.3" height="6.3"/>
+	</g>
+	<line class="st0" x1="135.3" y1="131.3" x2="135.3" y2="198.4"/>
+</g>
+<circle class="st0" cx="135.4" cy="224.9" r="13.7"/>
+<g>
+	<polygon class="st0" points="147.3,90.5 137.8,90.5 135.3,81 144.8,81 	"/>
+	<polygon class="st0" points="123.3,81 113.9,81 111.4,71.6 120.8,71.6 	"/>
+	<polygon class="st0" points="144.8,81 154.2,81 158,66.9 148.6,66.9 	"/>
+	<polygon class="st0" points="135.3,81 125.9,90.5 123.3,81 132.8,71.6 	"/>
+</g>
+</svg>

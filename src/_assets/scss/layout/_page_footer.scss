@@ -2,16 +2,36 @@
   display:block;
   background-color: $brand-primary;
   color: $white;
+  font-family: 'Saira', sans-serif;
+  background-color: $blue-dark;
+  img {
+    width: 85px;
+  }
+  .copyright {
+    padding-left: 30px;
+  }
+  .top-link {
+    padding-right: 20px;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
   .d-flex {
     align-items: center;
     justify-content: space-between;
-    background-color: $blue-dark;
+  }
+  .nav {
+    padding: 40px 0;
   }
 }
 
 #footernav {
   .nav {
-    justify-content: center;
+    justify-content: space-between;
+    .nav-link {
+      color: $white;
+      font-family: 'Saira', sans-serif;
+    }
   }
 }
 

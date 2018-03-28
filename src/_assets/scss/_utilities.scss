@@ -36,6 +36,23 @@ img {
   margin: 20px auto;
 }
 
+.lead {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.divider {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1px solid $gray-dark;
+}
+
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .bg-primary {
   @include palette($brand-primary, $white);
 }
