@@ -8,7 +8,7 @@ title: Contact
     <div class="row">
       <div class="col">
         <div class="content">
-          <h1>Need Help?</h1>
+          <h1 class="editable">Need Help?</h1>
         </div>
       </div>
     </div>
@@ -48,39 +48,19 @@ title: Contact
     <div class="row">
       <div class="col">
         <div class="content">
-          <h1>Events Listing</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet volutpat lectus eget hendrerit. Sed imperdiet porttitor commodo.</p>
+          <h1 class="editable">Events Listing</h1>
+          <div class="editable">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet volutpat lectus eget hendrerit. Sed imperdiet porttitor commodo.</p>
+          </div>
           <ul class="events-list">
+            {% for event in (1..10) %}
             <li>
               <span class="date">Date</span>
               <span class="event-title">Event Title</span>
               <span class="event-location">Location</span>
               <a href="#" class="button">Schedule Meeting</a>
             </li>
-            <li>
-              <span class="date">Date</span>
-              <span class="event-title">Event Title</span>
-              <span class="event-location">Location</span>
-              <a href="#" class="button">Schedule Meeting</a>
-            </li>
-            <li>
-              <span class="date">Date</span>
-              <span class="event-title">Event Title</span>
-              <span class="event-location">Location</span>
-              <a href="#" class="button">Schedule Meeting</a>
-            </li>
-            <li>
-              <span class="date">Date</span>
-              <span class="event-title">Event Title</span>
-              <span class="event-location">Location</span>
-              <a href="#" class="button">Schedule Meeting</a>
-            </li>
-            <li>
-              <span class="date">Date</span>
-              <span class="event-title">Event Title</span>
-              <span class="event-location">Location</span>
-              <a href="#" class="button">Schedule Meeting</a>
-            </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
