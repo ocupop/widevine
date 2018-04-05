@@ -4,21 +4,37 @@
   color: $white;
   font-family: 'Saira', sans-serif;
   background-color: $blue-dark;
-  img {
-    width: 85px;
+  .logo-footer {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6ab2ff+0,3ff2c1+100 */
+    background: #6ab2ff; /* Old browsers */
+    background: -moz-linear-gradient(left, #6ab2ff 0%, #3ff2c1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #6ab2ff 0%,#3ff2c1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #6ab2ff 0%,#3ff2c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ab2ff', endColorstr='#3ff2c1',GradientType=1 ); /* IE6-9 */
+    img {
+      width: 75px;
+    }
   }
   .copyright {
-    padding-left: 30px;
+    padding: 10px 0;
+    text-align: center;
+    display: block;
   }
   .top-link {
-    padding-right: 20px;
+    display: block;
+    text-align: center;
+    padding-right: 0;
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
   }
-  .d-flex {
-    align-items: center;
-    justify-content: space-between;
+  .footer-wrapper {
+    display: block;
   }
   .nav {
     padding: 40px 0;
@@ -28,9 +44,15 @@
 #footernav {
   .nav {
     justify-content: space-between;
+    .nav-item {
+      width: 100%;
+      text-align: center;
+    }
     .nav-link {
       color: $white;
       font-family: 'Saira', sans-serif;
+      font-size: 14px;
+      padding: 10px 0;
     }
   }
 }
@@ -40,10 +62,56 @@
 @media (min-width: $screen-sm-min) {}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: $screen-md-min) {}
+@media (min-width: $screen-md-min) {
+  #page-footer {
+    .copyright {
+      padding-left: 30px;
+    }
+    .top-link {
+      padding-right: 20px;
+      display: inline-block;
+    }
+    .footer-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 85px;
+      margin-top: 0;
+      img {
+        width: 50px;
+      }
+    }
+    .top {
+      display: flex;
+      align-items: center;
+    }
+  }
+  #footernav {
+    .nav {
+      .nav-item {
+        text-align: left;
+        width: auto;
+      }
+    }
+  }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: $screen-lg-min) {}
+@media (min-width: $screen-lg-min) {
+  #footernav {
+    .nav {
+      .nav-link {
+        font-size: 16px;
+      }
+    }
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: $screen-xl-min) {}

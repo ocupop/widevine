@@ -34,19 +34,53 @@
   list-style-type: none;
   padding-left: 0;
   li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
     border-bottom: 1px solid $white;
     padding: 10px 0;
     font-family: 'Saira', sans-serif;
     font-weight: 600;
+    font-size: 18px;
+    margin-top: 15px;
+    span {
+      display: block;
+      padding: 5px 0;
+    }
     &:last-of-type {
       border-bottom: 0;
     }
     .button {
       text-transform: none;
+      display: block;
+      margin: 25px auto;
     }
   }
 }
+
+// Media Queries
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $screen-sm-min) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: $screen-md-min) {
+  .events-list {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      font-size: 16px;
+      margin-top: 0;
+      .button {
+        display: inline-block;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: $screen-lg-min) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: $screen-xl-min) {}
 

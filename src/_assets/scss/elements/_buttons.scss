@@ -1,5 +1,5 @@
 .button {
-  padding: 9px 35px;
+  padding: 9px 20px;
   border-radius: 7px;
   background-color: $brand-primary;
   display: inline-block;
@@ -28,3 +28,20 @@
     padding-right: 70px;
   }
 }
+
+// Media Queries
+// Small devices (landscape phones, 576px and up)
+@media (min-width: $screen-sm-min) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: $screen-md-min) {
+  .button {
+    padding: 9px 35px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: $screen-lg-min) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: $screen-xl-min) {}

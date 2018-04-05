@@ -10,3 +10,14 @@
     flex-basis: auto;
   }
 }
+
+@media (max-width: $screen-md-max) {
+  .logo-pile {
+    flex-wrap: wrap;
+    .logo {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+}

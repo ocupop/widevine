@@ -2,11 +2,17 @@
   <nav id="mainnav" class="navbar navbar-expand-md">
     <a class="navbar-brand" href="/"><img src="/assets/img/logo-wordmark.svg" alt="{{ site.title }} logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="sr-only">Toggle navigation</span>
+      <span class="bar close-one"></span>
+      <span class="bar close-two"></span>
+      <span class="bar close-three"></span>
     </button>
 
     <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
       <ul class="navbar-nav">
+        <li class="nav-item logo-mobile">
+          <a class="nav-link " href="/"><img src="/assets/img/logo-mobile.svg" class="img-responsive" alt=""></a>
+        </li>
         <li class="nav-item">
           <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="/">Home {% if page.url == '/' %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
