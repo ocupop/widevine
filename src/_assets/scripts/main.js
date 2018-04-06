@@ -20,6 +20,11 @@ $(document).ready(function() {
       }, 500);
   });
 
+  //Navbar toggler animation
+  $('.navbar-toggler').on('click', function(){
+    $('.navbar-toggler').toggleClass('active');
+  });
+
 
   //lazy loading example
   $("img.lazy").Lazy({

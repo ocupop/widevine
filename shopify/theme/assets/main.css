@@ -175,17 +175,19 @@ p {
   right: 15px;
   top: 3px;
   width: 40px; }
+  .navbar-toggler:hover {
+    cursor: pointer; }
   .navbar-toggler:focus {
     outline: 0; }
-  .navbar-toggler.open .close-one {
+  .navbar-toggler.active .close-one {
     opacity: 0; }
-  .navbar-toggler.open .close-two {
+  .navbar-toggler.active .close-two {
     margin-top: 0;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
-  .navbar-toggler.open .close-three {
-    margin-top: 0;
+  .navbar-toggler.active .close-three {
+    margin-top: -2px;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
@@ -241,7 +243,7 @@ p {
   font-family: 'Saira', sans-serif;
   background-color: #062233; }
   #page-footer .logo-footer {
-    margin-top: 30px;
+    margin-top: 20px;
     display: block;
     width: 100%;
     padding: 20px;
