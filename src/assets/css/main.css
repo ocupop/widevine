@@ -120,6 +120,10 @@ section {
   section:focus {
     outline: none; }
 
+@media (max-width: 767px) {
+  section {
+    padding-top: 25px;
+    padding-bottom: 25px; } }
 h1, h2, h3, h4, h5, h6 {
   color: #0e4168; }
 
@@ -247,6 +251,7 @@ p {
             width: 20px;
             height: 20px;
             font-size: 16px;
+            font-weight: 100;
             color: #606060; }
     #mobilenav-wrapper .logo-mobile img {
       width: 50px; }
@@ -787,6 +792,14 @@ blockquote {
     color: #606060;
     padding-left: 0; }
 
+@media (max-width: 767px) {
+  #hash-nav {
+    display: none; }
+
+  #solutions img {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block; } }
 @-webkit-keyframes cardSlideIn {
   from {
     opacity: 0;
@@ -797,7 +810,6 @@ blockquote {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); } }
-
 @keyframes cardSlideIn {
   from {
     opacity: 0;

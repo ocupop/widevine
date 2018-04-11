@@ -17,3 +17,10 @@ section {
     outline: none;
   }
 }
+
+@media (max-width: $screen-md-max) {
+  section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
