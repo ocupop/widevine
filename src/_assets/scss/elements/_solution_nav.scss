@@ -24,3 +24,9 @@
     }
   }
 }
+
+@media (max-width: $screen-md-max) {
+  #solution-nav {
+    display: none;
+  }
+}

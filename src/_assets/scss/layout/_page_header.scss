@@ -30,7 +30,7 @@
   padding: 10px;
   position: absolute;
   right: 15px;
-  top: 3px;
+  top: 0;
   width: 40px;
   &:hover {
     cursor: pointer;
@@ -76,15 +76,62 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: $screen-md-min) {
-  .logo-mobile {
+  #mobilenav-wrapper {
     display: none;
+  }
+  .navbar-expand-md {
+    justify-content: space-between;
   }
 }
 
 @media (max-width: $screen-md-max) {
-  #page-header {
+  #mainnav {
+    display: none;
+  }
+
+  #mobilenav-wrapper {
+    text-align: center;
+    .navbar-brand {
+      padding-top: 3px;
+      padding-bottom: 5px;
+    }
+    .secondary-collapse-trigger {
+      position: relative;
+      &::after {
+        content: '+';
+        display: block;
+        position: absolute;
+        top: -1px;
+        right: 0;
+        font-size: 27px;
+        font-weight: 100;
+      }
+    }
+
     .nav-item {
       border-bottom: 1px solid $gray-light;
+      .secondary-collapse {
+        list-style-type: none;
+        padding-left: 0;
+        .nav-item {
+          border-bottom: 0;
+          position: relative;
+          .nav-link {
+            &::after {
+              content: '>';
+              display: block;
+              position: absolute;
+              top: 6px;
+              right: 20px;
+              width: 20px;
+              height: 20px;
+              font-size: 16px;
+              font-weight: 100;
+              color: $text-color;
+            }
+          }
+        }
+      }
     }
     .logo-mobile {
       img {
@@ -99,25 +146,26 @@
         border-bottom: 0;
       }
     }
-    .navbar-collapse {
-      position: fixed;
-      top: 0;
+  }
+  #mobilenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    background-color: $white;
+    width: 250px;
+    height: 100%;
+    z-index: 500;
+    text-align: left;
+    &.collapsing {
+      transition: left 0.4s ease-in;
+      left: -250px;
+    }
+    &.show {
       left: 0;
-      padding-left: 0;
-      padding-right: 0;
-      padding-bottom: 0;
-      background-color: $white;
-      width: 250px;
-      height: 100%;
-      z-index: 500;
-    }
-    .navbar-collapse.collapsing {
-        transition: left 0.4s ease-in-out;
-        left: -100%;
-    }
-    .navbar-collapse.show {
-        left: 0;
-        transition: left 0.4s ease-in-out;
+      transition: left 0.4s ease-out;
     }
   }
 }
