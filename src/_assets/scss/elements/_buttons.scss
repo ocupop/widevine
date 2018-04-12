@@ -9,8 +9,10 @@
   text-transform: uppercase;
   font-weight: 600;
   font-family: 'Saira', sans-serif;
+  @include transition(.5s);
   &:hover {
     text-decoration: none;
+    background-color: $blue-light;
   }
   &.button-white {
     background-color: $white;
@@ -19,6 +21,9 @@
   &.button-teal {
     background-color: $teal;
     color: $white;
+    &:hover {
+      background-color: $blue-light;
+    }
   }
   &.button-block {
     display: block;
