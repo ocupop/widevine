@@ -1,21 +1,14 @@
 #page-footer {
   display:block;
-  background-color: $brand-primary;
-  color: $white;
+  background-color: $white;
+  color: $brand-primary;
   font-family: 'Saira', sans-serif;
-  background-color: $blue-dark;
   .logo-footer {
     margin-top: 20px;
     display: block;
     width: 100%;
     padding: 20px;
     text-align: center;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6ab2ff+0,3ff2c1+100 */
-    background: #6ab2ff; /* Old browsers */
-    background: -moz-linear-gradient(left, #6ab2ff 0%, #3ff2c1 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #6ab2ff 0%,#3ff2c1 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #6ab2ff 0%,#3ff2c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ab2ff', endColorstr='#3ff2c1',GradientType=1 ); /* IE6-9 */
     img {
       width: 75px;
     }
@@ -29,7 +22,7 @@
     display: block;
     text-align: center;
     padding-right: 0;
-    color: $white;
+    color: $brand-primary;
     text-transform: uppercase;
     text-decoration: none;
   }

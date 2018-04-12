@@ -28,4 +28,9 @@
       background-color: $brand-primary;
     }
   }
+  &.overlay-gray-mid {
+    &::before {
+      background-color: $gray-mid;
+    }
+  }
 }
