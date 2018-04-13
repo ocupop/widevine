@@ -169,7 +169,7 @@ h2 {
   font-size: 35px; }
 
 h3 {
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase; }
 
 h4 {
@@ -520,33 +520,54 @@ blockquote {
   .collapsable li {
     margin-bottom: 30px;
     position: relative; }
-    .collapsable li span {
+    .collapsable li.collapsed .icon-plus .icon-bar.bar-2 {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+    .collapsable li .collapse-title {
+      position: relative;
       display: block;
       background-color: #0e4168;
       padding: 10px 20px;
       color: #fff;
       font-family: 'Saira', sans-serif;
       font-weight: 600; }
-      .collapsable li span::after {
-        content: '+';
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 44px;
-        height: 44px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        color: #fff;
-        background-color: #062233;
-        font-size: 30px;
-        font-family: 'Open Sans', sans-serif; }
+    .collapsable li .icon-plus {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 44px;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: #fff;
+      background-color: #062233;
+      font-size: 30px;
+      font-family: 'Open Sans', sans-serif; }
+      .collapsable li .icon-plus .icon-bar {
+        background-color: #fff; }
+        .collapsable li .icon-plus .icon-bar.bar-1 {
+          width: 20px;
+          height: 1px;
+          margin-left: -9px; }
+        .collapsable li .icon-plus .icon-bar.bar-2 {
+          width: 1px;
+          height: 20px;
+          -webkit-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+                  transform: rotate(90deg);
+          margin-left: -11px;
+          -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out; }
     .collapsable li .collapse-content {
       background-color: #fff;
       padding: 20px;
@@ -771,6 +792,11 @@ blockquote {
   #ecosystem h2 {
     color: #fff; }
 
+@media (max-width: 767px) {
+  #features img {
+    width: 225px;
+    display: block;
+    margin: 0 auto; } }
 #home-hero {
   background: -webkit-gradient(linear, left top, right top, color-stop(0, #6ab2ff), color-stop(50%, #3ff2c1), to(#6ab2ff));
   background: -webkit-linear-gradient(left, #6ab2ff 0, #3ff2c1 50%, #6ab2ff 100%);

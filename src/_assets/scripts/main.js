@@ -55,6 +55,11 @@ $(document).ready(function() {
     $('.navbar-toggler').toggleClass('active');
   });
 
+  $('.collapsable').on('shown.bs.collapse', function () {
+    window.console.log('show it');
+    $('.collapse-content.show').parent().addClass('open');
+  })
+  
 
   //lazy loading example
   $("img.lazy").Lazy({

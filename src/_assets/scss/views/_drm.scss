@@ -1,7 +1,6 @@
 #features {
   img {
     width: 250px;
-
   }
   hr {
     border-top: 1px solid $gray-dark;
@@ -20,4 +19,14 @@
     color: $white;
   }
   background-image: url('/assets/img/bg-ecosystem.jpg');
+}
+
+@media (max-width: $screen-md-max) {
+  #features {
+    img {
+      width: 225px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
