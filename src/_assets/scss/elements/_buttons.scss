@@ -13,6 +13,7 @@
   &:hover {
     text-decoration: none;
     background-color: $blue-light;
+    color: $white;
   }
   &.button-white {
     background-color: $white;
@@ -23,6 +24,7 @@
     color: $white;
     &:hover {
       background-color: $blue-light;
+      color: $white;
     }
   }
   &.button-block {

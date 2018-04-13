@@ -28,6 +28,8 @@ img.pull-right {
   margin-left: 20px;
   margin-right: 20px;
   border-top: 1px solid #9e9e9e; }
+  .divider.divider-white {
+    border-top: 1px solid #fff; }
 
 .bg-image {
   background-size: cover;
@@ -195,21 +197,14 @@ p {
     text-transform: uppercase;
     position: relative;
     overflow: hidden; }
-    #page-header .nav-link::after {
-      content: '';
-      width: 100%;
-      height: 4px;
-      background-color: #fff;
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: -100%;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-    #page-header .nav-link.active::after, #page-header .nav-link:hover::after {
-      left: 0; }
-    #page-header .nav-link:hover:after {
-      opacity: .5; }
+
+#magic-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background: #fff; }
 
 #mainnav {
   padding-top: 0;
@@ -362,7 +357,7 @@ p {
     width: 100%;
     text-align: center; }
   #footernav .nav .nav-link {
-    color: #fff;
+    color: #0e4168;
     font-family: 'Saira', sans-serif;
     font-size: 14px;
     padding: 10px 0; }
@@ -499,7 +494,8 @@ blockquote {
   transition: all 0.5s ease-in-out; }
   .button:hover {
     text-decoration: none;
-    background-color: #6ab2ff; }
+    background-color: #6ab2ff;
+    color: #fff; }
   .button.button-white {
     background-color: #fff;
     color: #0e4168; }
@@ -507,7 +503,8 @@ blockquote {
     background-color: #24dda2;
     color: #fff; }
     .button.button-teal:hover {
-      background-color: #6ab2ff; }
+      background-color: #6ab2ff;
+      color: #fff; }
   .button.button-block {
     display: block; }
   .button.button-lg {
@@ -666,13 +663,27 @@ blockquote {
   .accordion-class {
     display: none; } }
 .stat {
-  border: 1px solid #6ab2ff;
+  border: 1px solid #fff;
   text-align: center;
-  font-family: 'Saira';
-  padding: 20px; }
+  padding: 20px;
+  color: #0e4168; }
+  .stat span {
+    display: block; }
+    .stat span:nth-of-type(1) {
+      font-size: 40px;
+      font-weight: 400;
+      font-family: 'Saira Condensed', sans-serif; }
+    .stat span:nth-of-type(2) {
+      font-size: 18px;
+      font-family: 'Saira';
+      font-weight: 600;
+      text-transform: uppercase; }
+
+#stats {
+  color: #0e4168; }
 
 #company hr {
-  border-top: 1px solid; }
+  border-top: 1px solid #fff; }
 #company img {
   width: 400px;
   display: block;
@@ -776,7 +787,10 @@ blockquote {
     width: 225px;
     margin: 50px auto; }
   #home-hero h1 {
-    font-size: 28px; }
+    font-size: 29px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px; }
   #home-hero p {
     color: #0e4168;
     padding-left: 30px;
