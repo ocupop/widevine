@@ -2,7 +2,13 @@
   {% unless page.url == '/' %}
   <div class="bg-gray-mid">
     <div class="container">
-      {% include footernav.html %}
+      <div class="row">
+        <div class="col">
+          <div class="content">
+            {% include footernav.html %}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   {% endunless %}

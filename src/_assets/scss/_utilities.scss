@@ -39,6 +39,7 @@ img {
 .lead {
   font-size: 21px;
   margin-bottom: 30px;
+  color: $brand-primary;
 }
 
 .divider {
@@ -48,6 +49,22 @@ img {
   &.divider-white {
     border-top: 1px solid $white;
   }
+}
+
+ul.dashed {
+  list-style-type: none;
+  > li {
+    //text-indent: -5px;
+    &:before {
+      content: "-";
+      //text-indent: -5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.text-red {
+  color: $red;
 }
 
 .bg-image {

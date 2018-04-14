@@ -9,6 +9,9 @@
         <li class="nav-item{% if page.url == '/solutions' %} active-item{% endif %}">
           <a class="nav-link" href="/solutions">Solutions {% if page.url == '/solutions' %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
+        <li class="nav-item{% if page.url == '/training' %} active-item{% endif %}">
+          <a class="nav-link" href="/training">Training {% if page.url == '/training' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
         <li class="nav-item{% if page.url == '/about' %} active-item{% endif %}">
           <a class="nav-link" href="/about"> About {% if page.url == '/about' %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
@@ -55,14 +58,15 @@
           </ul>
         </li>
         <li class="nav-item">
+          <a class="nav-link {% if page.url == '/training' %} active{% endif %}" href="/training">Training {% if page.url == '/training' %}<span class="sr-only">(current)</span>{% endif %}</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link{% if page.url == '/about' %} active{% endif %}" href="/about"> About {% if page.url == '/about' %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link{% if page.url == '/contact' %} active{% endif %}" href="/contact">Contact {% if page.url == '/contact' %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
-
       </ul>
     </div>
-    
   </nav>
 </header>

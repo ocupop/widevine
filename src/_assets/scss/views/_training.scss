@@ -1,0 +1,118 @@
+#training {
+  ul {
+    li {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    &.dashed {
+      padding-left: 30px;
+      > li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        > ul {
+          padding-left: 60px;
+          list-style-type: disc;
+          li {
+            padding-top: 2px;
+            padding-bottom: 2px;
+          }
+        }
+      }
+      
+    }
+  }
+  ol {
+    margin: 20px 0;
+    padding-left: 20px;
+    li {
+      font-weight: 600;
+      padding-left: 10px;
+      span {
+        font-weight: 600;
+      }
+      p {
+        font-weight: 400;
+        margin-left: -30px;
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-family: 'Saira Condensed';
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+  address {
+    margin-bottom: 0;
+  }
+  .button {
+    background-color: $teal;
+    padding: 3px 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 10px 0;
+    color: $white;
+
+  }
+}
+
+.table {
+  thead {
+    th {
+      border-top: 0;
+      border-bottom: 0;
+      color: $brand-primary;
+      background-color: $gray-mid;
+      text-align: center;
+    }
+  }
+  td {
+    border: 1px solid $gray-mid;
+    min-height: 100px;
+    font-weight: 600;
+    font-family: 'Open Sans Condensed', sans-serif;
+    &.td-center {
+      text-align: center;
+      vertical-align: middle;
+    }
+    a {
+      color: $teal;
+    }
+    span {
+      display: block;
+    }
+  }
+  .button {
+    display: block;
+  }
+}
+
+#partners {
+  .table {
+    td {
+      &:first-of-type {
+        text-align: center;
+        vertical-align: middle
+      }
+      padding: 20px;
+      vertical-align: middle;
+    }
+    ul {
+      margin-bottom: 0;
+      li {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+#faq {
+  .collapsable {
+    margin-top: 30px;
+  }
+  padding-bottom: 0;
+}

@@ -18,6 +18,10 @@ section {
   }
 }
 
+ul {
+  padding-left: 20px;
+}
+
 @media (max-width: $screen-md-max) {
   section {
     padding-top: 25px;

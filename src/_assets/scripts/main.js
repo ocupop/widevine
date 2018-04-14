@@ -8,6 +8,7 @@ $(function() {
 });
 
 //mainnav hover animation
+
 $(function() {
   var $el, leftPos, newWidth,
       $mainNav = $("#primarynav .navbar-nav");

@@ -22,7 +22,8 @@ img.pull-right {
 
 .lead {
   font-size: 21px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  color: #0e4168; }
 
 .divider {
   margin-left: 20px;
@@ -30,6 +31,15 @@ img.pull-right {
   border-top: 1px solid #9e9e9e; }
   .divider.divider-white {
     border-top: 1px solid #fff; }
+
+ul.dashed {
+  list-style-type: none; }
+  ul.dashed > li:before {
+    content: "-";
+    padding-right: 5px; }
+
+.text-red {
+  color: #fc5820; }
 
 .bg-image {
   background-size: cover;
@@ -150,6 +160,9 @@ section {
   section:focus {
     outline: none; }
 
+ul {
+  padding-left: 20px; }
+
 @media (max-width: 767px) {
   section {
     padding-top: 25px;
@@ -162,11 +175,8 @@ h1, h2, h3 {
   color: #0e4168;
   font-weight: 600; }
 
-h1 {
-  font-size: 35px; }
-
-h2 {
-  font-size: 35px; }
+h1, h2 {
+  font-size: 32px; }
 
 h3 {
   font-size: 20px;
@@ -179,7 +189,7 @@ h4 {
   font-weight: 600; }
 
 p {
-  line-height: 2; }
+  line-height: 1.8; }
 
 #page-header {
   background-color: #0e4168; }
@@ -523,9 +533,7 @@ blockquote {
     .collapsable li.collapsed .icon-plus .icon-bar.bar-2 {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
-              transform: rotate(180deg);
-      -webkit-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out; }
+              transform: rotate(180deg); }
     .collapsable li .collapse-title {
       position: relative;
       display: block;
@@ -637,20 +645,20 @@ blockquote {
   .overlay.overlay-gray-mid::before {
     background-color: #eaeaea; }
 
-#solution-nav .nav {
+.subnav .nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px; }
-#solution-nav .nav-link {
+.subnav .nav-link {
   color: #0e4168;
   font-family: 'Saira', sans-serif;
   font-weight: 400;
   padding: 7px 0;
   position: relative;
   overflow: hidden; }
-  #solution-nav .nav-link::after {
+  .subnav .nav-link::after {
     content: '';
     width: 100%;
     height: 4px;
@@ -661,9 +669,9 @@ blockquote {
     left: -100%;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
-  #solution-nav .nav-link.active::after, #solution-nav .nav-link:hover::after {
+  .subnav .nav-link.active::after, .subnav .nav-link:hover::after {
     left: 0; }
-  #solution-nav .nav-link:hover:after {
+  .subnav .nav-link:hover:after {
     opacity: .5; }
 
 @media (max-width: 767px) {
@@ -917,6 +925,86 @@ blockquote {
     max-width: 175px;
     margin: 0 auto;
     display: block; } }
+#training ul li {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+#training ul.dashed {
+  padding-left: 30px; }
+  #training ul.dashed > li {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    #training ul.dashed > li > ul {
+      padding-left: 60px;
+      list-style-type: disc; }
+      #training ul.dashed > li > ul li {
+        padding-top: 2px;
+        padding-bottom: 2px; }
+#training ol {
+  margin: 20px 0;
+  padding-left: 20px; }
+  #training ol li {
+    font-weight: 600;
+    padding-left: 10px; }
+    #training ol li span {
+      font-weight: 600; }
+    #training ol li p {
+      font-weight: 400;
+      margin-left: -30px; }
+#training h2 {
+  margin-bottom: 15px; }
+#training h3 {
+  font-family: 'Saira Condensed';
+  font-weight: 600;
+  text-transform: none;
+  margin-bottom: 20px; }
+#training address {
+  margin-bottom: 0; }
+#training .button {
+  background-color: #24dda2;
+  padding: 3px 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 10px 0;
+  color: #fff; }
+
+.table thead th {
+  border-top: 0;
+  border-bottom: 0;
+  color: #0e4168;
+  background-color: #eaeaea;
+  text-align: center; }
+.table td {
+  border: 1px solid #eaeaea;
+  min-height: 100px;
+  font-weight: 600;
+  font-family: 'Open Sans Condensed', sans-serif; }
+  .table td.td-center {
+    text-align: center;
+    vertical-align: middle; }
+  .table td a {
+    color: #24dda2; }
+  .table td span {
+    display: block; }
+.table .button {
+  display: block; }
+
+#partners .table td {
+  padding: 20px;
+  vertical-align: middle; }
+  #partners .table td:first-of-type {
+    text-align: center;
+    vertical-align: middle; }
+#partners .table ul {
+  margin-bottom: 0; }
+  #partners .table ul li {
+    padding-top: 0;
+    padding-bottom: 0; }
+
+#faq {
+  padding-bottom: 0; }
+  #faq .collapsable {
+    margin-top: 30px; }
+
 @-webkit-keyframes cardSlideIn {
   from {
     opacity: 0;
@@ -927,6 +1015,7 @@ blockquote {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); } }
+
 @keyframes cardSlideIn {
   from {
     opacity: 0;
