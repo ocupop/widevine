@@ -357,7 +357,7 @@ p {
   #page-footer .footer-wrapper {
     display: block; }
   #page-footer .nav {
-    padding: 40px 0; }
+    padding: 0 0 20px 0; }
 
 #footernav .nav {
   -webkit-box-pack: justify;
@@ -987,6 +987,10 @@ blockquote {
     display: block; }
 .table .button {
   display: block; }
+
+#travel-info .button {
+  padding-left: 50px;
+  padding-right: 50px; }
 
 #partners .table td {
   padding: 20px;
