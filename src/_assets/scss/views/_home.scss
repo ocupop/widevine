@@ -80,5 +80,28 @@
       color: $brand-primary;
     }
   }
+}
 
+@media (max-width: $screen-md-max) {
+  #benefits {
+    img {
+      width: 200px;
+      display: block;
+      margin: 0 auto 30px auto;
+    }
+  }
+
+  #training-program {
+    img {
+      width: 200px;
+      display: block;
+      margin: 30px auto;
+    }
+  }
+
+  #support {
+    img {
+      margin-bottom: 25px;
+    }
+  }
 }
