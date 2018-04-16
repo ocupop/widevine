@@ -74,6 +74,8 @@
     min-height: 100px;
     font-weight: 600;
     font-family: 'Open Sans Condensed', sans-serif;
+    padding-bottom: 40px;
+    position: relative;
     &.td-center {
       text-align: center;
       vertical-align: middle;
@@ -87,6 +89,9 @@
   }
   .button {
     display: block;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
   }
 }
 
@@ -94,6 +99,7 @@
   .button {
     padding-left: 60px;
     padding-right: 60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -106,6 +112,9 @@
       }
       padding: 20px;
       vertical-align: middle;
+      img {
+        width: 110px;
+      }
     }
     ul {
       margin-bottom: 0;
@@ -122,4 +131,10 @@
     margin-top: 30px;
   }
   padding-bottom: 0;
+}
+
+@media (max-width: $screen-md-max) {
+  #training-nav {
+    display: none;
+  }
 }

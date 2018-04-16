@@ -58,7 +58,30 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link {% if page.url == '/training' %} active{% endif %}" href="/training">Training {% if page.url == '/training' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          <a class="nav-link secondary-collapse-trigger{% if page.url == '/training' %} active{% endif %}" data-toggle="collapse" data-target="#training-collapse">Training {% if page.url == '/training' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          <ul class="collapse secondary-collapse" id="training-collapse">
+            <li class="nav-item">
+              <a href="/training" class="nav-link">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a href="/training#prerequisites" class="nav-link">Prerequisites</a>
+            </li>
+            <li class="nav-item">
+              <a href="/training#training-topics" class="nav-link">Training Topics</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Apply Now</a>
+            </li>
+            <li class="nav-item">
+              <a href="/training#travel-info" class="nav-link">Travel Info</a>
+            </li>
+            <li class="nav-item">
+              <a href="/training#partners" class="nav-link">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login</a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link{% if page.url == '/about' %} active{% endif %}" href="/about"> About {% if page.url == '/about' %}<span class="sr-only">(current)</span>{% endif %}</a>

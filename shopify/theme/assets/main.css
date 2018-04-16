@@ -274,7 +274,8 @@ p {
       padding-bottom: 5px; }
     #mobilenav-wrapper .secondary-collapse-trigger {
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      display: block; }
       #mobilenav-wrapper .secondary-collapse-trigger::after {
         content: '+';
         display: block;
@@ -539,10 +540,12 @@ blockquote {
       position: relative;
       display: block;
       background-color: #0e4168;
-      padding: 10px 20px;
+      padding: 10px 50px 10px 20px;
       color: #fff;
       font-family: 'Saira', sans-serif;
-      font-weight: 600; }
+      font-weight: 600;
+      cursor: pointer;
+      display: block; }
     .collapsable li .icon-plus {
       position: absolute;
       right: 0;
@@ -582,6 +585,8 @@ blockquote {
       padding: 20px;
       color: #0e4168;
       font-size: 14px; }
+      .collapsable li .collapse-content p:last-of-type {
+        margin-bottom: 0; }
 
 .hero {
   display: -webkit-box;
@@ -978,7 +983,9 @@ blockquote {
   border: 1px solid #eaeaea;
   min-height: 100px;
   font-weight: 600;
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-bottom: 40px;
+  position: relative; }
   .table td.td-center {
     text-align: center;
     vertical-align: middle; }
@@ -987,11 +994,16 @@ blockquote {
   .table td span {
     display: block; }
 .table .button {
-  display: block; }
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 10px; }
 
 #travel-info .button {
   padding-left: 60px;
   padding-right: 60px; }
+#travel-info address {
+  margin-bottom: 30px; }
 
 #partners .table td {
   padding: 20px;
@@ -999,6 +1011,8 @@ blockquote {
   #partners .table td:first-of-type {
     text-align: center;
     vertical-align: middle; }
+  #partners .table td img {
+    width: 110px; }
 #partners .table ul {
   margin-bottom: 0; }
   #partners .table ul li {
@@ -1010,6 +1024,9 @@ blockquote {
   #faq .collapsable {
     margin-top: 30px; }
 
+@media (max-width: 767px) {
+  #training-nav {
+    display: none; } }
 @-webkit-keyframes cardSlideIn {
   from {
     opacity: 0;
@@ -1020,7 +1037,6 @@ blockquote {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); } }
-
 @keyframes cardSlideIn {
   from {
     opacity: 0;

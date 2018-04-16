@@ -2,12 +2,8 @@ require('jquery');
 require('jquery-lazy');
 //var bootstrap = require('bootstrap');
 
-$(function() {
-  console.log('jQuery loaded');
-  
-});
-
 //mainnav hover animation
+
 
 $(function() {
   var $el, leftPos, newWidth,
@@ -44,11 +40,11 @@ $(document).ready(function() {
 
   //scroll anchors
   $(document).on('click', 'a[href^="#"]', function (event) {
-      event.preventDefault();
+    event.preventDefault();
 
-      $('html, body').animate({
-          scrollTop: $($.attr(this, 'href')).offset().top
-      }, 500);
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
   });
 
   //Navbar toggler animation
@@ -56,30 +52,36 @@ $(document).ready(function() {
     $('.navbar-toggler').toggleClass('active');
   });
 
+
+  //add class to collapsable parent when clicked
   $('.collapsable').on('shown.bs.collapse', function () {
-    window.console.log('show it');
     $('.collapse-content.show').parent().addClass('open');
-  })
+  });
+
+  //close mobilenav if subnav drawer item clicked
+  $('.secondary-collapse .nav-link').on('click', function(){
+    $('#mobilenav').collapse('hide');
+  });
   
 
   //lazy loading example
-  $("img.lazy").Lazy({
-    beforeLoad: function(element) {
-      window.console.log('before');
-        // called before an elements gets handled
-    },
-    afterLoad: function(element) {
-      window.console.log('after');
-        // called after an element was successfully handled
-    },
-    onError: function(element) {
-      window.console.log('error');
-        // called whenever an element could not be handled
-    },
-    onFinishedAll: function() {
-      window.console.log('finished');
-        // called once all elements was handled
-    },
-    threshold: 0
-  });
+  // $("img.lazy").Lazy({
+  //   beforeLoad: function(element) {
+  //     window.console.log('before');
+  //       // called before an elements gets handled
+  //   },
+  //   afterLoad: function(element) {
+  //     window.console.log('after');
+  //       // called after an element was successfully handled
+  //   },
+  //   onError: function(element) {
+  //     window.console.log('error');
+  //       // called whenever an element could not be handled
+  //   },
+  //   onFinishedAll: function() {
+  //     window.console.log('finished');
+  //       // called once all elements was handled
+  //   },
+  //   threshold: 0
+  // });
 });

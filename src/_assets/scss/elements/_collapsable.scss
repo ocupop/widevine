@@ -17,25 +17,12 @@
       position: relative;
       display: block;
       background-color: $brand-primary;
-      padding: 10px 20px;
+      padding: 10px 50px 10px 20px;
       color: $white;
       font-family: 'Saira', sans-serif;
       font-weight: 600;
-      // &::after {
-      //   content: '+';
-      //   position: absolute;
-      //   right: 0;
-      //   top: 0;
-      //   width: 44px;
-      //   height: 100%;
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
-      //   color: $white;
-      //   background-color: $blue-dark;
-      //   font-size: 30px;
-      //   font-family: 'Open Sans', sans-serif;
-      // }
+      cursor: pointer;
+      display: block;
     }
     .icon-plus {
       position: absolute;
@@ -73,6 +60,11 @@
       padding: 20px;
       color: $brand-primary;
       font-size: 14px;
+      p {
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
