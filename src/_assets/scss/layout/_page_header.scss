@@ -106,6 +106,7 @@
     .secondary-collapse-trigger {
       position: relative;
       cursor: pointer;
+      display: block;
       &::after {
         content: '+';
         display: block;

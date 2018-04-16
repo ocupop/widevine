@@ -273,7 +273,8 @@ p {
       padding-top: 3px;
       padding-bottom: 5px; }
     #mobilenav-wrapper .secondary-collapse-trigger {
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
       #mobilenav-wrapper .secondary-collapse-trigger::after {
         content: '+';
         display: block;
