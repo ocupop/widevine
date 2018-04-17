@@ -39,22 +39,19 @@
           <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="/">Home {% if page.url == '/' %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link secondary-collapse-trigger{% if page.url == '/solutions' %} active{% endif %}" data-toggle="collapse" data-target="#solution-collapse">Solutions {% if page.url == '/solutions' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          <a class="nav-link secondary-collapse-trigger{% if page.url == '/solutions' %} active{% endif %}" data-toggle="collapse" data-target="#solution-collapse">Solutions {% if page.url contains '/solutions' %}<span class="sr-only">(current)</span>{% endif %}</a>
           <ul class="collapse secondary-collapse" id="solution-collapse">
             <li class="nav-item">
-              <a href="/solutions" class="nav-link{% if page.url == '/solutions' %} active{% endif %}">Overview</a>
+              <a href="/solutions/overview" class="nav-link{% if page.url == '/solutions' %} active{% endif %}">Overview</a>
             </li>
             <li class="nav-item">
-              <a href="/widevine-drm" class="nav-link{% if page.url == '/widevine-drm' %} active{% endif %}">Widevine DRM</a>
+              <a href="/solutions/widevine-drm" class="nav-link{% if page.url == '/widevine-drm' %} active{% endif %}">Widevine DRM</a>
             </li>
             <li class="nav-item">
-              <a href="/widevine-cas" class="nav-link{% if page.url == '/widevine-cas' %} active{% endif %}">Widevine CAS</a>
+              <a href="/solutions/widevine-cas" class="nav-link{% if page.url == '/widevine-cas' %} active{% endif %}">Widevine CAS</a>
             </li>
             <li class="nav-item">
-              <a href="/shaka-player" class="nav-link{% if page.url == '/shaka-player' %} active{% endif %}">Shaka Player + Packager</a>
-            </li>
-            <li class="nav-item">
-              <a href="/cwip-training" class="nav-link{% if page.url == '/cwip-training' %} active{% endif %}">CWIP Training</a>
+              <a href="/solutions/shaka-player" class="nav-link{% if page.url == '/shaka-player' %} active{% endif %}">Shaka Player + Packager</a>
             </li>
           </ul>
         </li>
