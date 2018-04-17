@@ -1080,8 +1080,6 @@ blockquote {
             justify-content: center; }
     #partners .table-list > li .item:nth-of-type(1) img {
       width: 100px; }
-    #partners .table-list > li .item:nth-of-type(1) p {
-      margin-bottom: 0; }
   #partners .table-list > li .item:nth-of-type(2), #partners .table-list > li .item:nth-of-type(3) {
     width: 40%; }
     #partners .table-list > li .item:nth-of-type(2) span, #partners .table-list > li .item:nth-of-type(3) span {
@@ -1091,6 +1089,8 @@ blockquote {
       #partners .table-list > li .item:nth-of-type(2) ul li, #partners .table-list > li .item:nth-of-type(3) ul li {
         padding-top: 0;
         padding-bottom: 0; }
+  #partners .table-list > li .item p {
+    margin-bottom: 0; }
 
 #faq {
   padding-bottom: 0; }

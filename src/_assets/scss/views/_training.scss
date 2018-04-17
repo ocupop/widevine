@@ -146,4 +146,31 @@
   #training-nav {
     display: none;
   }
+
+  #partners, #schedule {
+    .table-list {
+     > li {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid $gray-mid;
+        &.heading-row {
+          display: none;
+        }
+        .item {
+          border: 0;
+          padding: 10px;
+          width: 100%;
+          min-height: 0;
+          &:last-of-type {
+            border-right: 0;
+          }
+        }
+        .button {
+          position: relative;
+          bottom: auto;
+          left: auto;
+        }
+      }
+    }
+  }
 }
