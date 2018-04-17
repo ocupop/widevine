@@ -1,0 +1,28 @@
+.magic-line { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  // width: 100px; 
+  height: 4px; 
+  background: $white; 
+}
+
+#primarynav {
+  .magic-line {
+  }
+}
+
+#solution-nav, #training-nav {
+  .magicnav {
+    position: relative;
+  }
+  .magic-line {
+    background: $brand-primary;
+  }
+}
+
+#solution-nav {
+  .magic-line {
+    width: 69px;
+  }
+}

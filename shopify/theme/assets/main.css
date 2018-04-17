@@ -208,14 +208,6 @@ p {
     position: relative;
     overflow: hidden; }
 
-#magic-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100px;
-  height: 4px;
-  background: #fff; }
-
 #mainnav {
   padding-top: 0;
   padding-bottom: 0; }
@@ -627,6 +619,21 @@ blockquote {
     .logo-pile .logo {
       width: 50%;
       text-align: center; } }
+.magic-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: #fff; }
+
+#solution-nav .magicnav, #training-nav .magicnav {
+  position: relative; }
+#solution-nav .magic-line, #training-nav .magic-line {
+  background: #0e4168; }
+
+#solution-nav .magic-line {
+  width: 69px; }
+
 .overlay {
   color: #fff; }
   .overlay::before {
@@ -664,21 +671,6 @@ blockquote {
   padding: 7px 0;
   position: relative;
   overflow: hidden; }
-  .subnav .nav-link::after {
-    content: '';
-    width: 100%;
-    height: 4px;
-    background-color: #062233;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: -100%;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
-  .subnav .nav-link.active::after, .subnav .nav-link:hover::after {
-    left: 0; }
-  .subnav .nav-link:hover:after {
-    opacity: .5; }
 
 @media (max-width: 767px) {
   #solution-nav {
@@ -888,7 +880,10 @@ blockquote {
   #training-program img {
     width: 200px;
     display: block;
-    margin: 30px auto; } }
+    margin: 30px auto; }
+
+  #support img {
+    margin-bottom: 25px; } }
 .search input {
   padding: 5px 10px;
   color: #fff;

@@ -1,7 +1,7 @@
 <header id="page-header">
   <nav id="mainnav" class="navbar navbar-expand-md">
     <a class="navbar-brand animated fadeIn" href="/"><img src="/assets/img/logo-wordmark.svg" alt="{{ site.title }} logo"></a>
-    <div class="justify-content-end" id="primarynav">
+    <div class="justify-content-end magicnav" id="primarynav">
       <ul class="navbar-nav">
         <li class="nav-item {% if page.url == '/' %} active-item{% endif %}">
           <a class="nav-link" href="/">Home {% if page.url == '/' %}<span class="sr-only">(current)</span>{% endif %}</a>
@@ -19,6 +19,7 @@
           <a class="nav-link" href="/contact">Contact {% if page.url == '/contact' %}<span class="sr-only">(current)</span>{% endif %}</a>
         </li>
       </ul>
+      <div class="magic-line"></div>
     </div>
   </nav>
   <nav id="mobilenav-wrapper">

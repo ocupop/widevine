@@ -5,20 +5,46 @@ require('jquery-lazy');
 //mainnav hover animation
 
 
-$(function() {
-  var $el, leftPos, newWidth,
-      $mainNav = $("#primarynav .navbar-nav");
+// $(function() {
+//   var $el, leftPos, newWidth,
+//       $mainNav = $("#primarynav .navbar-nav");
   
-  $mainNav.append("<li id='magic-line'></li>");
-  var $magicLine = $("#magic-line");
+//   $mainNav.append("<li id='magic-line'></li>");
+//   var $magicLine = $("#magic-line");
   
-  $magicLine
-      .width($(".active-item").width())
-      .css("left", $(".active-item a").position().left)
-      .data("origLeft", $magicLine.position().left)
-      .data("origWidth", $magicLine.width());
+//   $magicLine
+//       .width($(".active-item").width())
+//       .css("left", $(".active-item a").position().left)
+//       .data("origLeft", $magicLine.position().left)
+//       .data("origWidth", $magicLine.width());
       
-  $("#primarynav .navbar-nav li a").hover(function() {
+//   $("#primarynav .navbar-nav li a").hover(function() {
+//       $el = $(this);
+//       leftPos = $el.position().left;
+//       newWidth = $el.parent().width();
+//       $magicLine.stop().animate({
+//           left: leftPos,
+//           width: newWidth
+//       });
+//   }, function() {
+//       $magicLine.stop().animate({
+//           left: $magicLine.data("origLeft"),
+//           width: $magicLine.data("origWidth")
+//       });    
+//   });
+// });
+
+$(".magicnav").each(function() {
+  var $el, leftPos, newWidth
+  var $magicLine = $(this).find(".magic-line:first");
+
+  $magicLine
+    .width($(".active-item").width())
+    .css("left", $(".active-item a").position().left)
+    .data("origLeft", $magicLine.position().left)
+    .data("origWidth", $magicLine.width());
+
+  $(this).find("li a").hover(function() {
       $el = $(this);
       leftPos = $el.position().left;
       newWidth = $el.parent().width();

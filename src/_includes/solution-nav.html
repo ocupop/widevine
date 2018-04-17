@@ -1,18 +1,21 @@
 <nav id="solution-nav" class="subnav bg-gradient">
   <div class="container">
-    <ul  class="nav">
-      <li class="nav-item">
-        <a class="nav-link{% if page.url == '/solutions' %} active{% endif %}" href="/solutions">Overview</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link{% if page.url == '/widevine-drm' %} active{% endif %}" href="/widevine-drm">Widevine DRM</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link{% if page.url == '/widevine-cas' %} active{% endif %}" href="/widevine-cas">Widevine CAS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link{% if page.url == '/shaka-player' %} active{% endif %}" href="/shaka-player">Shaka Player + Packager</a>
-      </li>
-    </ul>
+    <div class="magicnav">
+      <ul class="nav">
+        <li class="nav-item {% if page.url == '/solutions' %} active-item{% endif %}">
+          <a class="nav-link" href="/solutions">Overview</a>
+        </li>
+        <li class="nav-item{% if page.url == '/widevine-drm' %} active-item{% endif %}">
+          <a class="nav-link" href="/widevine-drm">Widevine DRM</a>
+        </li>
+        <li class="nav-item{% if page.url == '/widevine-cas' %} active-item{% endif %}">
+          <a class="nav-link" href="/widevine-cas">Widevine CAS</a>
+        </li>
+        <li class="nav-item{% if page.url == '/shaka-player' %} active-item{% endif %}">
+          <a class="nav-link" href="/shaka-player">Shaka Player + Packager</a>
+        </li>
+      </ul>
+      <div class="magic-line"></div>
+    </div>
   </div>
 </nav>
