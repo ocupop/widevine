@@ -59,42 +59,6 @@
   }
 }
 
-.table {
-  thead {
-    th {
-      border-top: 0;
-      border-bottom: 0;
-      color: $brand-primary;
-      background-color: $gray-mid;
-      text-align: center;
-    }
-  }
-  td {
-    border: 1px solid $gray-mid;
-    min-height: 100px;
-    font-weight: 600;
-    font-family: 'Open Sans Condensed', sans-serif;
-    padding-bottom: 40px;
-    position: relative;
-    &.td-center {
-      text-align: center;
-      vertical-align: middle;
-    }
-    a {
-      color: $teal;
-    }
-    span {
-      display: block;
-    }
-  }
-  .button {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-  }
-}
-
 #travel-info {
   .button {
     padding-left: 60px;
@@ -103,24 +67,69 @@
   }
 }
 
-#partners {
-  .table {
-    td {
-      &:first-of-type {
-        text-align: center;
-        vertical-align: middle
+#schedule {
+  .table-list {
+    li {
+      &.heading-row {
+        .column-heading {
+          width: 20%;
+        }
       }
-      padding: 20px;
-      vertical-align: middle;
-      img {
-        width: 110px;
+      &:last-of-type {
+        border-bottom: 1px solid $gray-mid;
+      }
+      .item {
+        width: 20%;
       }
     }
-    ul {
-      margin-bottom: 0;
-      li {
-        padding-top: 0;
-        padding-bottom: 0;
+  }
+}
+
+#partners {
+  .table-list {
+  > li {
+      &.heading-row {
+        .column-heading {
+          &:nth-of-type(1) {
+            width: 20%;
+          }
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            width: 40%;
+          }
+        }
+      }
+      &:last-of-type {
+        border-bottom: 1px solid $gray-mid;
+      }
+      .item {
+        padding: 30px 20px;
+        &:nth-of-type(1) {
+          width: 20%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 100px;
+          }
+        }
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          width: 40%;
+          span {
+            display: block;
+          }
+          ul {
+            list-style-type: disc;
+            li {
+              padding-top: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+        p {
+          margin-bottom: 0;
+        }
       }
     }
   }

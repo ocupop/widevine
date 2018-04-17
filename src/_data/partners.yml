@@ -1,0 +1,5 @@
+- partner_name: Accenture
+  partner_logo_image: /uploads/accenture_logo.png
+  contact_info_html: '<p>Name: Mark Richards</p><p>Email: <a href="mailto:mark.d.richards@accenture.com">mark.d.richards@accenture.com</a></p>'
+  certifications_html: '<ul><li>Widevine Classic VOD Packaging</li><li>Widevine Modular DRM</li></ul>'
+

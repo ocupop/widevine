@@ -10,13 +10,15 @@ title: CWIP Training
       <div class="col">
         <div class="content">
           <h1>Certified Widevine Implementation Partner Overview</h1>
-          <p class="lead">The Certified Widevine Implementation Partner (CWIP) program is designed to allow highly qualified individuals and companies the ability to confidently and successfully install and configure Widevine systems for their clients. The goals of the program are:</p>
-          <ul>
-            <li>Teach CWIP candidates how to install, configure and troubleshoot the Widevine system</li>
-            <li>Ensure a high level of satisfaction for both the System Integrator and their end customers</li>
-            <li>Maintain a high level of Widevine system knowledge within the CWIP community</li>
-            <li>Maintain a high level of content owner trust in the Widevine system and Widevine’s CWIPs</li>
-          </ul>
+          <p class="lead editable">The Certified Widevine Implementation Partner (CWIP) program is designed to allow highly qualified individuals and companies the ability to confidently and successfully install and configure Widevine systems for their clients. The goals of the program are:</p>
+          <div class="editable">
+            <ul>
+              <li>Teach CWIP candidates how to install, configure and troubleshoot the Widevine system</li>
+              <li>Ensure a high level of satisfaction for both the System Integrator and their end customers</li>
+              <li>Maintain a high level of Widevine system knowledge within the CWIP community</li>
+              <li>Maintain a high level of content owner trust in the Widevine system and Widevine’s CWIPs</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -78,72 +80,49 @@ title: CWIP Training
         </div>
       </div>
     </div>
-    <div class="row">
+    <div id="schedule" class="row">
       <div class="col">
         <div class="content">
           <h3>Upcoming Course Schedule</h3>
           <p class="text-red">* Class schedules are subject to change</p>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Course Title</th>
-                <th scope="col">Course Date(s)</th>
-                <th scope="col">Location</th>
-                <th scope="col">Time</th>
-                <th scope="col">Registration Deadline</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Widevine DRM Training</td>
-                <td>March 12 – March 15 2018</td>
-                <td>
-                  Google London<br>
-                  1-13 St Giles High St<br>
-                  London WC2H 8LG<br>
-                  United Kingdom
-                  <a href="https://www.google.com/maps/place/Google/@51.5160326,-0.1274572,18z/data=!4m5!3m4!1s0x0:0x77d00e13ac2579f8!8m2!3d51.5160195!4d-0.1274679" class="button" target="_blank">Map</a>
-                </td>
-                <td>9:00a -5:00p</td>
-                <td>
-                  <span class="text-red">February 25, 2018</span>
-                  <a href="#" class="button">Apply Now</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Widevine DRM Training</td>
-                <td>April 23 – March 26 2018</td>
-                <td>
-                  Google Singapore<br>
-                  70 Pasir Panjang Road, #03-71<br>
-                  Mapletree Business City<br>
-                  Singapore 117371
-                  <a href="https://www.google.com/maps/place/Google+Singapore/@1.2762381,103.7992667,19z/data=!4m5!3m4!1s0x0:0x43e454b88753032a!8m2!3d1.2764794!4d103.799213" class="button" target="_blank">Map</a>
-                </td>
-                <td>9:00a -5:00p</td>
-                <td>
-                  <span class="text-red">February 25, 2018</span>
-                  <a href="#" class="button">Apply Now</a>
-                </td>
-              </tr>
-              <tr>
-                <td>Widevine DRM Training</td>
-                <td>March 12 – March 15 2018</td>
-                <td>
-                  Google Kirkland<br>
-                  747 6th Street South<br>
-                  Kirkland, WA 98033<br>
-                  USA
-                  <a href="https://www.google.com/maps?hl=en&sugexp=gsis,i18n%3Dtrue&cp=10&gs_id=12&xhr=t&qe=Z29vZ2xlIGtpcg&qesig=VqkpAEtxcCJy-p_ycdNVzw&pkc=AFgZ2tkqts5v5la8EpXwKUBqyGsbQtubTKYMYLRaGDgZt-C_NcZHwaGBH6xD262WhzkTQCSAE9R8OW7LykOqK_h7IxJFsBzJJw&safe=off&gs_upl&bav=on.2,or.r_gc.r_pw.r_cp.&biw=1680&bih=880&um=1&ie=UTF-8&q=google+kirkland&fb=1&gl=us&hq=google&hnear=0x549012c02852ce7b:0x7a776aaa70782857,Kirkland,+WA&cid=0,0,10721464933427837784&ei=b-1uTvW3CcPSiAL6-vSVBw&sa=X&oi=local_result&ct=image&ved=0CAQQ_BI" class="button" target="_blank">Map</a>
-                </td>
-                <td>9:00a -5:00p</td>
-                <td>
-                  <span class="text-red">February 25, 2018</span>
-                  <a href="" class="button">Apply Now</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <ul class="table-list">
+            <li class="heading-row">
+              <div class="column-heading">Course Title</div>
+              <div class="column-heading">Course Date(s)</div>
+              <div class="column-heading">Location</div>
+              <div class="column-heading">Time</div>
+              <div class="column-heading">Registration Deadline</div>
+            </li>
+            {% for course in site.data.course-schedule %}
+            <li>
+              <div class="item">{{ course.course_title }}</div>
+              <div class="item">{{ course.course_dates }}</div>
+              <div class="item">
+                {% if course.location_line_1 %}
+                  {{ course.location_line_1 }}<br>
+                {% endif %}
+                {% if course.location_line_2 %}
+                  {{ course.location_line_2 }}<br>
+                {% endif %}
+                {% if course.location_line_3 %}
+                  {{ course.location_line_3 }}<br>
+                {% endif %}
+                {% if course.location_line_4 %}
+                  {{ course.location_line_4 }}
+                {% endif %}
+
+                {% if course.map_link %}
+                  <a href="{{ course.map_link}}" class="button" target="_blank">Map</a>
+                {% endif %}
+              </div>
+              <div class="item">{{ course.course_time }}</div>
+              <div class="item">
+                <span class="text-red">{{ course.registration_deadline }}</span>
+                <a href="#" class="button">Apply</a>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </div>
@@ -251,7 +230,7 @@ title: CWIP Training
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col-md-4">
         <div class="content">
           <address>
             Heathman Hotel<br>
@@ -264,7 +243,7 @@ title: CWIP Training
           <a href="#" class="button button-teal button-block">Map</a>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-4">
         <div class="content">
           <address>
             Woodmark Hotel<br>
@@ -278,7 +257,7 @@ title: CWIP Training
           <a href="#" class="button button-teal button-block">Map</a>
         </div>
       </div>
-      <div class="col">
+      <div class="col-md-4">
         <div class="content">
           <address>
             Courtyard Seattle Kirkland<br>
@@ -299,44 +278,26 @@ title: CWIP Training
         <div class="content">
           <h2>CWIP Integrators List</h2>
           <h3>The following companies have been certified as Widevine integrators to install, maintain, and deploy Widevine software.</h3>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Integrator</th>
-                <th scope="col">Contact Information</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img src="/assets/img/accenture.png" alt="Accenture Logo" class="img-fluid"></td>
-                <td>
-                  <span>Name: Mark Richards</span>
-                  <span>Email: <a href="mailto:mark.d.richards@accenture.com">mark.d.richards@accenture.com</a></span>
-                </td>
-                <td>
-                  <ul>
-                    <li>Widevine Classic VOD Packaging</li>
-                    <li>Widevine Modular DRM</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td class="td-center"><img src="/assets/img/alticast.png" alt="Alticast Logo" class="img-fluid"></td>
-                <td>
-                  <span>Name: YoungMi Shin</span>
-                  <span>Name: EunJung Seo</span>
-                  <span>Phone: +82 2 2007 7700</span>
-                  <span>Email: <a href="mailto:gcwip@alticast.com">gcwip@alticast.com</a></span>
-                </td>
-                <td>
-                  <ul>
-                    <li>Widevine Modular DRM</li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <ul class="table-list">
+            <li class="heading-row">
+              <div class="column-heading">Integrator</div>
+              <div class="column-heading">Contact Information</div>
+              <div class="column-heading">Certifications</div>
+            </li>
+            {% for partner in site.data.partners %}
+            <li>
+              <div class="item">
+                <img src="{{ partner.partner_logo_image }}" alt="{{ partner_name }} Logo" class="img-fluid">
+              </div>
+              <div class="item">
+                {{ partner.contact_info_html }}
+              </div>
+              <div class="item">
+                {{ partner.certifications_html }}
+              </div>
+            </li>
+            {% endfor %}
+         </ul>
         </div>
       </div>
     </div>
@@ -349,296 +310,22 @@ title: CWIP Training
         <div class="content">
           <h2 class="editable">CWIP Frequently Asked Questions</h2>
           <ul class="collapsable">
-            <li data-toggle="collapse" data-target="#how" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">How does my company become a CWIP?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
+            {% for item in site.data.faq %}
+              <li data-togge="collapse" data-taret="#question-{{ forloop.index }}" class="collapsed">
+                <div class="collapse-title">
+                  <span class="editable">{{ item.question }}</span>
+                  <div class="icon-plus">
+                    <span class="icon-bar bar-1"></span>
+                    <span class="icon-bar bar-2"></span>
+                  </div>
                 </div>
-              </div>
-              <div id="how" class="collapse-content collapse">
-                <div class="editable">
-                  <p>All vendors must have at least two employees take the CWIP certification courses and pass the certification test.</p>
-                  <p>It is important to note these are challenging classes with high requirements for certification. The average pass rate for the class is 75%.</p>
-                  <p>If you are interested in becoming a CWIP parter, please Contact Us to get started.</p>
+                <div id="question-{{ forloop.index }}" class="collapse-content collapse">
+                  <div class="editable">
+                    {{ item.answer_html }}
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#responsibilites" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">What are my company’s responsibilities as a CWIP?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="responsibilites" class="collapse-content collapse">
-                <div class="editable">
-                  <p>As a CWIP you are responsible for all of your installations from "cradle to grave". This includes but is not limited to assuring all legal agreements are executed and current, installation, developing of products (i.e. storefronts), installation, deployment, and customer support. You are expected to maintain a professional attitude when working with both your customers as well as with Google/Widevine. You will also be responsible for managing mandatory upgrades as defined by the Google/Widevine staff to ensure your deployments are recent and providing the best customer experience possible.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#gain" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">What will my company gain from becoming a CWIP?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="gain" class="collapse-content collapse">
-                <div class="editable">
-                  <p>CWIPs will be able to sell services related to the installation, integration, and maintenance of Widevine software. CWIPs will be the point of contact for any support issues customers might have with the Widevine software. They will be responsible for installing upgrades to the product as necessary.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#resell" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">What if my company does not plan to resell Widevine software—for example, my company is an operator and will only use Widevine for our own deployment—do I still need to be a CWIP?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="resell" class="collapse-content collapse">
-                <div class="editable">
-                  <p>No. CWIP is an optional instructional program designed to educate third parties on the use of Widevine products. However CWIP Training is still highly recommended to shorten the learning curve, become familiar with the ecosystem and technology, and perform troubleshooting.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#pre" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">What are the prerequisites for the individuals training to become a CWIP?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="pre" class="collapse-content collapse">
-                <div class="editable">
-                  <p>Individuals training to become certified to use Widevine software for their company must possess the following skills:</p>
-                  <ol>
-                    <li>Systems and network administration</li>
-                    <li>Linux - working with the command line</li>
-                    <li>Familiarity with video encoding</li>
-                    <li>Scripting (bash, python, XML)</li>
-                    <li>Programming (C, Java)</li>
-                    <li>Ability to understand English (verbal and written)</li>
-                  </ol>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#skills" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">What should I do if I don't have the skills required to take this class?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="skills" class="collapse-content collapse">
-                <div class="editable">
-                  <p>Please do not sign up for the class.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#classes" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">Where are CWIP classes held? </span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="classes" class="collapse-content collapse">
-                <div class="editable">
-                  <p>Classes are typically held at Widevine’s headquarters in Kirkland, WA, but may also be held at another Google Office location worldwide. Location is specified in the course schedule.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#instructor" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">Can an instructor come to my office instead?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="instructor" class="collapse-content collapse">
-                <div class="editable">
-                  <p>No. classes are held in Google Office locations.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#length" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">How long are the CWIP classes?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="length" class="collapse-content collapse">
-                <div class="editable">
-                  <p>Course lengths vary from one day to an entire week.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#fail" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">What happens if I fail a CWIP course?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="fail" class="collapse-content collapse">
-                <div class="editable">
-                  <p>You have a number of options if you fail a CWIP course. You may sign up for and take a "retake test". You also have the option to simply retake the class in its entirety. Lastly, you and your company may decide to send someone else to retake the class. As of June 2012, these option will not require you to pay additional charges.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#commitments" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">But I have customer commitments and schedules to keep. Although I failed we need a quick resolution?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="commitments" class="collapse-content collapse">
-                <div class="editable">
-                  <p>Your success or lack thereof, is in your hands. While Widevine would like to see everyone pass we cannot guarantee your success. Any obligations you have made based on the assumption you would pass will need to be put on hold until you become certified. There are no exceptions. Sorry.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#levels" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">Are there levels of certification?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="levels" class="collapse-content collapse">
-                <div class="editable">
-                  <p>No. All CWIPs will be trained on the same material and take the same final exam. </p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#individuals" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">How many individuals from my company can attend the training?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="individuals" class="collapse-content collapse">
-                <div class="editable">
-                  <p>There is no set limit; however training courses will need to be reserved in advance and have limited capacity so waiting lists may apply.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#fees" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">Are there fees associated with the CWIP program?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="fees" class="collapse-content collapse">
-                <div class="editable">
-                  <p>Yes. Please <a href="{{ site.data.links.tech_support }}">Contact Us</a> for more information.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#other" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">Will there be other CWIPs active in my territory?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="other" class="collapse-content collapse">
-                <div class="editable">
-                  <p>Very possibly. The program is available to any implementer who wishes to use Widevine software in their operations or the operations of their customers.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#colleague" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">I have currently registered for training, but I will be unable to attend it. Can I send my colleague instead?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="colleague" class="collapse-content collapse">
-                <div class="editable">
-                  <p>Yes. Please <a href="{{ site.data.links.tech_support }}">Contact Us</a> to notify us immediately. Please include manager approval for both the original student and the replacement student. Failure to provide advanced notification will result in a forfeit of course registration.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#widevine-support" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">What kind of support can I expect from Google/Widevine?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="widevine-support" class="collapse-content collapse">
-                <div class="editable">
-                  <p>As a CWIP you are responsible for your installations and are expected to be experts in maintaining all of your deployments. As such you are expected to provide all support with the following exceptions: 1) A reduction or loss of service from the Google Cloud License Service. (Widevine will immediately escalate such events.) 2) An issue or defect found in the product itself. (Widevine engineering and development will work with you to understand the issue and make modifications to the product as required.) That said, Widevine still wants to support your efforts and will be available to do so Monday through Friday 8am to 5pm Pacific Time.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#help" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">How do I get help, and what should I expect from the Widevine team? </span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="help" class="collapse-content collapse">
-                <div class="editable">
-                  <p>You can direct questions via the CWIP portal to the Widevine Support team. These questions will come in the form of an e-mail to the Widevine staff. Widevine will review and target a response to your inquiry within 24 business hours. (8am to 5pm Monday through Friday, Pacific time, excluding holidays).</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#emergency" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">Is there an emergency support procedures?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="emergency" class="collapse-content collapse">
-                <div class="editable">
-                  <p>No. As a CWIP you are expected to know the product well and be able to respond to any issue that might arise.</p>
-                </div>
-              </div>
-            </li>
-            <li data-toggle="collapse" data-target="#integrate" class="collapsed">
-              <div class="collapse-title">
-                <span class="editable">When I become a CWIP, how do I integrate the Widevine client onto new living room devices?</span>
-                <div class="icon-plus">
-                  <span class="icon-bar bar-1"></span>
-                  <span class="icon-bar bar-2"></span>
-                </div>
-              </div>
-              <div id="integrate" class="collapse-content collapse">
-                <div class="editable">
-                  <p>You can't. Integration of the Widevine client into OEM devices requires a significant amount of time and effort by both the Widevine development team, the OEM manufacture, and both companies legal teams. A device integration is the "root of trust" for the Widevine product and as such must be handled by Widevine. If there is a device you would like to see the Widevine product on, you must encourage the device manufacturer to contact Widevine and request for integration.</p>
-                </div>
-              </div>
-            </li>
+              </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
