@@ -4,7 +4,9 @@
   left: 0; 
   // width: 100px; 
   height: 4px; 
-  background: $white; 
+  background: $white;
+  opacity: 0;
+  @include transition(opacity, .3s);
 }
 
 #primarynav {

@@ -624,7 +624,10 @@ blockquote {
   bottom: 0;
   left: 0;
   height: 4px;
-  background: #fff; }
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
 
 #solution-nav .magicnav, #training-nav .magicnav {
   position: relative; }

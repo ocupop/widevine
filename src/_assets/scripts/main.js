@@ -34,31 +34,7 @@ require('jquery-lazy');
 //   });
 // });
 
-$(".magicnav").each(function() {
-  var $el, leftPos, newWidth
-  var $magicLine = $(this).find(".magic-line:first");
 
-  $magicLine
-    .width($(".active-item").width())
-    .css("left", $(".active-item a").position().left)
-    .data("origLeft", $magicLine.position().left)
-    .data("origWidth", $magicLine.width());
-
-  $(this).find("li a").hover(function() {
-      $el = $(this);
-      leftPos = $el.position().left;
-      newWidth = $el.parent().width();
-      $magicLine.stop().animate({
-          left: leftPos,
-          width: newWidth
-      });
-  }, function() {
-      $magicLine.stop().animate({
-          left: $magicLine.data("origLeft"),
-          width: $magicLine.data("origWidth")
-      });    
-  });
-});
 
 $(document).ready(function() {
   //initiate tab collapse (if in use on this project)
@@ -89,6 +65,38 @@ $(document).ready(function() {
     $('#mobilenav').collapse('hide');
   });
   
+  $(".magicnav").each(function() {
+    var $el, leftPos, newWidth
+    var $magicLine = $(this).find(".magic-line:first");
+    var $activeItem = $(this).find(".active-item a");
+    var $activeItemLeft = $activeItem.find(".nav-link").position();
+    window.console.log('hello', $activeItemLeft);
+
+
+    $magicLine
+      .width($activeItem.width())
+      .css({
+        left: $activeItem.position().left,
+        opacity: 1
+      })
+      .data("origLeft", $activeItem.position().left)
+      .data("origWidth", $activeItem.width());
+
+    $(this).find("li a").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        newWidth = $el.parent().width();
+        $magicLine.stop().animate({
+            left: leftPos,
+            width: newWidth
+        });
+    }, function() {
+        $magicLine.stop().animate({
+            left: $magicLine.data("origLeft"),
+            width: $magicLine.data("origWidth")
+        });    
+    });
+  });
 
   //lazy loading example
   // $("img.lazy").Lazy({
