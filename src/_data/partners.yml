@@ -4,8 +4,8 @@
     <p>Name: Mark Richards</p><p>Email: <a
     href="mailto:mark.d.richards@accenture.com">mark.d.richards@accenture.com</a></p>
   certifications_html: >-
-    <ul><li>Widevine Classic VOD Packaging</li><li>Widevine Modular
-    DRM</li></ul>
+    <p>Widevine Classic VOD Packaging</p><p>Widevine Modular
+    DRM</p>
 - partner_name: Alticast
   partner_logo_image: /uploads/alticast-logo.png
   contact_info_html: >-

@@ -6,24 +6,24 @@
 }
 
 // CARD SLIDE IN
-@keyframes cardSlideIn {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
+// @keyframes cardSlideIn {
+//   from {
+//     opacity: 0;
+//     transform: translate3d(0, 100%, 0);
+//     visibility: visible;
+//   }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
+//   to {
+//     opacity: 1;
+//     transform: translate3d(0, 0, 0);
+//   }
+// }
 
-.card {
-    // Loop through the cards and delay the loading animation.
-  @for $i from 1 through 20 {
-    &:nth-child(#{$i}) {
-      @include animation(cardSlideIn, .8s, .1s * $i);
-    }
-  }
-}
+// .card {
+//     // Loop through the cards and delay the loading animation.
+//   @for $i from 1 through 20 {
+//     &:nth-child(#{$i}) {
+//       @include animation(cardSlideIn, .8s, .1s * $i);
+//     }
+//   }
+// }

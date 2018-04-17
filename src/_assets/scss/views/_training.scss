@@ -65,6 +65,26 @@
     padding-right: 60px;
     margin-bottom: 30px;
   }
+  
+}
+
+#hotel-info {
+  .card {
+    border: 0;
+    .card-body {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+    .card-footer {
+      background: transparent;
+      border: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+    }
+
+  }
 }
 
 #schedule {
@@ -129,6 +149,7 @@
         }
         p {
           margin-bottom: 0;
+          line-height: 1.4;
         }
       }
     }
@@ -147,6 +168,12 @@
     display: none;
   }
 
+  #hotel-info {
+    .card-deck {
+      display: block;
+    }
+  }
+
   #partners, #schedule {
     .table-list {
      > li {
@@ -163,6 +190,11 @@
           min-height: 0;
           &:last-of-type {
             border-right: 0;
+          }
+          &:nth-of-type(1),
+          &:nth-of-type(2),
+          &:nth-of-type(3)  {
+            width: 100%;
           }
         }
         .button {
