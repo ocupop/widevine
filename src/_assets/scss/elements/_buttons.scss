@@ -9,21 +9,25 @@
   text-transform: uppercase;
   font-weight: 600;
   font-family: 'Saira', sans-serif;
-  @include transition(.5s);
+  @include transition(.4s);
   &:hover {
     text-decoration: none;
-    background-color: $blue-light;
-    color: $white;
+    background-color: $white;
+    color: $brand-primary;
   }
   &.button-white {
     background-color: $white;
     color: $brand-primary;
+    &:hover {
+      background-color: $brand-primary;
+      color: $white;
+    }
   }
   &.button-teal {
     background-color: $teal;
     color: $white;
     &:hover {
-      background-color: $blue-light;
+      background-color: $teal-dark;
       color: $white;
     }
   }

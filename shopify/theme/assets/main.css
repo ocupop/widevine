@@ -494,20 +494,23 @@ blockquote {
   text-transform: uppercase;
   font-weight: 600;
   font-family: 'Saira', sans-serif;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
   .button:hover {
     text-decoration: none;
-    background-color: #6ab2ff;
-    color: #fff; }
+    background-color: #fff;
+    color: #0e4168; }
   .button.button-white {
     background-color: #fff;
     color: #0e4168; }
+    .button.button-white:hover {
+      background-color: #0e4168;
+      color: #fff; }
   .button.button-teal {
     background-color: #24dda2;
     color: #fff; }
     .button.button-teal:hover {
-      background-color: #6ab2ff;
+      background-color: #00CC99;
       color: #fff; }
   .button.button-block {
     display: block; }

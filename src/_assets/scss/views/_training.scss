@@ -55,6 +55,10 @@
     font-size: 13px;
     margin: 10px 0;
     color: $white;
+    @include transition(.4s);
+    &:hover {
+      background-color: $teal-dark;
+    }
 
   }
 }
