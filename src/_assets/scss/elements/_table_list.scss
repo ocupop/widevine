@@ -5,10 +5,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    padding-top: 0;
+    padding-bottom: 0;
     border-top: 1px solid $gray-mid;
-    
+
     &.heading-row {
       border-top: 0;
       border-bottom: 0;
@@ -21,7 +21,6 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
         font-weight: 600;
-        width: 20%;
       }
     }
     &:last-of-type {
@@ -29,17 +28,20 @@
     }
     .item {
       border-left: 1px solid $gray-mid;
-      min-height: 100px;
+      
       font-weight: 600;
       font-family: 'Open Sans Condensed', sans-serif;
       position: relative;
-      width: 20%;
-      padding: 10px 10px 40px 10px;
+      padding: 10px;
       &:last-of-type {
         border-right: 1px solid $gray-mid;
       }
       a {
         color: $teal;
+      }
+      p {
+        margin-bottom: 0;
+        line-height: 1.4;
       }
     }
     .button {
@@ -49,6 +51,18 @@
       left: 10px;
     }
 
+  }
+  .w-20 {
+    width: 20%;
+  }
+  .w-25 {
+    width: 25%;
+  }
+  .w-33 {
+    width: 33.3%;
+  }
+  .w-40 {
+    width: 40%;
   }
 }
 
@@ -77,6 +91,9 @@
         display: block;
         width: 150px;
       }
+    }
+    .w-20, .w-25, .w-33, .w-40 {
+      width: 100%;
     }
   }
 }

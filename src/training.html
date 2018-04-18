@@ -87,17 +87,17 @@ title: CWIP Training
           <p class="text-red">* Class schedules are subject to change</p>
           <ul class="table-list">
             <li class="heading-row">
-              <div class="column-heading">Course Title</div>
-              <div class="column-heading">Course Date(s)</div>
-              <div class="column-heading">Location</div>
-              <div class="column-heading">Time</div>
-              <div class="column-heading">Registration Deadline</div>
+              <div class="column-heading w-20">Course Title</div>
+              <div class="column-heading w-20">Course Date(s)</div>
+              <div class="column-heading w-20">Location</div>
+              <div class="column-heading w-20">Time</div>
+              <div class="column-heading w-20">Registration Deadline</div>
             </li>
             {% for course in site.data.course-schedule %}
             <li>
-              <div class="item">{{ course.course_title }}</div>
-              <div class="item">{{ course.course_dates }}</div>
-              <div class="item">
+              <div class="item w-20">{{ course.course_title }}</div>
+              <div class="item w-20">{{ course.course_dates }}</div>
+              <div class="item w-20">
                 {% if course.location_line_1 %}
                   {{ course.location_line_1 }}<br>
                 {% endif %}
@@ -117,8 +117,8 @@ title: CWIP Training
                 </div>  
                 {% endif %}
               </div>
-              <div class="item">{{ course.course_time }}</div>
-              <div class="item">
+              <div class="item w-20">{{ course.course_time }}</div>
+              <div class="item w-20">
                 <span class="deadline">{{ course.registration_deadline }}</span>
                 <a href="#" class="button">Apply</a>
               </div>
@@ -288,19 +288,19 @@ title: CWIP Training
           <h3>The following companies have been certified as Widevine integrators to install, maintain, and deploy Widevine software.</h3>
           <ul class="table-list">
             <li class="heading-row">
-              <div class="column-heading">Integrator</div>
-              <div class="column-heading">Contact Information</div>
-              <div class="column-heading">Certifications</div>
+              <div class="column-heading w-20">Integrator</div>
+              <div class="column-heading w-40">Contact Information</div>
+              <div class="column-heading w-40">Certifications</div>
             </li>
             {% for partner in site.data.partners %}
             <li>
-              <div class="item">
+              <div class="item w-20">
                 <img src="{{ partner.partner_logo_image }}" alt="{{ partner_name }} Logo" class="img-fluid">
               </div>
-              <div class="item">
+              <div class="item w-40">
                 {{ partner.contact_info_html }}
               </div>
-              <div class="item">
+              <div class="item w-40">
                 {{ partner.certifications_html }}
               </div>
             </li>

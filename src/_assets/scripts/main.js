@@ -70,60 +70,25 @@ $(document).ready(function() {
     $('#mobilenav').collapse('hide');
   });
   
-  // $(".magicnav").each(function() {
-  //   var $el, leftPos, newWidth
-  //   var $magicLine = $(this).find(".magic-line:first");
-  //   var $activeItem = $(this).find(".active-item a");
-  //   var $activeItemLeft = $activeItem.find(".nav-link").position();
-  //   window.console.log('hello', $activeItemLeft);
-
-
-  //   $magicLine
-  //     .width($activeItem.width())
-  //     .css({
-  //       left: $activeItem.position().left,
-  //       opacity: 1
-  //     })
-  //     .data("origLeft", $activeItem.position().left)
-  //     .data("origWidth", $activeItem.width());
-
-  //   $(this).find("li a").hover(function() {
-  //       $el = $(this);
-  //       leftPos = $el.position().left;
-  //       newWidth = $el.parent().width();
-  //       $magicLine.stop().animate({
-  //           left: leftPos,
-  //           width: newWidth
-  //       });
-  //   }, function() {
-  //       $magicLine.stop().animate({
-  //           left: $magicLine.data("origLeft"),
-  //           width: $magicLine.data("origWidth")
-  //       });    
-  //   });
-  // });
   magicNav();
 
-  //lazy loading example
-  // $("img.lazy").Lazy({
-  //   beforeLoad: function(element) {
-  //     window.console.log('before');
-  //       // called before an elements gets handled
-  //   },
-  //   afterLoad: function(element) {
-  //     window.console.log('after');
-  //       // called after an element was successfully handled
-  //   },
-  //   onError: function(element) {
-  //     window.console.log('error');
-  //       // called whenever an element could not be handled
-  //   },
-  //   onFinishedAll: function() {
-  //     window.console.log('finished');
-  //       // called once all elements was handled
-  //   },
-  //   threshold: 0
-  // });
+  if($('.count')){
+    $('.count').each(function () {
+      $(this).prop('Counter', 0).animate({
+          Counter: $(this).data('value')
+        }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function (now) {
+          if($(this).hasClass('decimal-1')){
+            $(this).text(this.Counter.toFixed(1));
+          }else {
+            $(this).text(this.Counter.toFixed(0));
+          }                
+        }
+      });
+    });
+  }
 });
 
 $(window).resize(function(){

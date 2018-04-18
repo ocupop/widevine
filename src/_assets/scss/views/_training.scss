@@ -92,17 +92,15 @@
 
 #schedule {
   .table-list {
-    li {
-      &.heading-row {
-        .column-heading {
-          width: 20%;
-        }
-      }
+    > li {
+      padding-top: 0;
+      padding-bottom: 0;
       &:last-of-type {
         border-bottom: 1px solid $gray-mid;
       }
       .item {
-        width: 20%;
+        padding: 10px 10px 40px 10px;
+        min-height: 100px;
       }
     }
   }
@@ -115,24 +113,14 @@
 #partners {
   .table-list {
   > li {
-      &.heading-row {
-        .column-heading {
-          &:nth-of-type(1) {
-            width: 20%;
-          }
-          &:nth-of-type(2),
-          &:nth-of-type(3) {
-            width: 40%;
-          }
-        }
-      }
+    padding-top: 0;
+    padding-bottom: 0;
       &:last-of-type {
         border-bottom: 1px solid $gray-mid;
       }
       .item {
         padding: 30px 20px;
         &:nth-of-type(1) {
-          width: 20%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -140,9 +128,7 @@
             width: 100px;
           }
         }
-        &:nth-of-type(2),
-        &:nth-of-type(3) {
-          width: 40%;
+        &.w-40 {
           span {
             display: block;
           }
@@ -154,10 +140,7 @@
             }
           }
         }
-        p {
-          margin-bottom: 0;
-          line-height: 1.4;
-        }
+        
       }
     }
   }
@@ -205,7 +188,7 @@
           &:nth-of-type(1) {
             background-color: $brand-primary;
             color: $white;
-            padding: 20px;
+            padding: 10px 20px;
             font-size: 16px;
           }
         }
@@ -240,11 +223,11 @@
           &:last-of-type {
             border-right: 0;
           }
-          &:nth-of-type(1),
-          &:nth-of-type(2),
-          &:nth-of-type(3)  {
-            width: 100%;
-          }
+          // &:nth-of-type(1),
+          // &:nth-of-type(2),
+          // &:nth-of-type(3)  {
+          //   width: 100%;
+          // }
         }
         .button {
           position: relative;

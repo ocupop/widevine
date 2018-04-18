@@ -4,7 +4,7 @@
   color: $brand-primary;
   font-family: 'Saira', sans-serif;
   .logo-footer {
-    margin-top: 20px;
+    margin-top: 0;
     display: block;
     width: 100%;
     padding: 20px;
@@ -14,20 +14,25 @@
     }
   }
   .copyright {
-    padding: 10px 0;
+    padding: 40px 0 15px;
     text-align: center;
     display: block;
   }
   .top-link {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     text-align: center;
-    padding-right: 0;
+    width: 100%;
+    padding: 10px;
     color: $brand-primary;
     text-transform: uppercase;
     text-decoration: none;
   }
   .footer-wrapper {
     display: block;
+    position: relative;
   }
   .nav {
     padding: 0 0 20px 0;
@@ -58,11 +63,12 @@
 @media (min-width: $screen-md-min) {
   #page-footer {
     .copyright {
-      padding-left: 30px;
+      padding: 0 0 0 30px;
     }
     .top-link {
       padding-right: 20px;
       display: inline-block;
+      position: relative;
     }
     .footer-wrapper {
       display: flex;
