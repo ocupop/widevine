@@ -143,9 +143,9 @@ ul.dashed {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-html h1, html h2, html h3, html h4, html h5, html h6, html p {
+html h1, html h2, html h3, html h4, html h5, html h6, html p, html a, html .button, html li {
   opacity: 0; }
-html.wf-active h1, html.wf-active h2, html.wf-active h3, html.wf-active h4, html.wf-active h5, html.wf-active h6, html.wf-active p, html.wf-inactive h1, html.wf-inactive h2, html.wf-inactive h3, html.wf-inactive h4, html.wf-inactive h5, html.wf-inactive h6, html.wf-inactive p {
+html.wf-active h1, html.wf-active h2, html.wf-active h3, html.wf-active h4, html.wf-active h5, html.wf-active h6, html.wf-active p, html.wf-active a, html.wf-active .button, html.wf-active li, html.wf-inactive h1, html.wf-inactive h2, html.wf-inactive h3, html.wf-inactive h4, html.wf-inactive h5, html.wf-inactive h6, html.wf-inactive p, html.wf-inactive a, html.wf-inactive .button, html.wf-inactive li {
   opacity: 1; }
 
 body {
@@ -1085,6 +1085,9 @@ blockquote {
 #schedule .table-list li .item {
   width: 20%; }
 
+.deadline {
+  color: #fc5820; }
+
 #partners .table-list > li.heading-row .column-heading:nth-of-type(1) {
   width: 20%; }
 #partners .table-list > li.heading-row .column-heading:nth-of-type(2), #partners .table-list > li.heading-row .column-heading:nth-of-type(3) {
@@ -1125,11 +1128,38 @@ blockquote {
     margin-top: 30px; }
 
 @media (max-width: 767px) {
+  #training ul li {
+    padding-top: 3px;
+    padding-bottom: 3px; }
+  #training ul.dashed {
+    padding-left: 30px; }
+    #training ul.dashed > li {
+      padding-top: 3px;
+      padding-bottom: 3px; }
+
   #training-nav {
     display: none; }
 
   #hotel-info .card-deck {
     display: block; }
+
+  #schedule .table-list > li .item:nth-of-type(1) {
+    background-color: #0e4168;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px; }
+  #schedule .table-list > li .map-link {
+    margin: 10px -10px;
+    padding: 10px;
+    background-color: #eaeaea; }
+    #schedule .table-list > li .map-link .button {
+      background-color: #fff;
+      color: #0e4168; }
+
+  .deadline::before {
+    content: 'Registration Deadline';
+    display: block;
+    color: #606060; }
 
   #partners .table-list > li, #schedule .table-list > li {
     display: block;
@@ -1139,7 +1169,7 @@ blockquote {
       display: none; }
     #partners .table-list > li .item, #schedule .table-list > li .item {
       border: 0;
-      padding: 10px;
+      padding: 5px 10px;
       width: 100%;
       min-height: 0; }
       #partners .table-list > li .item:last-of-type, #schedule .table-list > li .item:last-of-type {
@@ -1149,6 +1179,8 @@ blockquote {
     #partners .table-list > li .button, #schedule .table-list > li .button {
       position: relative;
       bottom: auto;
-      left: auto; } }
+      left: auto;
+      display: block;
+      width: 100%; } }
 
 

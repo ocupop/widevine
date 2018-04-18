@@ -112,12 +112,14 @@ title: CWIP Training
                 {% endif %}
 
                 {% if course.map_link %}
-                  <a href="{{ course.map_link}}" class="button" target="_blank">Map</a>
+                <div class="map-link">
+                  <a href="{{ course.map_link }}" class="button" target="_blank">Map</a>
+                </div>  
                 {% endif %}
               </div>
               <div class="item">{{ course.course_time }}</div>
               <div class="item">
-                <span class="text-red">{{ course.registration_deadline }}</span>
+                <span class="deadline">{{ course.registration_deadline }}</span>
                 <a href="#" class="button">Apply</a>
               </div>
             </li>
