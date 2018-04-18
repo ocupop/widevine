@@ -73,11 +73,14 @@ $(document).ready(function() {
   magicNav();
 
   if($('.count')){
-    $('.count').each(function () {
+    $('.count').each(function (index) {
+      var dur = 1000 * (index + 1);
+      window.console.log(dur)
+
       $(this).prop('Counter', 0).animate({
           Counter: $(this).data('value')
         }, {
-        duration: 3000,
+        duration: dur,
         easing: 'swing',
         step: function (now) {
           if($(this).hasClass('decimal-1')){
