@@ -143,6 +143,11 @@ ul.dashed {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+html h1, html h2, html h3, html h4, html h5, html h6, html p {
+  opacity: 0; }
+html.wf-active h1, html.wf-active h2, html.wf-active h3, html.wf-active h4, html.wf-active h5, html.wf-active h6, html.wf-active p, html.wf-inactive h1, html.wf-inactive h2, html.wf-inactive h3, html.wf-inactive h4, html.wf-inactive h5, html.wf-inactive h6, html.wf-inactive p {
+  opacity: 1; }
+
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1050,7 +1055,11 @@ blockquote {
   text-transform: uppercase;
   font-size: 13px;
   margin: 10px 0;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+  #training .button:hover {
+    background-color: #00CC99; }
 
 #travel-info .button {
   padding-left: 60px;
