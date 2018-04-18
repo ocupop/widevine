@@ -6,6 +6,17 @@ url: "http://vital-beet.cloudvent.net"
 permalink: /:title
 analytics_code: UA-000000000-1 # accessible via dev@ocupop.com
 
+facebook:
+  title: 'Widevine'
+  description: 'Widevine provides multiplatform DRM and video optimization solutions using industry adopted standards including common encryption (CENC) and encrypted media extensions (EME).'
+  featured_image: 'http://vital-beet.cloudvent.net/assets/img/og-image.jpg'
+twitter:
+  username: '@Widevine'
+  title: 'Widevine'
+  description: 'Widevine provides multiplatform DRM and video optimization solutions using industry adopted standards including common encryption (CENC) and encrypted media extensions (EME).'
+  featured_image: 'http://vital-beet.cloudvent.net/assets/img/twitter-share-280-150.jpg'
+  image_alt_text: 'Widevine'
+
 # Collections
 collections:
   examples:
