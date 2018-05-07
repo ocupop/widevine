@@ -17,13 +17,6 @@ twitter:
   featured_image: 'http://vital-beet.cloudvent.net/assets/img/twitter-share-280-150.jpg'
   image_alt_text: 'Widevine'
 
-# Collections
-collections:
-  examples:
-    output: true
-    layout: default
-    permalink: /examples/:path
-
 # defaults:
 #   - 
 #     scope:
