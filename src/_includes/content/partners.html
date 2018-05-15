@@ -1,0 +1,39 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="content">
+          <h2 class="text-center editable">Widevine is trusted by:</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="content">
+          <h4 class="text-center editable">Service Providers and Broadcasters who deliver content over an IP network</h4>
+          <div class="logo-pile">
+            {% for partner in site.data.partners.service_providers %}
+              <div class="logo">
+                <img src="{{ partner.logo_image | relative_url }}" class="img-fluid" alt="{{ partner.title }} Logo">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col">
+        <div class="content">
+          <h4 class="text-center editable">Devices using Widevine</h4>
+          <div class="logo-pile flex-wrap">
+            {% for partner in site.data.partners.device_vendors %}
+              <div class="logo col-md-2">
+                <img src="{{ partner.logo_image | relative_url }}" class="img-fluid" alt="{{ partner.title }} Logo">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,4 +1,86 @@
 ---
-layout: homepage
+layout: page
 title: Widevine
 ---
+
+<div id="home-hero" class="hero">
+  <div class="home-hero-overlay" style="background-image: url('{{ '/assets/img/bg-home-hero2.png' | relative_url }}');"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-9 m-auto">
+        <div class="content">
+          <img src="{{ '/assets/img/logo-wordmark.svg' | relative_url }}" class="img-fluid" alt="Widevine Logo">
+          <hr>
+          <h1 class="editable">Systematic Content Protection for Streaming Media.</h1>
+          <p class="editable">Widevine enables secure premium content solutions utilizing free-to-use, standards-based solutions.</p>
+          <a href="{{ '/solutions/overview' | relative_url }}" class="button button-white">Explore Solutions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <section id="benefits">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content">
+            <img src="{{ '/assets/img/icon-no-fee.svg' | relative_url }}" class="img-fluid" alt="No fees icon">
+            <h3 class="editable">No Fees</h3>
+            <div class="editable">
+              <p>Reduce costs and overhead using Widevine. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content">
+            <img src="{{ '/assets/img/icon-secure-versitile.svg' | relative_url }}" class="img-fluid" alt="Play button icon">
+            <h3 class="editable">Secure &amp; Versatile</h3>
+            <div class="editable">
+              <p>Studio-approved, 4K UHD compliant. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content">
+            <img src="{{ '/assets/img/icon-global.svg' | relative_url }}" class="img-fluid" alt="Globe icon">
+            <h3 class="editable">Global Reach</h3>
+            <div class="editable">
+              <p>Device footprint and chipset support. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  {% include content/training_summary.html %}
+
+
+  {% include content/partners.html %}
+  
+  <section id="support" class="bg-image overlay overlay-gray-mid" style="background-image: url('{{ '/assets/img/BW-pexels-photo-442150.jpg' | relative_url }}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content text-center">
+            <img src="{{ '/assets/img/icon-tech-support-blue.svg' | relative_url }}" class="img-fluid" alt="Tech Support Icon">
+            <a href="{{ site.tech_support_link | relative_url }}" class="button button-block">Tech Support</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content text-center">
+            <img src="{{ '/assets/img/general-qs.svg' | relative_url }}" class="img-fluid" alt="Questions Icon">
+            <a href="{{ site.general_questions_link | relative_url }}" class="button button-block">General Questions</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="content">
+            {% include nav/footer_nav.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
