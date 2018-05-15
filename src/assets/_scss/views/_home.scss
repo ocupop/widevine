@@ -1,5 +1,4 @@
 #home-hero {
-  // background-image: url('/assets/img/bg-hero.jpg');
   background: linear-gradient(to right,#6ab2ff 0,#3ff2c1 50%, #6ab2ff 100%);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
@@ -43,21 +42,21 @@
 }
 
 @-webkit-keyframes Gradient {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @-moz-keyframes Gradient {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @keyframes Gradient {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 #benefits {
@@ -87,7 +86,7 @@
     img {
       width: 200px;
       display: block;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 30px;
     }
   }
 

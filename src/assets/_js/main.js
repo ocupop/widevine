@@ -11,8 +11,6 @@ function magicNav() {
     var $magicLine = $(this).find(".magic-line:first");
     var $activeItem = $(this).find(".active-item a");
     var $activeItemLeft = $activeItem.find(".nav-link").position();
-    window.console.log('hello', $activeItemLeft);
-
 
     $magicLine
       .width($activeItem.width())
@@ -43,6 +41,8 @@ function magicNav() {
 
 
 $(document).ready(function() {
+  magicNav();
+
   //initiate tab collapse (if in use on this project)
   $('#my-tab').tabCollapse();
 
@@ -70,13 +70,10 @@ $(document).ready(function() {
   $('.secondary-collapse .nav-link').on('click', function(){
     $('#mobilenav').collapse('hide');
   });
-  
-  magicNav();
 
   if($('.count')){
     $('.count').each(function (index) {
       var dur = 1000 * (index + 1);
-      window.console.log(dur)
 
       $(this).prop('Counter', 0).animate({
           Counter: $(this).data('value')

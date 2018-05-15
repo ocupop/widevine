@@ -18,7 +18,6 @@
           }
         }
       }
-      
     }
   }
   ol {
@@ -99,7 +98,7 @@
         border-bottom: 1px solid $gray-mid;
       }
       .item {
-        padding: 10px 10px 40px 10px;
+        padding: 10px 10px 40px;
         min-height: 100px;
       }
     }
@@ -112,9 +111,9 @@
 
 #partners {
   .table-list {
-  > li {
-    padding-top: 0;
-    padding-bottom: 0;
+    > li {
+      padding-top: 0;
+      padding-bottom: 0;
       &:last-of-type {
         border-bottom: 1px solid $gray-mid;
       }
@@ -140,12 +139,10 @@
             }
           }
         }
-        
       }
     }
   }
 }
-
 #faq {
   .collapsable {
     margin-top: 30px;
@@ -166,11 +163,10 @@
           padding-top: 3px;
           padding-bottom: 3px;
         }
-        
       }
     }
   }
-  
+
   #training-nav {
     display: none;
   }
@@ -180,7 +176,7 @@
       display: block;
     }
   }
-  
+
   #schedule {
     .table-list {
       > li {
@@ -195,9 +191,6 @@
       }
     }
   }
-
-  
-
   .deadline {
     &::before {
       content: 'Registration Deadline';
@@ -206,9 +199,10 @@
     }
   }
 
-  #partners, #schedule {
+  #partners,
+  #schedule {
     .table-list {
-     > li {
+      > li {
         display: block;
         margin-bottom: 20px;
         border: 1px solid $gray-mid;

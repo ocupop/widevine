@@ -3,7 +3,7 @@ title: Widevine
 email: dev@ocupop.com
 description: ''
 url: "http://vital-beet.cloudvent.net"
-permalink: /:title
+permalink: pretty
 analytics_code: UA-000000000-1 # accessible via dev@ocupop.com
 
 

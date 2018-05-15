@@ -34,7 +34,7 @@ linters:
   NameFormat:
     enabled: true
   NestingDepth:
-    max_depth: 6
+    max_depth: 7
   PlacehodlerInExtend:
     enabled: true
   PropertySortOrder:
@@ -48,8 +48,8 @@ linters:
     allow_element_with_attribute: true
     allow_element_with_id: true
   SelectorDepth:
-    enabled: true
-    max_depth: 5
+    enabled: false
+    max_depth: 6
   SelectorFormat:
     convention: 'hyphenated_lowercase'
   Shorthand:

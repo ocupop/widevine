@@ -6,20 +6,15 @@
     background-color: $brand-primary;
     border: 0;
   }
-  
-  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  ::-webkit-input-placeholder {
     color: $white;
     font-size: 14px;
   }
-  ::-moz-placeholder { /* Firefox 19+ */
+  ::-moz-placeholder {
     color: $white;
     font-size: 14px;
   }
-  :-ms-input-placeholder { /* IE 10+ */
-    color: $white;
-    font-size: 14px;
-  }
-  :-moz-placeholder { /* Firefox 18- */
+  :-ms-input-placeholder {
     color: $white;
     font-size: 14px;
   }

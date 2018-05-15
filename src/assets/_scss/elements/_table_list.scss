@@ -68,7 +68,7 @@
 
 @media (max-width: $screen-md-max) {
   .table-list {
-   > li {
+    > li {
       display: block;
       margin-bottom: 20px;
       border: 1px solid $gray-mid;
@@ -92,7 +92,10 @@
         width: 150px;
       }
     }
-    .w-20, .w-25, .w-33, .w-40 {
+    .w-20,
+    .w-25,
+    .w-33,
+    .w-40 {
       width: 100%;
     }
   }
