@@ -39,3 +39,10 @@ twitter:
 
 # External Links
 cwip_registration_link: 'https://cwip-portal.appspot.com/'
+tech_support_link: 'https://support.google.com/widevine/troubleshooter/6027072'
+general_questions_link: 'https://support.google.com/widevine/troubleshooter/6027072#ts=6035942'
+documentation_link:
+documentation_shaka_player_link: 'https://github.com/google/shaka-player'
+integration_console_link: 'https://integration.widevine.com'
+terms_of_service_link: 'https://policies.google.com/terms'
+privacy_policy_link: 'https://policies.google.com/privacy'

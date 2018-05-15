@@ -60,24 +60,11 @@ title: About
         <div class="content text-center">
           <h2 class="editable">Services using Widevine</h2>
           <div class="logo-pile">
-            <div class="logo">
-              <img src="/assets/img/logo-netflix.png" class="img-fluid" alt="Netflix Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-hbo.png" class="img-fluid" alt="HBO Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-disney.png" class="img-fluid" alt="Disney Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-southwest.png" class="img-fluid" alt="Southwest Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-showtime.png" class="img-fluid" alt="Showtime Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-wb.png" class="img-fluid" alt="WB Logo">
-            </div>
+            {% for partner in site.data.partners.service_providers %}
+              <div class="logo">
+                <img src="{{ partner.logo_image | relative_url }}" class="img-fluid" alt="{{ partner.title }} Logo">
+              </div>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -86,57 +73,24 @@ title: About
       <div class="col">
         <div class="content">
           <h2 class="editable text-center">Devices using Widevine</h2>
-          <div class="logo-pile">
-            <div class="logo">
-              <img src="/assets/img/logo-android.png" class="img-fluid" alt="Android Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-samsung.png" class="img-fluid" alt="Samsung Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-chrome.png" class="img-fluid" alt="Chrome Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-sony.png" class="img-fluid" alt="Sony Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-mozilla.png" class="img-fluid" alt="Mozilla Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-panasonic.png" class="img-fluid" alt="Panasonic Logo">
-            </div>
-          </div>
-          <div class="logo-pile">  
-            <div class="logo">
-              <img src="/assets/img/logo-qualcomm.png" class="img-fluid" alt="Qualcomm Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-google-home.png" class="img-fluid" alt="Google Home Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-intel.png" class="img-fluid" alt="Intel Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-roku.png" class="img-fluid" alt="Roku Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-playstation.png" class="img-fluid" alt="Playstation Logo">
-            </div>
-            <div class="logo">
-              <img src="/assets/img/logo-vizio.png" class="img-fluid" alt="Vizio Logo">
-            </div>
+          <div class="logo-pile flex-wrap">
+            {% for partner in site.data.partners.device_vendors %}
+              <div class="logo col-md-2">
+                <img src="{{ partner.logo_image | relative_url }}" class="img-fluid" alt="{{ partner.title }} Logo">
+              </div>
+            {% endfor %}
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section id="company" class="bg-image overlay overlay-blue-light" style="background-image: url('/assets/img/BW-pexels-photo.jpg')">
+<section id="company" class="bg-image overlay overlay-blue-light" style="background-image: url({{'/assets/img/BW-pexels-photo.jpg' | relative_url }})">
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="content">
-          <img src="/assets/img/logo-wordmark.svg" class="img-fluid m-auto" alt="Widevine Logo">
+          <img src="{{ '/assets/img/logo-wordmark.svg' | relative_url }}" class="img-fluid m-auto" alt="Widevine Logo">
           <hr>
           <div class="editable">
             <p>Brian Baker founded Widevine in 1999 to connect digital content to consumers. During his tenure as CEO, Widevine grew to become a global provider of video optimization and multiplatform content protection for telecom, cable, satellite, and internet video services. In December 2010, Google aquired Widevine (read Google’s post here). Widevine will continue to support its current customer base while enhancing both Google products and its own.</p>

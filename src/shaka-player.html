@@ -5,6 +5,7 @@ permalink: /solutions/shaka-player
 ---
 
 {% include solution-nav.html %}
+
 <section>
   <div class="container">
     <div class="row">
@@ -15,7 +16,7 @@ permalink: /solutions/shaka-player
             <p>Shaka Player is an open-source JavaScript library for adaptive media. It plays adaptive media formats (such as DASH and HLS) in a browser, without using plugins or Flash. Instead, Shaka Player uses the open web standards MediaSource Extensions and Encrypted Media Extensions.</p>
             <p>Shaka Player also supports offline storage and playback of media using IndexedDB. Content can be stored on any browser. Storage of licenses depends on browser support.</p>
           </div>
-          <a href="{{ site.data.links.documentation_shaka_player }}" class="button button-teal button-block" target="_blank">View Documentation</a>
+          <a href="{{ site.documentation_shaka_player_link }}" class="button button-teal button-block" target="_blank">View Documentation</a>
         </div>
       </div>
     </div>
@@ -29,7 +30,7 @@ permalink: /solutions/shaka-player
     <div id="features" class="row">
       <div class="col-md-4">
         <div class="content">
-          <img src="/assets/img/icon-content-protection.svg" class="img-fluid" alt="Protection Icon">
+          <img src="{{ '/assets/img/icon-content-protection.svg' | relative_url }}" class="img-fluid" alt="Protection Icon">
           <hr>
           <h3 class="editable">Content Protection</h3>
           <div class="editable">
@@ -39,7 +40,7 @@ permalink: /solutions/shaka-player
       </div>
       <div class="col-md-4">
         <div class="content">
-          <img src="/assets/img/icon-video-playback.svg" class="img-fluid" alt="Playback Icon">
+          <img src="{{ '/assets/img/icon-video-playback.svg' | relative_url }}" class="img-fluid" alt="Playback Icon">
           <hr>
           <h3 class="editable">Video Playback Control</h3>
           <div class="editable">
@@ -49,7 +50,7 @@ permalink: /solutions/shaka-player
       </div>
       <div class="col-md-4">
         <div class="content">
-          <img src="/assets/img/icon-standardized.svg" class="img-fluid" alt="Format Icon">
+          <img src="{{ '/assets/img/icon-standardized.svg' | relative_url }}" class="img-fluid" alt="Format Icon">
           <hr>
           <h3 class="editable">Standardized Format</h3>
           <div class="editable">
@@ -59,7 +60,7 @@ permalink: /solutions/shaka-player
       </div>
       <div class="col-md-4">
         <div class="content">
-          <img src="/assets/img/icon-legacy-system.svg" class="img-fluid" alt="Legacy Icon">
+          <img src="{{ '/assets/img/icon-legacy-system.svg' | relative_url }}" class="img-fluid" alt="Legacy Icon">
           <hr>
           <h3 class="editable">Legacy System</h3>
           <div class="editable">
@@ -69,7 +70,7 @@ permalink: /solutions/shaka-player
       </div>
       <div class="col-md-4">
         <div class="content">
-          <img src="/assets/img/icon-device-security.svg" class="img-fluid" alt="Security Icon">
+          <img src="{{ '/assets/img/icon-device-security.svg' | relative_url }}" class="img-fluid" alt="Security Icon">
           <hr>
           <h3 class="editable">Device Security</h3>
           <div class="editable">
@@ -80,6 +81,7 @@ permalink: /solutions/shaka-player
     </div>
   </div>
 </section>
+
 <section id="device-integration" class="bg-gray-mid">
   <div class="container">
     <div class="row">
@@ -138,32 +140,7 @@ permalink: /solutions/shaka-player
     </div>
   </div>
 </section>
-<section id="release-updates">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="content">
-          <h1>Release Updates</h1>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="content">
-          <a href="#" class="button button-teal button-block">vX.XX</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="content">
-          <a href="#" class="button button-teal button-block">vX.XX</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="content">
-          <a href="#" class="button button-teal button-block">View All</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+{% include component/release_updates.html %}
+
 {% include training-program.html %}
