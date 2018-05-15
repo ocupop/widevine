@@ -7,8 +7,12 @@ This project uses Gulp, Webpack, Jekyll, React
 2. Install dependencies: `bundle install`
 3. Install Node packages: `npm install`
 
-##Daily Startup##
+##Local Startup##
 1. `cd` to project directory
 2. Start environment: `npm start`
 3. Navigate to [http://localhost:9999/](http://localhost:9999/)
+
+##Publish##
+1. `cd` to project directory
+2. Start environment: `npm run publish`
 

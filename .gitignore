@@ -5,6 +5,7 @@
 
 # Site build
 _site
+.publish
 
 # Logs
 *.log

@@ -3,6 +3,7 @@ const argv        = require('yargs').argv;
 const cp          = require('child_process');
 const browsersync = require('browser-sync');
 const config      = require('../../project.config');
+// const log         = require('fancy-log');
 
 let jekyll        = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
