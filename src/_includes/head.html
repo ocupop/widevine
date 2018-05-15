@@ -12,8 +12,8 @@
    <meta property="og:title" content="{{ page.title }} | {{ site.facebook.title }} ">
    <meta property="og:description" content="{% if page.layout == 'post' %}{{ page.intro }} {{ page.content | strip_html | truncate: 200 }}{% else %}{{ site.facebook.description }}{% endif %}">
    <meta property="og:type" content="website">
-   <meta property="og:url" content="{{ page.url | prepend: site.url }}">
-   <meta property="og:image" content="{% if page.layout == 'post' %}{{ site.url }}{{ page.image }}{% else %}{{ site.facebook.featured_image }}{% endif %}">
+   <meta property="og:url" content="{{ page.url | absolute_url }}">
+   <meta property="og:image" content="{% if page.layout == 'post' %}{{ page.image | absolute_url }}{% else %}{{ site.facebook.featured_image | absolute_url }}{% endif %}">
    <meta property="og:image:type" content="image/jpg">
    <meta property="og:image:width" content="1200">
    <meta property="og:image:height" content="600">
@@ -25,7 +25,7 @@
    <meta name="twitter:creator" content="{{ site.twitter.username }}">
    <meta name="twitter:title" content="{{ page.title }} | {{ site.twitter.title }}">
    <meta name="twitter:description" content="{% if page.layout == 'post' %}{{ page.intro }}{% else %}{{ site.twitter.description }}{% endif %}">
-   <meta name="twitter:image" content="{% if page.layout == 'post' %}{{ site.url }}{{ page.image }}{% else %}{{ site.twitter.featured_image }}{% endif%}">
+   <meta name="twitter:image" content="{% if page.layout == 'post' %}{{ page.image | absolute_url }}{% else %}{{ site.twitter.featured_image | absolute_url }}{% endif%}">
    <meta name="twitter:image:alt" content="{% if page.layout == 'post' %}{{ page.title }} image{% else %}{{ site.twitter.image_alt_text }}{% endif %}">
   {% endif %}
 

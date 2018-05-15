@@ -28,10 +28,14 @@ plugins:
 facebook:
   title: 'Widevine'
   description: 'Widevine provides multiplatform DRM and video optimization solutions using industry adopted standards including common encryption (CENC) and encrypted media extensions (EME).'
-  featured_image: 'http://vital-beet.cloudvent.net/assets/img/og-image.jpg'
+  featured_image: '/assets/img/og-image.jpg'
 twitter:
   username: '@Widevine'
   title: 'Widevine'
   description: 'Widevine provides multiplatform DRM and video optimization solutions using industry adopted standards including common encryption (CENC) and encrypted media extensions (EME).'
-  featured_image: 'http://vital-beet.cloudvent.net/assets/img/twitter-share-280-150.jpg'
+  featured_image: '/assets/img/twitter-share-280-150.jpg'
   image_alt_text: 'Widevine'
+
+
+# External Links
+cwip_registration_link: 'https://cwip-portal.appspot.com/'
