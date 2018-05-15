@@ -1,0 +1,43 @@
+@charset 'utf-8';
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+@import 'variables';
+@import 'mixins';
+@import 'utilities';
+@import 'fonts';
+
+
+// Import base / global styles
+@import 'base/global';
+@import 'base/typography';
+
+// Import layout / global styles
+@import 'layout/page_header';
+@import 'layout/page_content';
+@import 'layout/page_footer';
+
+// Import additional elements or project specific styles
+@import 'elements/bg_video';
+@import 'elements/blockquotes';
+@import 'elements/buttons';
+@import 'elements/collapsable';
+@import 'elements/hero';
+@import 'elements/logo_pile';
+@import 'elements/magic_line';
+@import 'elements/overlay';
+@import 'elements/solution_nav';
+@import 'elements/tab_collapse';
+@import 'elements/table_list';
+
+// Import view specific styles
+@import 'views/about';
+@import 'views/contact';
+@import 'views/drm';
+@import 'views/home';
+@import 'views/news';
+@import 'views/solutions';
+@import 'views/supported_platforms';
+@import 'views/training';
+
+// Animations
+@import 'animations';
