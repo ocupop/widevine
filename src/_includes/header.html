@@ -1,10 +1,10 @@
 <header id="page-header">
   <nav id="mainnav" class="navbar navbar-expand-md">
-    <a class="navbar-brand animated fadeIn" href="{{ '/' | absolute_url }}"><img src="{{ '/assets/img/logo-wordmark.svg' | relative_url }}" alt="{{ site.title }} logo"></a>
+    <a class="navbar-brand animated fadeIn" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/logo-wordmark.svg' | relative_url }}" alt="{{ site.title }} logo"></a>
     <div class="justify-content-end magicnav" id="primarynav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="{{ '/' | absolute_url }}">Home</a>
+        <li class="nav-item{% if page.url == '/' %} active-item{% endif %}">
+          <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
         </li>
         <li class="nav-item{% if page.url contains 'solutions' %} active-item{% endif %}">
           <a class="nav-link" href="{{ '/solutions/overview' | relative_url }}">Solutions</a>
@@ -23,7 +23,7 @@
     </div>
   </nav>
   <nav id="mobilenav-wrapper">
-    <a class="navbar-brand animated fadeIn" href="{{ '/' | absolute_url }}"><img src="{{ '/assets/img/logo-wordmark.svg' | relative_url }}" alt="{{ site.title }} logo"></a>
+    <a class="navbar-brand animated fadeIn" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/logo-wordmark.svg' | relative_url }}" alt="{{ site.title }} logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilenav" aria-controls="mobilenav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="sr-only">Toggle navigation</span>
       <span class="bar close-one"></span>
@@ -33,10 +33,10 @@
     <div id="mobilenav" class="navbar-collapse collapse">
       <ul class="navbar-nav">
         <li class="nav-item logo-mobile">
-          <a class="nav-link" href="{{ '/' | absolute_url }}"><img src="{{ '/assets/img/logo-mobile.svg' | relative_url }}" class="img-responsive" alt="{{ site.title }}"></a>
+          <a class="nav-link" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/logo-mobile.svg' | relative_url }}" class="img-responsive" alt="{{ site.title }}"></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ '/' | absolute_url }}">Home</a>
+          <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link secondary-collapse-trigger{% if page.url contains 'solutions' %} active{% endif %}" data-toggle="collapse" data-target="#solution-collapse">Solutions</a>
