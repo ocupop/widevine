@@ -1,15 +1,54 @@
-- partner_name: Accenture
-  partner_logo_image: /uploads/accenture_logo.png
-  contact_info_html: >-
-    <p>Name: Mark Richards</p><p>Email: <a
-    href="mailto:mark.d.richards@accenture.com">mark.d.richards@accenture.com</a></p>
-  certifications_html: >-
-    <p>Widevine Classic VOD Packaging</p><p>Widevine Modular
-    DRM</p>
-- partner_name: Alticast
-  partner_logo_image: /uploads/alticast-logo.png
-  contact_info_html: >-
-    <p>Name: YoungMi Shin</p><p>Name: EunJung Seo&nbsp;</p><p>Phone: +82 2 2007
-    7700</p><p>Email:&nbsp;<a
-    href="javascript:void(location.href='mailto:'+String.fromCharCode(103,99,119,105,112,64,97,108,116,105,99,97,115,116,46,99,111,109))">gcwip@alticast.com</a></p>
-  certifications_html: <p>Widevine Modular DRM</p>
+service_providers:
+  - name: Netflix
+    logo_image: /assets/img/logo-netflix.png
+  - name: HBO
+    logo_image: /assets/img/logo-hbo.png
+  - name: Disney
+    logo_image: /assets/img/logo-disney.png
+  - name: Southwest
+    logo_image: /assets/img/logo-southwest.png
+  - name: Showtime
+    logo_image: /assets/img/logo-showtime.png
+  - name: WB
+    logo_image: /assets/img/logo-wb.png
+device_vendors:
+  - name: Android
+    logo_image: /assets/img/logo-android.png
+  - name: Samsung
+    logo_image: /assets/img/logo-samsung.png
+  - name: Chrome
+    logo_image: /assets/img/logo-chrome.png
+  - name: Sony
+    logo_image: /assets/img/logo-sony.png
+  - name: Mozilla
+    logo_image: /assets/img/logo-mozilla.png
+  - name: Panasonic
+    logo_image: /assets/img/logo-panasonic.png
+  - name: Qualcomm
+    logo_image: /assets/img/logo-qualcomm.png
+  - name: Google Home
+    logo_image: /assets/img/logo-google-home.png
+  - name: Intel
+    logo_image: /assets/img/logo-intel.png
+  - name: Roku
+    logo_image: /assets/img/logo-roku.png
+  - name: Playstation
+    logo_image: /assets/img/logo-playstation.png
+  - name: Vizio
+    logo_image: /assets/img/logo-vizio.png
+integrators:
+  - name: Accenture
+    logo_image: /uploads/accenture_logo.png
+    contact_info_html: >-
+      <p>Name: Mark Richards</p><p>Email: <a
+      href="mailto:mark.d.richards@accenture.com">mark.d.richards@accenture.com</a></p>
+    certifications_html: >-
+      <p>Widevine Classic VOD Packaging</p><p>Widevine Modular
+      DRM</p>
+  - name: Alticast
+    logo_image: /uploads/alticast-logo.png
+    contact_info_html: >-
+      <p>Name: YoungMi Shin</p><p>Name: EunJung Seo&nbsp;</p><p>Phone: +82 2 2007
+      7700</p><p>Email:&nbsp;<a
+      href="javascript:void(location.href='mailto:'+String.fromCharCode(103,99,119,105,112,64,97,108,116,105,99,97,115,116,46,99,111,109))">gcwip@alticast.com</a></p>
+    certifications_html: <p>Widevine Modular DRM</p>

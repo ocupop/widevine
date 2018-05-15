@@ -4,6 +4,7 @@ title: CWIP Training
 ---
 
 {% include training-nav.html %}
+
 <section id="training">
   <div class="container">
     <div class="row">
@@ -292,10 +293,10 @@ title: CWIP Training
               <div class="column-heading w-40">Contact Information</div>
               <div class="column-heading w-40">Certifications</div>
             </li>
-            {% for partner in site.data.partners %}
+            {% for partner in site.data.partners.integrators %}
             <li>
               <div class="item w-20">
-                <img src="{{ partner.partner_logo_image }}" alt="{{ partner_name }} Logo" class="img-fluid">
+                <img src="{{ partner.logo_image }}" alt="{{ partner.name }} Logo" class="img-fluid">
               </div>
               <div class="item w-40">
                 {{ partner.contact_info_html }}

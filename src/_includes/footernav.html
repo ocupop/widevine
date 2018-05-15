@@ -1,7 +1,7 @@
 <nav id="footernav">
   <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link{% if page.url == '/news' %} active{% endif %}" href="/news">News {% if page.url == '/news' %}<span class="sr-only">(current)</span>{% endif %}</a>
+      <a class="nav-link{% if page.url contains 'news' %} active{% endif %}" href="{{ '/news' | relative_url }}">News</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="{{ site.data.links.documentation }}" target="_blank">Documentation</a>
@@ -10,7 +10,7 @@
       <a class="nav-link" href="{{ site.data.links.integration_console }}" target="_blank"> Integration Console</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/supported-platforms">Supported Platforms {% if page.url == '/supported-platforms' %}<span class="sr-only">(current)</span>{% endif %}</a>
+      <a class="nav-link{% if page.url contains 'supported-platforms' %} active{% endif %}" href="{{ '/supported-platforms' | relative_url }}">Supported Platforms</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="{{ site.data.links.terms_of_service }}" target="_blank">Terms of Service</a>
