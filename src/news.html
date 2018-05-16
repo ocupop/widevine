@@ -15,42 +15,22 @@ title: News
 </div>
 <section id="news">
   <div class="container">
+    {% for post in site.posts %}
     <div class="row">
       <div class="col-md-4">
         <div class="content">
-          <h2>News Post Title</h2>
-          <p class="post-details">03/14/18 by Alex Lee</p>
+          <h2>{{ post.title }}</h2>
+          <p class="post-details">{{ post.date | date: "%D"}} {% if post.author %}by {{ post.author }}{% endif %}</p>
         </div>
       </div>
       <div class="col-md-8">
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptate animi veniam iure, voluptatum, earum nulla esse quas magnam architecto aspernatur quae nesciunt vel at tempore a, reiciendis! Dolor, architecto.</p>
-          <a href="#" class="button button-teal button-lg">Read More</a>
+          {{ post.content | truncatewords: 30 }}
+          <a href="{{ post.url }}" class="button button-teal button-lg">Read More</a>
         </div>
       </div>
     </div>
     <hr class="divider">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="content">
-          <h2>News Post Title</h2>
-          <p class="post-details">03/14/18 by Alex Lee</p>
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptate animi veniam iure, voluptatum, earum nulla esse quas magnam architecto aspernatur quae nesciunt vel at tempore a, reiciendis! Dolor, architecto.</p>
-          <a href="#" class="button button-teal button-lg">Read More</a>
-        </div>
-      </div>
-    </div>
-    <hr class="divider">
-    <div class="row">
-      <div class="col">
-        <div class="content">
-          <a href="#" class="button button-block button-teal">Load More</a>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </section>

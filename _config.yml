@@ -5,6 +5,10 @@ description: ''
 permalink: pretty
 analytics_code: UA-000000000-1 # accessible via dev@ocupop.com
 
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title
 
 # Build settings
 safe: false
