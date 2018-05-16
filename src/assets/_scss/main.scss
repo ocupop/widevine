@@ -17,6 +17,7 @@
 @import 'layout/page_footer';
 
 // Import additional elements or project specific styles
+@import 'elements/blog_sidebar';
 @import 'elements/buttons';
 @import 'elements/collapsable';
 @import 'elements/hero';
@@ -24,7 +25,6 @@
 @import 'elements/magic_line';
 @import 'elements/overlay';
 @import 'elements/solution_nav';
-@import 'elements/tab_collapse';
 @import 'elements/table_list';
 
 // Import view specific styles
@@ -33,6 +33,7 @@
 @import 'views/drm';
 @import 'views/home';
 @import 'views/news';
+@import 'views/post';
 @import 'views/solutions';
 @import 'views/supported_platforms';
 @import 'views/training';

@@ -1,8 +1,25 @@
 <!-- Javascript -->
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+{% if page.url == '/news/' %}
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script>
+  $(function() {
+    $('.blog-posts').mixItUp();
+  });
 
-<!-- Script for collapsing tab navigation on smaller screens, remove for your project if not needed -->
-<script src="{{ '/assets/js/vendor/tab-collapse-b4.js' | prepend: site.baseurl }}"></script>
+  var params = window.location.search.substring(1);
+  if (params) {
+    window.console.log(params);
+    var filter = '.' + params;
+    window.console.log('filter ', filter);
+    $('.blog-posts').mixItUp({
+      load: {
+        filter: filter
+      }
+    });
+  }
+</script>
+{% endif %}
 
 <!-- Search -->
 {% include search.html %}

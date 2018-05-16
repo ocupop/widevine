@@ -41,7 +41,9 @@ function magicNav() {
 
 
 $(document).ready(function() {
-  magicNav();
+  if($('.magicnav').length){
+    magicNav();
+  }
 
   //initiate tab collapse (if in use on this project)
   $('#my-tab').tabCollapse();

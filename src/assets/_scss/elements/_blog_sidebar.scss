@@ -1,0 +1,32 @@
+#blog-sidebar {
+  h4 {
+    margin-bottom: 0;
+  }
+  .card {
+    border: 1px solid $brand-primary;
+    border-radius: 0;
+  }
+  .card-header {
+    border-radius: 0;
+    border: 0;
+    background-color: $brand-primary;
+    
+    a {
+      color: $white;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .card-body {
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  }
+  .filter {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -13,24 +13,28 @@ title: News
     </div>
   </div>
 </div>
-<section id="news">
+<section id="news" class="blog-posts">
   <div class="container">
-    {% for post in site.posts %}
     <div class="row">
-      <div class="col-md-4">
-        <div class="content">
-          <h2>{{ post.title }}</h2>
-          <p class="post-details">{{ post.date | date: "%D"}} {% if post.author %}by {{ post.author }}{% endif %}</p>
-        </div>
-      </div>
       <div class="col-md-8">
         <div class="content">
-          {{ post.content | truncatewords: 30 }}
-          <a href="{{ post.url }}" class="button button-teal button-lg">Read More</a>
+          {% for post in site.posts %}
+          <div class="content mix {% for category in post.categories %}{{ category | slugify }} {% endfor %}">
+            <h2>{{ post.title }}</h2>
+            <p class="post-details">{{ post.date | date: "%D"}} {% if post.author %}by {{ post.author }}{% endif %}</p>
+            {{ post.content | truncatewords: 30 }}
+            <br>
+            <a href="{{ post.url }}" class="button button-teal button-lg">Read More</a>  
+            <hr>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="content">
+          {% include components/blog_sidebar.html %}
         </div>
       </div>
     </div>
-    <hr class="divider">
-    {% endfor %}
   </div>
 </section>

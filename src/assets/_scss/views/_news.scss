@@ -20,12 +20,21 @@
   }
 }
 
-#news {
+.blog-posts {
+  .mix {
+    display: none;
+  }
+}
+
+#news, #post {
   h2 {
     font-size: 20px;
   }
   p {
     color: $brand-primary;
+  }
+  .button {
+    margin: 10px 0;
   }
   .post-details {
     color: $blue-light;
