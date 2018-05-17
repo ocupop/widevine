@@ -7,7 +7,11 @@ title: News
     <div class="row">
       <div class="col">
         <div class="content">
-          <input type="text" placeholder="Search...">
+          <form id="site_search" autocomplete="on">
+           <input type="text" id="search_box">
+           <input type="submit" value="Search">
+           </form>
+           <ul id="search_results"></ul>
         </div>
       </div>
     </div>
@@ -16,10 +20,10 @@ title: News
 <section id="news" class="blog-posts">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-lg-8">
         <div class="content">
           {% for post in site.posts %}
-          <div class="content mix {% for category in post.categories %}{{ category | slugify }} {% endfor %}">
+          <div class="mix {% for category in post.categories %}{{ category | slugify }} {% endfor %}">
             <h2>{{ post.title }}</h2>
             <p class="post-details">{{ post.date | date: "%D"}} {% if post.author %}by {{ post.author }}{% endif %}</p>
             {{ post.content | truncatewords: 30 }}
@@ -30,7 +34,7 @@ title: News
           {% endfor %}
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4">
         <div class="content">
           {% include components/blog_sidebar.html %}
         </div>

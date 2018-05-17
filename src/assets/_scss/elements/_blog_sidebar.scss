@@ -10,6 +10,7 @@
     border-radius: 0;
     border: 0;
     background-color: $brand-primary;
+    position: relative;
     
     a {
       color: $white;
@@ -22,6 +23,13 @@
     ul {
       list-style-type: none;
       padding-left: 0;
+      li {
+        font-size: 14px;
+        color: $brand-primary;
+        a {
+          color: $brand-primary;
+        }
+      }
     }
   }
   .filter {
@@ -29,4 +37,13 @@
       cursor: pointer;
     }
   }
+  
+  .icon-plus {
+    .icon-bar {
+      &.bar-2 {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  
 }

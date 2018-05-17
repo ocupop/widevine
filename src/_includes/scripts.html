@@ -2,6 +2,7 @@
 <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 {% if page.url == '/news/' %}
 <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script src="https://unpkg.com/lunr/lunr.js"></script>
 <script>
   $(function() {
     $('.blog-posts').mixItUp();
@@ -18,11 +19,13 @@
       }
     });
   }
+  
+
 </script>
 {% endif %}
 
 <!-- Search -->
-{% include search.html %}
+<!-- {% include search.html %} -->
 
 <!-- Analytics -->
 {% include analytics.html %}
