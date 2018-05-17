@@ -1,5 +1,4 @@
 <div class="blog-filters accordion d-none d-lg-block" id="blog-sidebar" role="tablist" aria-multiselectable="true">
-  {% unless page.layout == 'post' %}
   <div class="card">
     <div class="card-header" role="tab">
       <h4>
@@ -15,15 +14,13 @@
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
       <div class="card-body">
         <ul>
-          <li class="filter" data-filter="all">All</li>
           {% for category in site.categories %}
-            <li class="filter" data-filter=".{{ category[0] | slugify }}">{{ category[0] }}</li>
+            <li><a href="/archives/category/{{ category[0] | slugify }}/">{{ category[0] | capitalize }}</a></li>
           {% endfor %}
         </ul>
       </div>
     </div>
   </div>
-  {% endunless %}
   <div class="card">
     <div class="card-header" role="tab" id="headingTwo">
       <h4>
@@ -38,18 +35,12 @@
     </div>
     <div id="collapseTwo" class="collapse {% if page.layout == 'post' %}show{% endif %}" role="tabpanel" aria-labelledby="headingTwo">
       <div class="card-body">
-        <!-- need to understand how many will be output onto this page to be able to set what will be output into this list -->
-        {% for post in site.posts %}
-           {% assign currentDate = post.date | date: "%Y" %}
-           {% if currentDate != myDate %}
-               {% unless forloop.first %}</ul>{% endunless %}
-               <h5>{{ currentDate }}</h5>
-               <ul>
-               {% assign myDate = currentDate %}
-           {% endif %}
-           <li><a href="{{ post.url }}"><span>{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a></li>
-           {% if forloop.last %}</ul>{% endif %}
-       {% endfor %}
+        <ul>
+          {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+          {% for year in postsByYear %}
+            <li><a href="/archives/years/{{ year.name }}">{{ year.name }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>

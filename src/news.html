@@ -1,37 +1,55 @@
 ---
 layout: default
 title: News
+pagination:
+  enabled: true
 ---
-<div class="search">
+
+<div class="search" style="display: none;">
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="content">
-          <form id="site_search" autocomplete="on">
-           <input type="text" id="search_box">
-           <input type="submit" value="Search">
-           </form>
-           <ul id="search_results"></ul>
+          <form action="{{ site.baseurl }}/search" method="get">
+            <label for="search-box">Search</label>
+            <input type="text" id="search-box" name="query">
+            <input type="submit" value="search">
+          </form>
         </div>
       </div>
     </div>
   </div>
 </div>
-<section id="news" class="blog-posts">
+<section id="news">
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
         <div class="content">
-          {% for post in site.posts %}
-          <div class="mix {% for category in post.categories %}{{ category | slugify }} {% endfor %}">
-            <h2>{{ post.title }}</h2>
-            <p class="post-details">{{ post.date | date: "%D"}} {% if post.author %}by {{ post.author }}{% endif %}</p>
-            {{ post.content | truncatewords: 30 }}
-            <br>
-            <a href="{{ post.url }}" class="button button-teal button-lg">Read More</a>  
+          <div class="infinite-scroll">
+          {% for post in paginator.posts %}
+            <div class="post">
+              <h2>{{ post.title }}</h2>
+              <p class="post-details">{{ post.date | date: "%D"}} {% if post.author %}by {{ post.author }}{% endif %}</p>
+              {{ post.content | truncatewords: 30 }}
+              <br>
+              <a href="{{ post.url }}" class="button button-teal button-lg">Read More</a>  
+            </div>
             <hr>
-          </div>
-          {% endfor %}
+            {% endfor %}
+            <div class="pagination sr-only">
+              {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+              {% else %}
+                <span class="previous">Previous</span>
+              {% endif %}
+              <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+              {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+              {% else %}
+                <span class="next ">Next</span>
+              {% endif %}
+            </div>
+          </div>  
         </div>
       </div>
       <div class="col-lg-4">

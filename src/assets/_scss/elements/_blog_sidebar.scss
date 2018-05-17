@@ -28,6 +28,9 @@
         color: $brand-primary;
         a {
           color: $brand-primary;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }
