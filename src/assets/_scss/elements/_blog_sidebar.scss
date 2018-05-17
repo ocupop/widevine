@@ -17,6 +17,15 @@
       &:hover {
         text-decoration: none;
       }
+      &.collapsed {
+        .icon-plus {
+          .icon-bar {
+            &.bar-2 {
+              transform: rotate(0);
+            }
+          }
+        }
+      }
     }
   }
   .card-body {
@@ -44,7 +53,7 @@
   .icon-plus {
     .icon-bar {
       &.bar-2 {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
       }
     }
   }

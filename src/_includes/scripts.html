@@ -47,15 +47,13 @@
                   this.field('category');
                   this.field('content');
                   for (var key in window.store) { 
-                      this.add({
-                          'id': key,
-                          'title': window.store[key].title,
-                          'author': window.store[key].author,
-                          'category': window.store[key].category,
-                          'content': window.store[key].content
-                      });
-
-                      
+                    this.add({
+                      'id': key,
+                      'title': window.store[key].title,
+                      'author': window.store[key].author,
+                      'category': window.store[key].category,
+                      'content': window.store[key].content
+                    });
                   }
               });
 
@@ -91,6 +89,17 @@
         padding: 20,
         contentSelector: '.infinite-scroll'
     });
+
+    // $('#blog-sidebar .collapse').on('hide.bs.collapse', function () {
+    //   window.console.log('closed');
+    //   $(this).parent().find('a').addClass('closed');
+    // })
+
+    // $('#blog-sidebar .collapse').on('show.bs.collapse', function () {
+    //   window.console.log('closed');
+    //   $(this).parent().find('a').removeClass('closed');
+    // })
+
   </script>
   
 {% endif %}
