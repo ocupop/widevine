@@ -296,7 +296,7 @@ title: CWIP Training
             {% for partner in site.data.partners.integrators %}
             <li>
               <div class="item w-20">
-                <img src="{{ partner.logo_image }}" alt="{{ partner.name }} Logo" class="img-fluid">
+                <img src="{{ partner.logo_image | relative_url }}" alt="{{ partner.name }} Logo" class="img-fluid">
               </div>
               <div class="item w-40">
                 {{ partner.contact_info_html }}
