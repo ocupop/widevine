@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <h4>
-        <a role="button" data-toggle="collapse" data-parent="#blog-sidebar" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <a role="button" data-toggle="collapse" data-parent="#blog-sidebar" data-target="#collapse-categories" aria-expanded="true" aria-controls="collapse-categories">
           Categories
           <div class="icon-plus">
             <span class="icon-bar bar-1"></span>
@@ -11,7 +11,7 @@
         </a>
       </h4>
     </div>
-    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+    <div id="collapse-categories" class="collapse show" role="tabpanel">
       <div class="card-body">
         <ul>
           {% for category in site.categories %}
@@ -24,7 +24,7 @@
   <div class="card">
     <div class="card-header" role="tab" id="headingTwo">
       <h4>
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#blog-sidebar" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#blog-sidebar" data-target="#collapse-archive" aria-expanded="false" aria-controls="collapse-archive">
           Archive
           <div class="icon-plus">
             <span class="icon-bar bar-1"></span>
@@ -33,7 +33,7 @@
         </a>
       </h4>
     </div>
-    <div id="collapseTwo" class="collapse {% if page.layout == 'post' %}show{% endif %}" role="tabpanel" aria-labelledby="headingTwo">
+    <div id="collapse-archive" class="collapse {% if page.layout == 'post' %}show{% endif %}" role="tabpanel">
       <div class="card-body">
         <ul>
           {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}

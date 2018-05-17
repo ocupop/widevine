@@ -5,15 +5,15 @@ pagination:
   enabled: true
 ---
 
-<div class="search" style="display: none;">
+<div class="search">
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="content">
           <form action="{{ site.baseurl }}/search" method="get">
-            <label for="search-box">Search</label>
-            <input type="text" id="search-box" name="query">
-            <input type="submit" value="search">
+            <label for="search-box" class="sr-only">Search</label>
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <input type="submit" value="Search Posts">
           </form>
         </div>
       </div>
