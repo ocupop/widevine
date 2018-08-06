@@ -2,8 +2,8 @@
   <div class="container">
     <div class="magicnav">
       <ul class="nav">
-        <li class="nav-item {% if page.url contains 'overview' %} active-item{% endif %}">
-          <a class="nav-link" href="{{ '/solutions/overview' | relative_url }}">Overview</a>
+        <li class="nav-item {% if page.url == '/solutions/' %} active-item{% endif %}">
+          <a class="nav-link" href="{{ '/solutions/' | relative_url }}">Overview</a>
         </li>
         <li class="nav-item{% if page.url contains 'widevine-drm' %} active-item{% endif %}">
           <a class="nav-link" href="{{ '/solutions/widevine-drm' | relative_url }}">Widevine DRM</a>

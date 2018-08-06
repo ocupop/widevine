@@ -6,8 +6,8 @@
         <li class="nav-item{% if page.url == '/' %} active-item{% endif %}">
           <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
         </li>
-        <li class="nav-item{% if page.url contains 'solutions' %} active-item{% endif %}">
-          <a class="nav-link" href="{{ '/solutions/overview' | relative_url }}">Solutions</a>
+        <li class="nav-item{% if page.url == '/solutions/' %} active-item{% endif %}">
+          <a class="nav-link" href="{{ '/solutions/' | relative_url }}">Solutions</a>
         </li>
         <li class="nav-item{% if page.url contains 'training' %} active-item{% endif %}">
           <a class="nav-link" href="{{ '/training' | relative_url }}">Training</a>
@@ -42,7 +42,7 @@
           <a class="nav-link secondary-collapse-trigger{% if page.url contains 'solutions' %} active{% endif %}" data-toggle="collapse" data-target="#solution-collapse">Solutions</a>
           <ul class="collapse secondary-collapse" id="solution-collapse">
             <li class="nav-item">
-              <a href="{{ '/solutions/overview' | relative_url }}" class="nav-link{% if page.url contains 'overview' %} active{% endif %}">Overview</a>
+              <a href="{{ '/solutions/' | relative_url }}" class="nav-link{% if page.url == '/solutions/' %} active{% endif %}">Overview</a>
             </li>
             <li class="nav-item">
               <a href="{{ '/solutions/widevine-drm' | relative_url }}" class="nav-link{% if page.url contains 'widevine-drm' %} active{% endif %}">Widevine DRM</a>
