@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "bundle exec gulp",
-    "deploy": "bundle exec gulp publish --production",
+    "deploy": "bundle exec gulp publish --production"
   },
   "author": "Ocupop",
   "license": "MIT",
