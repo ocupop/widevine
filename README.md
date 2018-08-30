@@ -17,5 +17,5 @@ This project uses Gulp, Webpack, Jekyll, React
 ## Deploy
 
 1. `cd` to project directory
-2. Start environment: `npm run deploy`
+2. Deploy site to Firebase: `npm run deploy`
 
