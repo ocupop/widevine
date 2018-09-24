@@ -2,7 +2,7 @@
 layout: default
 title: News
 ---
-<div class="search">
+<!-- <div class="search">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -12,20 +12,119 @@ title: News
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <section id="news">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
         <div class="content">
-          <h2>News Post Title</h2>
-          <p class="post-details">03/14/18 by Alex Lee</p>
+          <h2>Widevine Quarterly Partner Update - Q3 2018</h2>
+          <p class="post-details">09/05/18</p>
         </div>
       </div>
       <div class="col-md-8">
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptate animi veniam iure, voluptatum, earum nulla esse quas magnam architecto aspernatur quae nesciunt vel at tempore a, reiciendis! Dolor, architecto.</p>
-          <a href="#" class="button button-teal button-lg">Read More</a>
+          <p>Welcome to another quarterly update from the Widevine team.  Our aim is to improve transparency and facilitate discussions around improving ease of use, integration and deployment of Widevine DRM.</p>
+		
+		<h2>IBC 2018</h2>
+			<p>Widevine is participating at <a href="https://show.ibc.org" target="_new">IBC 2018</a> (Sept 13 - 18) in Amsterdam as part of the <a href="https://events.withgoogle.com/ibc-2018/" target="_new">Google presence in Hall 14</a>. Please reach out to <a href="mailto:meet-widevine@google.com">meet-widevine@google.com</a> to arrange a discussion.</p>
+			
+		<h2>Content Survey</h2>
+			<p>Widevine is conducting a <a href="https://goo.gl/forms/omVfmO0tq6K4obwa2" target="_new">survey</a> for future planning.  We would appreciate additional data points to help guide our future planning.  This survey closes on Sept 30, 2018.</p>
+			
+		<h2>Widevine CAS</h2>
+			<p>Widevine CAS is now available for the Android TV platform, starting from Android TV Pie.  Operating on the same model as Widevine DRM, our <a href="https://storage.googleapis.com/wvdocs/Widevine_CAS_Overview.pdf" target="_new">CAS solution</a> has no fees across both client and server products.</p>
+			
+			<p>Please <a href="http://www.widevine.com/contact.html" target="_new">contact us</a> if we can assist with your integration or implementation questions.</p>
+			
+		<h2>Chrome Browser</h2>
+			<p><a href="https://www.chromestatus.com/features/schedule" target="_new">Chrome 68</a> introduces support for CMAF.  Please see <a href="https://storage.googleapis.com/wvdocs/Widevine_DRM_HLS.pdf" target="_new">Widevine’s CMAF specification</a> for more information.</p>
+			
+			<p>Chrome on Android is a Widevine L1 implementation as it leverages the built-in CDM on Android OS.</p>
+			
+			<p>Widevine CDM for Chrome 58 (or earlier) are no longer supported.</p>
+			
+			<p>Chrome includes support for Verified Media Path (VMP).  VMP provides a method to verify the authenticity of a device platform.  For browser deployments, this will provide an additional signal to determine if a browser-based implementation is reliable and secure.</p>
+			
+			<p>The <a href="https://storage.googleapis.com/wvdocs/Widevine_DRM_Proxy_Integration.pdf" target="_new">proxy integration guide</a> has been updated with information about VMP and how to issue licenses. Widevine recommends our browser-based integrations (vendors and browser-based applications) add support for VMP.</p>
+			
+		<h2>CDM Source and OEMCrypto</h2>
+			<p>The upcoming CE CDM 15 (due Q4 2018) will require C++11 support.</p>
+			
+		<h2>Content Encryption</h2>
+			<p>Widevine would like to reinforce our recommendation of <strong>using separate content keys to encrypt each video and audio track</strong>. In particular, the emphasis is on <strong>using separate content keys</strong> for each category of SD, HD, 4K (UHD1), 8K (UHD2) and AUDIO streams.</p>
+			
+<!--		<h2>Widevine Cloud License Service</h2>
+			
+			<h4>Cloud Environments</h4>
+			<p>Widevine has three different cloud services - UAT, Staging and Production.  Moving forward, we recommend that partners use the appropriate environment to validate any new changes coming to the production environment.</p>
+			
+			<p>The Widevine release process will update Staging first.  Approximately 1-2 weeks later, Production and UAT are updated simultaneously if Staging is successfully verified.</p>
+			
+			<p>This table represents the available Widevine Cloud License Service endpoints:</p>
+			
+			
+			<ul class="table-list">
+				<li class="heading-row">
+					<div class="column-heading w-20">Environment</div>
+					<div class="column-heading w-20">Data Store</div>
+					<div class="column-heading w-20">GetLicense</div>
+					<div class="column-heading w-20">GetContentKey</div>
+					<div class="column-heading w-20">Purpose</div>
+				</li>
+				<li>
+					<div class="column-heading w-20">UAT (Test)</div>
+					<div class="column-heading w-20">UAT</div>
+					<div class="column-heading w-20"><font size=1>https://license.uat.widevine.com/cenc/getlicense/&lt;provider></font></div>
+					<div class="column-heading w-20" word-wrap: break-word;><font size=1>https://license.uat.widevine.com/cenc/getcontentkey/&lt;provider></font></div>
+					<div class="column-heading w-20">Testing environment for Device Integration and Service providers</div>
+				</li>
+				<li>
+					<div class="column-heading w-20">Staging</div>
+					<div class="column-heading w-20">Production</div>
+					<div class="column-heading w-20">https://license.staging.widevine.com/cenc/getlicense/&lt;provider></div>
+					<div class="column-heading w-20">https://license.staging.widevine.com/cenc/getcontentkey/&lt;provider></div>
+					<div class="column-heading w-20">Testing environment for bug fixes, and new changes.</div>
+				</li>
+				<li>
+					<div class="column-heading w-20">Production</div>
+					<div class="column-heading w-20">Production</div>
+					<div class="column-heading w-20">https://license.widevine.com/cenc/getlicense/&lt;provider></div>
+					<div class="column-heading w-20">https://license.widevine.com/cenc/getcontentkey/&lt;provider></div>
+					<div class="column-heading w-20">Standard production environment.</div>
+				</li>
+				</ul>
+			
+			<p>The Production and Staging environment is accessed using the same set of service credentials (IV/Key pair), separate from UAT.</p>
+			
+			<ul>
+				<li>Staging is a pre-release environment for Production releases. <strong>It is recommended that a service provider use staging to validate after launch.</strong></li>
+				<li>Data (content keys, provider credentials)</li>
+			</ul>
+
+			<p>The UAT (Test) environment is accessed using a unique set of service credentials (IV/Key pair).  The purpose of UAT is to enable:</p>
+
+			<ul>
+				<li>Testing and integration of devices in development.</li>
+				<li>Testing and integration of service providers.</li>
+			</ul>
+-->          
+		<h2>Cloud Service Performance</h2>
+			<p>Please <a href="http://www.widevine.com/contact.html">contact us</a> to discuss the Queries Per Second (QPS) requirements for your service. Performance or load testing must be executed on our production systems only.   We will need to know the expected traffic (QPS, duration) for any testing.</p>
+			
+		<h2>Cloud Signing Key Rotation</h2>
+			<p>Signing key credentials for access to the Widevine Cloud License Service can now be enabled to expire and new signing keys will be auto-generated. Please <a href="http://www.widevine.com/contact.html">contact us</a> if you are interested in enabling this function.</p>
+
+
+		<h2>Training Program (CWIP)</h2>
+			<p>The next training sessions in 2018 are scheduled for:</p>
+
+			<ul>
+			<li>Oct 2 - 5 in Brussels, Belgium.</li>
+			</ul>
+
+			
+		<!-- TODO	<a href="#" class="button button-teal button-lg">Read More</a>
         </div>
       </div>
     </div>
@@ -51,6 +150,6 @@ title: News
           <a href="#" class="button button-block button-teal">Load More</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
