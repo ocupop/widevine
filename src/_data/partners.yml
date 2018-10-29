@@ -13,16 +13,16 @@ service_providers:
     logo_image: /assets/img/logo-showtime.png
   - name: Hulu
     logo_image: /assets/img/logo_hulu.png
-  - name: Delta Airlines
-    logo_image: /assets/img/logo_delta.jpg
+  - name: Reliance Jio
+    logo_image: /assets/img/logo_reliancejio.png
   - name: DirecTV
     logo_image: /assets/img/logo_directv.png
   - name: PlayStation Vue
     logo_image: /assets/img/logo_psvue.png
   - name: Sling TV
     logo_image: /assets/img/logo_slingtv.png
-  - name: United Airlines
-    logo_image: /assets/img/logo_unitedair.png
+  - name: Facebook
+    logo_image: /assets/img/logo_facebook.png
 device_vendors:
   - name: Android
     logo_image: /assets/img/logo-android.png
@@ -973,6 +973,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: StreamingBuzz
+    website_url: https://www.streamingbuzz.com/
+    logo_image: /uploads/streamingbuzz_logo.png
+    contact_info_html: >-
+      <p>Name: Jon Vink</p><p>Phone: +31(0)23-7600400 (Office)</p><p>Phone: +31(0)6-53214448 (Mobile)</p><p>Email: <a href="mailto:jon.vink@streamingbuzz.com ">jon.vink@streamingbuzz.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: Sunfibernet
     website_url: https://www.sunfibernet.com/
     logo_image: /uploads/sunfibernet_logo.png
@@ -1106,6 +1114,14 @@ integrators:
     logo_image: /uploads/viaccessorca_logo.png
     contact_info_html: >-
       <p>Email: <a href="mailto:marketing@viaccess-orca.com">marketing@viaccess-orca.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Vimmi
+    website_url: http://vimmi.net/
+    logo_image: /uploads/vimmi_logo.png
+    contact_info_html: >-
+      <p>Name: Eitan Koter, Co-CEO</p><p>Phone: +972-54-5452-455</p><p>Email: <a href="mailto:eitan@vimmi.net">eitan@vimmi.net</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
