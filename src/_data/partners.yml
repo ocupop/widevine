@@ -93,6 +93,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: Ascentac
+    website_url: http://ascentac.com/
+    logo_image: /uploads/ascentac_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:service@ascentac.com">service@ascentac.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: Atnede Software
     website_url: http://www.atendesoftware.pl
     logo_image: /uploads/atendesoft_logo.png
@@ -402,6 +410,14 @@ integrators:
     logo_image: /uploads/gs_labs_logo.png
     contact_info_html: >-
       <p>Name: Sergey Manukhin</p><p>Name: Nikolay Gurban</p><p>Name: Alexander Ekimov</p><p>Email: <a href="mailto:widevine@gs-labs.ru">widevine@gs-labs.ru</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Gospell
+    website_url: http://www.gospell.com/
+    logo_image: /uploads/gospell_logo.png
+    contact_info_html: >-
+      <p>Name: 贺亚（Ya He)</p><p>Phone:+8613824363480</p><p>Email: <a href="mailto:hey@gospell.com">hey@gospell.com</a></p><br><p>Name: 麦煜峰（Yufeng Mai)</p><p>Phone:+8613612817644</p><p>Email: <a href="mailto:maiyf@gospell.com">maiyf@gospell.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -921,7 +937,7 @@ integrators:
     website_url: http://smartlabs.tv/en/
     logo_image: /uploads/smartlabs_logo.png
     contact_info_html: >-
-      <p>Name: Gary Hamer, SVP Sales and Business Development</p><p>Name: Sergey Kruykov, Sales Director</p><p>Phone: +7.495.645.44.56 ext. 1342</a></p><p>Email: <a href="mailto:widevine@smartlabs.tv">widevine@smartlabs.tv</a></p>
+      <p>Name: Gary Hamer, SVP Sales and Business Development</p><p>Phone: +49 3021 782150</a></p><p>Email: <a href="mailto:widevine@smartlabs.tv">widevine@smartlabs.tv</a></p>
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Classic Live Packaging</p><p>Widevine Modular DRM</p>
 
@@ -1074,6 +1090,14 @@ integrators:
     logo_image: /uploads/unext_logo.png
     contact_info_html: >-
       <p>Name: Kakimoto Takatoshi</p><p>Phone: +8 1367414431</p><p>Email: <a href="mailto:cwip@unext.jp">cwip@unext.jp</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Uniqcast
+    website_url: http://uniqcast.com/
+    logo_image: /uploads/uniqcast_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:widevine@uniqcast.com">widevine@uniqcast.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
