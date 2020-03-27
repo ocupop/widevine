@@ -1,13 +1,19 @@
 ---
 layout: default
 title: News
+pagination:
+  enabled: true
 ---
 <!-- <div class="search">
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="content">
-          <input type="text" placeholder="Search...">
+          <form action="{{ site.baseurl }}/search" method="get">
+            <label for="search-box" class="sr-only">Search</label>
+            <input type="text" id="search-box" name="query" placeholder="Search...">
+            <input type="submit" value="Search Posts">
+          </form>
         </div>
       </div>
     </div>
@@ -314,13 +320,36 @@ title: News
     </div>
     <hr class="divider">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-lg-8">
         <div class="content">
-          <h2>News Post Title</h2>
-          <p class="post-details">03/14/18 by Alex Lee</p>
+          <div class="infinite-scroll">
+          {% for post in paginator.posts %}
+            <div class="post">
+              <h2>{{ post.title }}</h2>
+              <p class="post-details">{{ post.date | date: "%D"}} {% if post.author %}by {{ post.author }}{% endif %}</p>
+              {{ post.content | truncatewords: 30 }}
+              <br>
+              <a href="{{ post.url }}" class="button button-teal button-lg">Read More</a>  
+            </div>
+            <hr>
+            {% endfor %}
+            <div class="pagination sr-only">
+              {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+              {% else %}
+                <span class="previous">Previous</span>
+              {% endif %}
+              <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+              {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+              {% else %}
+                <span class="next ">Next</span>
+              {% endif %}
+            </div>
+          </div>  
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-lg-4">
         <div class="content">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptate animi veniam iure, voluptatum, earum nulla esse quas magnam architecto aspernatur quae nesciunt vel at tempore a, reiciendis! Dolor, architecto.</p>
           <a href="#" class="button button-teal button-lg">Read More</a>

@@ -1,0 +1,47 @@
+<div class="blog-filters accordion d-none d-lg-block" id="blog-sidebar" role="tablist" aria-multiselectable="true">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <h4>
+        <a role="button" data-toggle="collapse" data-parent="#blog-sidebar" data-target="#collapse-categories" aria-expanded="true" aria-controls="collapse-categories">
+          Categories
+          <div class="icon-plus">
+            <span class="icon-bar bar-1"></span>
+            <span class="icon-bar bar-2"></span>
+          </div>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-categories" class="collapse show" role="tabpanel">
+      <div class="card-body">
+        <ul>
+          {% for category in site.categories %}
+            <li><a href="/archives/category/{{ category[0] | slugify }}/">{{ category[0] | capitalize }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <h4>
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#blog-sidebar" data-target="#collapse-archive" aria-expanded="false" aria-controls="collapse-archive">
+          Archive
+          <div class="icon-plus">
+            <span class="icon-bar bar-1"></span>
+            <span class="icon-bar bar-2"></span>
+          </div>
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-archive" class="collapse {% if page.layout == 'post' %}show{% endif %}" role="tabpanel">
+      <div class="card-body">
+        <ul>
+          {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+          {% for year in postsByYear %}
+            <li><a href="/archives/years/{{ year.name }}">{{ year.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

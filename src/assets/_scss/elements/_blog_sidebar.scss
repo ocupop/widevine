@@ -1,0 +1,63 @@
+#blog-sidebar {
+  font-family: 'Saira', sans-serif;
+  h4 {
+    margin-bottom: 0;
+  }
+  .card {
+    border: 1px solid $brand-primary;
+    border-radius: 0;
+  }
+  .card-header {
+    border-radius: 0;
+    border: 0;
+    background-color: $brand-primary;
+    position: relative;
+    
+    a {
+      color: $white;
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+      }
+      &.collapsed {
+        .icon-plus {
+          .icon-bar {
+            &.bar-2 {
+              transform: rotate(0);
+            }
+          }
+        }
+      }
+    }
+  }
+  .card-body {
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      li {
+        font-size: 14px;
+        color: $brand-primary;
+        a {
+          color: $brand-primary;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .filter {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .icon-plus {
+    .icon-bar {
+      &.bar-2 {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  
+}

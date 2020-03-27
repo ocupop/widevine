@@ -1,0 +1,31 @@
+.icon-plus {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 44px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  background-color: $blue-dark;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  .icon-bar {
+    background-color: $white;
+    &.bar-1 {
+      width: 20px;
+      height: 1px;
+      margin-left: -9px;
+    }
+    &.bar-2 {
+      width: 1px;
+      height: 20px;
+      transform: rotate(90deg);
+      margin-left: -11px;
+      @include transition(.4s);
+    }
+  }
+
+
+}
