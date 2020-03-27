@@ -17,8 +17,8 @@ service_providers:
     logo_image: /assets/img/logo_reliancejio.png
   - name: DirecTV
     logo_image: /assets/img/logo_directv.png
-  - name: PlayStation Vue
-    logo_image: /assets/img/logo_psvue.png
+  - name: Starz
+    logo_image: /assets/img/logo_starz.png
   - name: Sling TV
     logo_image: /assets/img/logo_slingtv.png
   - name: Facebook
@@ -60,13 +60,19 @@ integrators:
       <p>Widevine Classic VOD Packaging</p><p>Widevine Modular
       DRM</p>
 
+  - name: Agile Content
+    website_url: http://www.agilecontent.com/
+    logo_image: /uploads/agile_content_logo.png
+    contact_info_html: >-
+      <p>Name: Filipe Badaro</p><p>Name: Thiago Bessa</p><p>Phone: +55 11 3045-5010</p><p>Email: <a href="mailto:cwip@agilecontent.com">cwip@agilecontent.com</a></p>
+    certifications_html: <p>Widevine Modular DRM</p>
+
   - name: Alticast
     website_url: http://www.alticast.com
     logo_image: /uploads/alticast-logo.png
     contact_info_html: >-
       <p>Name: YoungMi Shin</p><p>Name: EunJung Seo&nbsp;</p><p>Phone: +82 2 2007
-      7700</p><p>Email:&nbsp;<a
-      href="javascript:void(location.href='mailto:'+String.fromCharCode(103,99,119,105,112,64,97,108,116,105,99,97,115,116,46,99,111,109))">gcwip@alticast.com</a></p>
+      7700</p><p>Email: <a href="mailto:cwip@alticast.com">cwip@alticast.com</a></p>
     certifications_html: <p>Widevine Modular DRM</p>
 
   - name: Antena 3
@@ -76,6 +82,14 @@ integrators:
       <p>Name: David Gonzalez</p><p>Name: Miguel Rodriguez</p><p>Email: <a href="mailto:cwip@antena3tv.es">cwip@antena3tv.es</a></p>
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Classic Live Packaging</p>
+
+  - name: Antik Telecom
+    website_url: https://www.antik.sk/
+    logo_image: /uploads/antik_telecom_logo.png
+    contact_info_html: >-
+      <p>Name: Vlastimil Lakatos</p><p>Email: <a href="mailto:widevine@antik.sk">widevine@antik.sk</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
 
   - name: Around
     website_url: http://we-are-around.com
@@ -109,21 +123,21 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Classic License Server</p>
 
-  - name: AVOV Technologies
-    website_url: http://avovtech.net
-    logo_image: /uploads/avov_logo.png
-    contact_info_html: >-
-      <p>Name: Yudong Shao</p><p>Phone: +86-13699212957</p><p>Email: <a href="mailto:sean.y@avovtech.net">sean.y@avovtech.net</a></p><br><p>Name: Yufeng Shao</p><p>Phone: +86-13439262360</p><p></p>Email: <a href="mailto:Nathan@avovtech.net ">Nathan@avovtech.net</a>
-    certifications_html: >-
-      <p>Widevine Modular DRM</p>
-
   - name: Axinom
     website_url: http://axinom.com
     logo_image: /uploads/axinom_logo.jpg
     contact_info_html: >-
-      <p>Name: Jürgen Jõgeva</p><p>Email: <a href="mailto:jogeva@axinom.com">jogeva@axinom.com</a></p>
+      <p>Name: Johannes Jauch</p><p>Email: <a href="mailto:jauch@axinom.com">jauch@axinom.com</a></p>
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Modular DRM</p>
+
+  - name: Azdio
+    website_url: http://azdio.com/
+    logo_image: /uploads/azdio_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:cwip@azdio.com">cwip@azdio.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
 
   - name: Azimut Bus Solutions
     website_url: http://www.azimutelectronics.es
@@ -173,6 +187,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: Brightblue
+    website_url: https://brightblue.tv/
+    logo_image: /uploads/brightblue_logo.png
+    contact_info_html: >-
+      <p>Name: Léon Spaans</p><p>Email: <a href="mailto:l.spaans@brightblue.tv">l.spaans@brightblue.tv</a></p><br><p>Name: Chris Ros</p><p>Email: <a href="mailto:c.ros@brightblue.tv">c.ros@brightblue.tv</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: Brightcove
     website_url: http://go.brightcove.com/forms/contact-sales/
     logo_image: /uploads/brightcove_logo.jpg
@@ -201,7 +223,7 @@ integrators:
     website_url: http://www.castlabs.com
     logo_image: /uploads/castlabs_logo.png
     contact_info_html: >-
-      <p>Name: Susanne Guth-Orlowski</p><p>Phone: +49.162.2678760</p><p>Email: <a href="mailto:sales@castlabs.com">sales@castlabs.com</a></p>
+      <p>Email: <a href="mailto:sales@castlabs.com">sales@castlabs.com</a></p>
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Classic Live Packaging</p><p>Widevine Modular DRM</p>
 
@@ -213,19 +235,19 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: CDNnow
+    website_url: https://cdnnow.pro/
+    logo_image: /uploads/cdnnow_logo.png
+    contact_info_html: >-
+      <p>Name: Gleb Shchavlev</p><p></p>Name: Dmitry Pisman<p>Email: <a href="mailto:drm@cdnnow.pro">drm@cdnnow.pro</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: CID
     website_url: http://cid.com/
     logo_image: /uploads/cid_logo.png
     contact_info_html: >-
       <p>Name: Alexander Stumpfegger</p><p>Email: <a href="mailto:A.stumpfegger@cid.com">A.stumpfegger@cid.com</a></p><br><p>Name: Timo Geppert</p><p>Email: <a href="mailto:t.geppert@cid.com">t.geppert@cid.com</a></p>
-    certifications_html: >-
-      <p>Widevine Modular DRM</p>
-
-  - name: Cisco
-    website_url: http://www.cisco.com
-    logo_image: /uploads/cisco_logo.png
-    contact_info_html: >-
-      <p>Name: Amit Wohl</p><p>Phone: +972 2 589 4453</p><p>Email: <a href="mailto:amwohl@cisco.com">amwohl@cisco.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -245,11 +267,19 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: Cornea Aero Systems
+    website_url: http://cornea.aero/
+    logo_image: /uploads/cornea_logo.png
+    contact_info_html: >-
+      <p>Halil Enver Soylu</p><p>Mehmet Çavdar</p><p>Mahmud Rasih Çelenlioğlu</p><p>Email: <a href="mailto:contentsecurity@cornea.aero">contentsecurity@cornea.aero</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: Coretrust
     website_url: http://coretrust.com/en/main/index.asp
     logo_image: /uploads/coretrust_logo.png
     contact_info_html: >-
-      <p>Name: Juno Oh</p><p>Phone: +82-2-2135-5132</p><p>Email: <a href="mailto:bizall@coretrust.com ">bizall@coretrust.com</a></p>
+      <p>Name: Juno Oh</p><p>Phone: +82-2-2135-5132</p><p>Email: <a href="mailto:bizall@coretrust.com">bizall@coretrust.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -265,7 +295,7 @@ integrators:
     website_url: http://www.cryptoguard.com/
     logo_image: /uploads/cryptoguard_logo.png
     contact_info_html: >-
-      <p>Name: Josip Mårtensson</p><p>Email: <a href="mailto:josip@cryptoguard.com">josip@cryptoguard.com</a></p><br><p>Name: Stefan Asp</p><p>Email: <a href="mailto:stefan@cryptoguard.com">stefan@cryptoguard.com</a></p>
+      <p>Name: Josip Mårtensson</p><p>Email: <a href="mailto:josip@cryptoguard.com">josip@cryptoguard.com</a></p><br><p>Name: Jörgen Hedberg</p><p>Email: <a href="mailto:jorgen@cryptoguard.com">jorgen@cryptoguard.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -273,7 +303,15 @@ integrators:
     website_url: http://www.cyfrowypolsat.pl
     logo_image: /uploads/cyfrowy_polstat.logo.png
     contact_info_html: >-
-      <p>Name: Krzysztof Calinski</p><p>Email: <a href="mailto:Email:krzysztof.calinski@cyfrowypolsat.pl">Email:krzysztof.calinski@cyfrowypolsat.pl</a></p>
+      <p>Name: Krzysztof Calinski</p><p>Email: <a href="mailto:krzysztof.calinski@cyfrowypolsat.pl">krzysztof.calinski@cyfrowypolsat.pl</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Cylo
+    website_url: https://cylo.com
+    logo_image: /uploads/cylo_logo.png
+    contact_info_html: >-
+      <p>Name: Peter Pajchl</p><p>Email: <a href="mailto:peter.pajchl@cylo.com">peter.pajchl@cylo.com</a></p><br><p>Name: Branko Simic</p><p>Email: <a href="mailto:branko.simic@cylo.com">branko.simic@cylo.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -341,6 +379,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: DNA
+    website_url: https://www.dna.fi/
+    logo_image: /uploads/dna_logo.png
+    contact_info_html: >-
+      <p>Name: Timo Kousa</p>Email: <a href="mailto:timo.kousa@dna.fi">timo.kousa@dna.fi</a></p><br>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: EBOX
     website_url: http://ebox.ca
     logo_image: /uploads/ebox_logo.png
@@ -361,7 +407,7 @@ integrators:
     website_url: http://www.erlab.com.tr
     logo_image: /uploads/erlab_logo.png
     contact_info_html: >-
-      <p>Name: Mahmut Şamil Sağıroğlu</p><p>Email: <a href="mailto:widevine@erlabtechnology.com ">widevine@erlabtechnology.com</a></p>
+      <p>Name: Mahmut Şamil Sağıroğlu</p><p>Name: Halil Enver Soylu</p><p>Email: <a href="mailto:widevine@erlabtechnology.com ">widevine@erlabtechnology.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -429,14 +475,6 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Classic License Server</p><p>Widevine Modular DRM</p>
 
-  - name: Huawei
-    website_url: http://www.huawei.com/en/
-    logo_image: /uploads/huawei_logo.png
-    contact_info_html: >-
-      <p>Name: 陈银苗(Yinmiao Chen)</p><p>Phone: +8613590213331</p><p>Email: <a href="mailto:chenyinmiao@huawei.com">chenyinmiao@huawei.com</a></p><br><p>Name: 徐斌(Bin Xu)</p><p>Phone: +8618694970071</p><p>Email: <a href="mailto:xubin713@huawei.com">xubin713@huawei.com</a></p>
-    certifications_html: >-
-      <p>Widevine Modular DRM</p>
-
   - name: IdeaNova Technologies
     website_url: http://www.ideanovatech.com
     logo_image: /uploads/ideanova_logo.jpg
@@ -453,6 +491,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: Immfly
+    website_url: https://immfly.com/
+    logo_image: /uploads/immfly_logo.png
+    contact_info_html: >-
+      <p>Name: Alfredo Ibanez</p><p>Email: <a href="mailto:cwip@immfly.com">cwip@immfly.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: IndieReign
     website_url: http://www.indiereign.com
     logo_image: /uploads/indiereign_logo.png
@@ -460,6 +506,14 @@ integrators:
       <p>Name: David White</p><p>Email: <a href="mailto:cwip@indiereign.com">cwip@indiereign.com</a></p>
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p>
+
+  - name: Inisoft
+    website_url: http://inisoft.tv/
+    logo_image: /uploads/inisoft_logo.png
+    contact_info_html: >-
+      <p>Name: Joonsang Lee</p><p>Email: <a href="mailto:joonsang.lee@inisoft.tv">joonsang.lee@inisoft.tv</a></p><br><p>Name: Eungoo Song</p><p>Email: <a href="mailto:sales@inisoft.tv">sales@inisoft.tv</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
 
   - name: Inka Networks
     website_url: http://www.inka.co.kr/
@@ -498,14 +552,6 @@ integrators:
     logo_image: /uploads/insys_logo.png
     contact_info_html: >-
       <p>Email: <a href="mailto:play@insys.pl">play@insys.pl</a></p>
-    certifications_html: >-
-      <p>Widevine Modular DRM</p>
-
-  - name: Interactive Mobility
-    website_url: http://interactive-mobility.com/#en/
-    logo_image: /uploads/interactive_mobility_logo.png
-    contact_info_html: >-
-      <p>Name: Tanguy Morel</p><p>Phone: +331 84 17 53 46</p><p>Email: <a href="mailto:hello@interactive-mobility.com">hello@interactive-mobility.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -573,6 +619,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: L&T Technology Services Limited
+    website_url: https://www.ltts.com/
+    logo_image: /uploads/ltts_logo.png
+    contact_info_html: >-
+      <p>Name: Asha Kulkarni</p><p>Phone: +91-7760696000</p><p>Email: <a href="mailto:asha.kulkarni@ltts.com">asha.kulkarni@ltts.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: Liberty Global
     website_url: http://www.libertyglobal.com/
     logo_image: /uploads/liberty_global_logo.png
@@ -597,11 +651,27 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p>
 
+  - name: Livesport TV
+    website_url: https://livesporttv.cz/kariera
+    logo_image: /uploads/livesport_tv_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:cwip@livesporttv.cz">cwip@livesporttv.cz</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: LogicLogic
     website_url: http://www.logiclogic.jp/
     logo_image: /uploads/logiclogic_logo.png
     contact_info_html: >-
       <p>Name: Daisuke Miyajima, COO</p><p>Phone: +81-3-5459-5753</p><p>Email: <a href="mailto:cwip@logiclogic.jp">cwip@logiclogic.jp</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: MaginePro
+    website_url: https://www.maginepro.com/
+    logo_image: /uploads/magine_pro_logo.png
+    contact_info_html: >-
+      <p>Name: Fredrik Eliasson</p><p>Email: <a href="mailto:fredrik.eliasson@magine.com">fredrik.eliasson@magine.com</a></p><br><p>Name: Adam Bergmark</p><p>Email: <a href="mailto:adam.bergmark@magine.com">adam.bergmark@magine.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -629,11 +699,11 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
-  - name: Microsoft Azure
-    website_url: https://azure.microsoft.com/en-us/services/media-services/
-    logo_image: /uploads/ms_azure_logo.png
+  - name: Mediakind
+    website_url: https://www.mediakind.com/
+    logo_image: /uploads/mediakind_logo.png
     contact_info_html: >-
-      <p>Name: Mingfei Yan</p><p>Email: <a href="mailto:azuremediawidevine@microsoft.com">azuremediawidevine@microsoft.com</a></p>
+      <p>Name: Rabih Filfili</p><p>Email: <a href="mailto:rabih.filfili@MediaKind.com">rabih.filfili@MediaKind.com</a></p><br><p>Name: Weiwan Liu</p><p>Email: <a href="mailto:weiwan.liu@MediaKind.com">weiwan.liu@MediaKind.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -642,6 +712,22 @@ integrators:
     logo_image: /uploads/mediatech_logo.png
     contact_info_html: >-
       <p>Name: Evgeniy Kozhuhovskiy</p><p>Name: Dzianis Voranau</p><p>Email: <a href="mailto:info@mediatech.by">info@mediatech.by</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Microsoft Azure
+    website_url: https://azure.microsoft.com/en-us/services/media-services/
+    logo_image: /uploads/ms_azure_logo.png
+    contact_info_html: >-
+      <p>Name: Mingfei Yan</p><p>Email: <a href="mailto:azuremediawidevine@microsoft.com">azuremediawidevine@microsoft.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Mirada
+    website_url: https://www.mirada.tv/
+    logo_image: /uploads/mirada_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:partners@mirada.tv">partners@mirada.tv</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -658,6 +744,22 @@ integrators:
     logo_image: /uploads/mobitv_logo.jpg
     contact_info_html: >-
       <p>Name: Katie North</p><p>Email: <a href="mailto:knorth@mobitv.com">knorth@mobitv.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: ModernTV s.r.o.
+    website_url: https://www.moderntv.eu/
+    logo_image: /uploads/moderntv_logo.png
+    contact_info_html: >-
+      <p>Name: Ludek Svoboda</p><p>Email: <a href="mailto:ludek.svoboda@moderntv.eu">ludek.svoboda@moderntv.eu</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Moment
+    website_url: https://moment.tech/
+    logo_image: /uploads/moment_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:hello@moment.tech">hello@moment.tech</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -701,6 +803,22 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p>
 
+  - name: Movidone
+    website_url: http://movidone.com/
+    logo_image: /uploads/movidone_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:contact@movidone.com">contact@movidone.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: MVTV Broadcasting
+    website_url: https://www.mvtv.co.th/
+    logo_image: /uploads/mvtv_logo.png
+    contact_info_html: >-
+      <p>Name: Sith Chanwatanapong</p><p>Email: <a href="mailto:email:sith@mvtv.co.th">email:sith@mvtv.co.th</a></p><br><p>Name: Porrarit Mahakkapong</p><p>Email: <a href="mailto:email:porrarit_m@mvtv.co.th">email:porrarit_m@mvtv.co.th</a></p><br><p>Phone: +6620263115</p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: The Kudelski Group
     website_url: https://www.nagra.com/
     logo_image: /uploads/nagra_kudelski_logo.png
@@ -725,6 +843,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Modular DRM</p>
 
+  - name: Shenzhen National Engineering Laboratory of Digital Television
+    website_url: http://www.neldtv.org
+    logo_image: /uploads/neldtv_logo.png
+    contact_info_html: >-
+      <p>Name: Xiaolong Yu</p><p>Phone: +86 13480831427</p><p>Email: <a href="mailto:xlyu@neldtv.org">xlyu@neldtv.org</a></p><br><p>Name: Lin Chang</p><p>Phone: (0086）18948359707</p><p>Email: <a href="mailto:lchang@neldtv.org">lchang@neldtv.org</a>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: NEP Worldwide
     website_url: https://www.nepworldwide.nl/
     logo_image: /uploads/nep_logo.png
@@ -732,14 +858,6 @@ integrators:
       <p>Name: Tommie Rekers</p><p>Name: Tiemen Strijk</p><p>Email: <a href="mailto:cwip@nepworldwide.nl">cwip@nepworldwide.nl</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
-
-  - name: Netris
-    website_url: http://www.netris.ru/
-    logo_image: /uploads/netris_logo.jpg
-    contact_info_html: >-
-      <p>Name: Roman Belyakov</p><p>Email: <a href="mailto:r.belyakov@netris.ru">r.belyakov@netris.ru</a></p><br><p>Name: Dmitry Chumak</p><p>Email: <a href="mailto:d.tchoomak@netris.ru">d.tchoomak@netris.ru</a></p><br><p>Phone: +7.495.950.5525 x1207</p>
-    certifications_html: >-
-      <p>Widevine Classic VOD Packaging</p><p>Widevine Modular DRM</p>
 
   - name: Neustar
     website_url: http://www.neustar.biz
@@ -757,19 +875,19 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
-  - name: NexStreaming
-    website_url: http://www.nexstreaming.com/
-    logo_image: /uploads/nexstreaming_logo.jpg
+  - name: NexPlayer
+    website_url: https://www.nexplayersdk.com/
+    logo_image: /uploads/nexplayer_logo.png
     contact_info_html: >-
-      <p>Name: Julián Abad</p><p>Email: <a href="mailto:julian.abad@nexstreaming.com">julian.abad@nexstreaming.com</a></p>
+      <p>Name: Carlos Lucas</p><p>Email: <a href="mailto:Carlos.lucas@nexplayer.com">Carlos.lucas@nexplayer.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
   - name: Nextscape
-    website_url: http://www.nextscape.net
+    website_url: https://www.nextscape.net/solutions/multiDRM
     logo_image: /uploads/nextscape_logo.jpg
     contact_info_html: >-
-      <p>Name: Ken Sawada</p><p>Name: Yu Okazaki</p><p>Phone: +81-3-5325-1301</p><p>Email: <a href="mailto:widevine@nextscape.net">widevine@nextscape.net</a></p>
+      <p>Name: Ken Sawada</p><p>Name: Yu Okazaki</p><p>Phone: +81-3-5325-1301</p><p>Email: <a href="mailto: widevine@nextscape.net"> widevine@nextscape.net</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -820,6 +938,22 @@ integrators:
       <p>Name: Shiney James</p><p>Email: <a href="mailto:shiney.james@panasonic.aero">shiney.james@panasonic.aero</a></p><br><p>Name: Ruchi Kaji</p><p>Email: <a href="mailto:ruchi.kaji@panasonic.aero">ruchi.kaji@panasonic.aero</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
+
+  - name: Piksel
+    website_url: https://piksel.com/
+    logo_image: /uploads/piksel_logo.png
+    contact_info_html: >-
+      <p>Name: Kristan Bullett</p><p>Phone: +44 7899795937</p><p>Email: <a href="mailto:kristan.bullett@piksel.com">kristan.bullett@piksel.com</a></p>
+    certifications_html: >-
+      <p>Widevine Classic VOD Packaging</p><p>Widevine Modular DRM</p>
+
+  - name: Play
+    website_url: https://play.jp
+    logo_image: /uploads/playjp_logo.png
+    contact_info_html: >-
+      <p>Name: Muto Kano</p><p>Name: Yuki Kanamori</p><p>Email: <a href="mailto:sales@uliza.jp">sales@uliza.jp</a></p>
+    certifications_html: >-
+      <p>Widevine Classic VOD Packaging</p><p>Widevine Modular DRM</p>
 
   - name: Primetime
     website_url: https://www.goprimetime.tv
@@ -909,13 +1043,21 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p>
 
-  - name: Skillup Japan
-    website_url: http://skillupjapan.co.jp/
-    logo_image: /uploads/skillup_logo.png
+  - name: SeaChange
+    website_url: http://www.xstream.dk/
+    logo_image: /uploads/seachange_logo.png
     contact_info_html: >-
-      <p>Name: Kenji Saito</p><p>Name: Ryo Tsuyuki</p><p>Email: <a href="mailto:sales@uliza.jp">sales@uliza.jp</a></p>
+      <p>Name: Pawel Łuszczek, VP</p><p>Phone: +48 609 717 111</p><p>Email: <a href="mailto:Pawel.Luszczek@schange.com">Pawel.Luszczek@schange.com</a></p>
     certifications_html: >-
-      <p>Widevine Classic VOD Packaging</p><p>Widevine Modular DRM</p>
+      <p>Widevine Classic VOD Packaging</p><p>Widevine Classic Live Packaging</p><p>Widevine Modular DRM</p>
+
+  - name: Shenzhen SDMC Technology
+    website_url: http://www.sdmctv.com/about-us
+    logo_image: /uploads/shenzhen_sdmc_logo.png
+    contact_info_html: >-
+      <p>Name: Yuefei Wei</p><p>Phone: +8613243896431</p><p>Email: <a href="mailto:weiyuefei@gmail.com">weiyuefei@gmail.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
 
   - name: Skylights SAS
     website_url: http://www.skylights.aero/
@@ -1013,6 +1155,22 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Classic License Server</p><p>Widevine Modular DRM</p>
 
+  - name: Synamedia
+    website_url: https://www.synamedia.com/
+    logo_image: /uploads/synamedia_logo.png
+    contact_info_html: >-
+      <p>Name: Jonathan Maissel</p><p>Phone: +972 2 588 5862</p><p>Email: <a href="mailto:jmaissel@synamedia.com">jmaissel@synamedia.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Synterra Media
+    website_url: http://synterramedia.ru/ru/home/
+    logo_image: /uploads/synterramedia_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:drm@synterramedia.ru">drm@synterramedia.ru </a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: Tata Communications
     website_url: http://www.tatacommunications.com/
     logo_image: /uploads/tatacommunications_logo.png
@@ -1025,7 +1183,7 @@ integrators:
     website_url: http://www.tataelxsi.com/
     logo_image: /uploads/tata.elxsi.logo.jpg
     contact_info_html: >-
-      <p>Name: Saravanan Theckyam</p><p>Phone: +91-9686521743</p><p>Email: <a href="mailto:widevinecwip@tataelxsi.com">widevinecwip@tataelxsi.com</a></p>
+      <p>Name: Tarun Joshi</p><p>Email: <a href="mailto:tarun.joshi@tataelxsi.co.in">tarun.joshi@tataelxsi.co.in</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1037,11 +1195,19 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Modular DRM</p>
 
-  - name: TEO
-    website_url: http://www.teo.lt/
-    logo_image: /uploads/teo_logo.png
+  - name: TecnoActive
+    website_url: http://tecnoactive.cl/
+    logo_image: /uploads/tecnoactive_logo.png
     contact_info_html: >-
-      <p>Email: <a href="mailto:widevine@teo.lt">widevine@teo.lt</a></p>
+      <p>Email: <a href="mailto:rgonzalez@tecnoactive.cl">rgonzalez@tecnoactive.cl</a></p><p>Phone: +56972110234</p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Telia Company
+    website_url: https://www.teliacompany.com/en
+    logo_image: /uploads/telia_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:widevine-team@teliacompany.com">widevine-team@teliacompany.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1077,6 +1243,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: TVIP
+    website_url: http://tvip.ru/en
+    logo_image: /uploads/tvip_logo.png
+    contact_info_html: >-
+      <p>Name: Stanislav Krynin</p><p>Email: <a href="mailto:sales@tvip.ru">sales@tvip.ru</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: Tvinci
     website_url: http://www.tvinci.com/
     logo_image: /uploads/tvinci_logo.jpg
@@ -1109,6 +1283,22 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: VdoCipher
+    website_url: https://www.vdocipher.com
+    logo_image: /uploads/vdocipher_logo.png
+    contact_info_html: >-
+      <p>Name: Siddhant Jain</p><p>Phone: +91-9891271326</p><p>Email: <a href="mailto:siddhant@vdocipher.com">siddhant@vdocipher.com</a></p><br><p>Name: Vibhav Sinha</p><p>Phone: +91-9891271357</p><p>Email: <a href="mailto:vsinha@vdocipher.com">vsinha@vdocipher.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Vector Group
+    website_url: https://www.vector.net
+    logo_image: /uploads/vector_x_labs_logo.jpg
+    contact_info_html: >-
+      <p>Name: Szymon Karbowski</p><p>Phone: +48 797 005 059</p><p>Email: <a href="mailto:s.karbowski@vector.net">s.karbowski@vector.net</a></p><br><p>Name: Dariusz Błaszczak</p><p>Phone: +48 693 002 252‬</p><p>Email: <a href="mailto:d.blaszczak@vector.net">d.blaszczak@vector.net</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: Verimatrix
     website_url: https://www.verimatrix.com/
     logo_image: /uploads/verimatrix_logo.png
@@ -1119,9 +1309,9 @@ integrators:
 
   - name: Verizon Digital Media Services
     website_url: https://www.verizondigitalmedia.com/
-    logo_image: /uploads/verizon_dms_logo.jpg
+    logo_image: /uploads/vdms_logo.png
     contact_info_html: >-
-      <p>Name: Jason Skrifvars</p><p>Phone: +1.424.341.3431</p><p>Email: <a href="mailto:cwip@verizondigitalmedia.com">cwip@verizondigitalmedia.com</a></p>
+      <p>Name: Nate Cahoon</p><p>Phone: (801) 919-9295</p><p>Email: <a href="mailto:cwip@verizondigitalmedia.com">cwip@verizondigitalmedia.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1153,7 +1343,7 @@ integrators:
     website_url: http://www.vimond.com/
     logo_image: /uploads/vimond_logo.jpeg
     contact_info_html: >-
-      <p>Name: David Gonzalez</p><p>Name: Miguel Rodriguez</p><p>Email: <a href="mailto:cwip@antena3tv.es">cwip@antena3tv.es</a></p>
+      <p>Name: Stein Erik Sorhaug</p><p>Email: <a href="mailto:stein.erik@vimond.com">stein.erik@vimond.com</a></p>
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Classic Live Packaging</p><p>Widevine Modular DRM</p>
 
@@ -1185,7 +1375,7 @@ integrators:
     website_url: http://www.vualto.com/
     logo_image: /uploads/vualto_logo.png
     contact_info_html: >-
-      <p>Name: James Burt, CTO</p><p>Phone: +44.1752.916050</p><p>Email: <a href="mailto:james.burt@vualto.com">james.burt@vualto.com</a></p>
+      <p>Name: James Burt, CTO</p><p>Robert Mitchell, Technical Architect - DRM</p><p>Roger Pales, Senior Developer</p><br><p>Phone: +44 (0) 800 031 4352</p><p>Email: <a href="mailto:info@vualto.com">info@vualto.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1205,14 +1395,6 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
-  - name: Xstream
-    website_url: http://www.xstream.dk/
-    logo_image: /uploads/xstream_logo.jpg
-    contact_info_html: >-
-      <p>Name: Frank Thorup, CEO</p><p>Name: Martin Eiler, CTO</p><p>Phone: +45.70.27.17.78</p><p>Email: <a href="mailto:cwip@xstream.dk">cwip@xstream.dk</a></p>
-    certifications_html: >-
-      <p>Widevine Classic VOD Packaging</p><p>Widevine Classic Live Packaging</p><p>Widevine Modular DRM</p>
-
   - name: Yandex
     website_url: https://yandex.com/company/
     logo_image: /uploads/yandex_logo.png
@@ -1226,5 +1408,13 @@ integrators:
     logo_image: /uploads/zattoo_logo.png
     contact_info_html: >-
       <p>Name: Dr. Stefan Lietsch, CTO</p><p>Phone: +41 79 286 3505</p><p>Email: <a href="mailto:stefan@zattoo.com">stefan@zattoo.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: ZTE
+    website_url: https://www.zte.com.cn/global/
+    logo_image: /uploads/zte_logo.png
+    contact_info_html: >-
+      <p>Name: Yanmin Xu</p><p>Phone: +86 18603028006</p><p>Email: <a href="mailto:xu.yanmin@zte.com.cn">xu.yanmin@zte.com.cn</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>

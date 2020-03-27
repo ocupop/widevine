@@ -5,7 +5,7 @@
 - question: 'What will my company gain from becoming a CWIP?'
   answer_html: '<p>CWIPs will be able to sell services related to the installation, integration, and maintenance of Widevine software. CWIPs will be the point of contact for any support issues customers might have with the Widevine software. They will be responsible for installing upgrades to the product as necessary.</p>'
 - question: 'What if my company does not plan to resell Widevine software—for example, my company is an operator and will only use Widevine for our own deployment—do I still need to be a CWIP?'
-  answer_html: '<p>No. CWIP is an optional instructional program designed to educate third parties on the use of Widevine products. However CWIP Training is still highly recommended to shorten the learning curve, become familiar with the ecosystem and technology, and perform troubleshooting.</p>'
+  answer_html: '<p>You do not have to become a CWIP, but in order to launch with Widevine’s DRM products you will then need to contract with an existing CWIP who can provide installation, integration, and support of the Widevine Software. In either case you will need to execute a Master License Agreement directly with Widevine/Google.</p>'
 - question: 'What should I do if I don''t have the skills required to take this class?'
   answer_html: '<p>Please do not sign up for the class.</p>'
 - question: 'Where are CWIP classes held?'
