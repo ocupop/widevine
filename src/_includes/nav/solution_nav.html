@@ -2,17 +2,17 @@
   <div class="container">
     <div class="magicnav">
       <ul class="nav">
-        <li class="nav-item {% if page.url contains 'overview' %} active-item{% endif %}">
-          <a class="nav-link" href="/solutions/overview">Overview</a>
+        <li class="nav-item {% if page.url == '/solutions/' %} active-item{% endif %}">
+          <a class="nav-link" href="{{ '/solutions/' | relative_url }}">Overview</a>
         </li>
         <li class="nav-item{% if page.url contains 'widevine-drm' %} active-item{% endif %}">
-          <a class="nav-link" href="/solutions/widevine-drm">Widevine DRM</a>
+          <a class="nav-link" href="{{ '/solutions/widevine-drm' | relative_url }}">Widevine DRM</a>
         </li>
         <li class="nav-item{% if page.url contains 'widevine-cas' %} active-item{% endif %}">
-          <a class="nav-link" href="/solutions/widevine-cas">Widevine CAS</a>
+          <a class="nav-link" href="{{ '/solutions/widevine-cas' | relative_url }}">Widevine CAS</a>
         </li>
         <li class="nav-item{% if page.url contains '/shaka-player' %} active-item{% endif %}">
-          <a class="nav-link" href="/solutions/shaka-player">Shaka Player + Packager</a>
+          <a class="nav-link" href="{{ '/solutions/shaka-player' | relative_url }}">Shaka Player + Packager</a>
         </li>
       </ul>
       <div class="magic-line"></div>

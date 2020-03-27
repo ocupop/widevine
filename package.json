@@ -10,8 +10,7 @@
   },
   "scripts": {
     "start": "bundle exec gulp",
-    "deploy": "bundle exec gulp deploy",
-    "publish": "bundle exec gulp publish --production"
+    "deploy": "bundle exec gulp publish --production"
   },
   "author": "Ocupop",
   "license": "MIT",
@@ -46,6 +45,7 @@
     "gulp-rev-collector": "^1.3.1",
     "gulp-sass": "^4.0.1",
     "gulp-scss-lint": "^0.6.1",
+    "gulp-shell": "^0.6.5",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",

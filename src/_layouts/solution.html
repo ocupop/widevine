@@ -3,8 +3,26 @@ layout: default
 ---
 {% include nav/solution_nav.html %}
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="content">
+          <h1 class="editable">{{ page.title }}</h1>
+          <div class="editable">
+            {{ page.summary_html }}
+          </div>
+<!-- TODO          <a href="{{ site.documentation_link }}" class="button button-teal button-block">View Documentation</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+{% include content/solution_features.html %}
+
 {{ content }}
 
-{% include components/release_updates.html %}
+<!-- TODO {% include components/release_updates.html %} -->
 
 {% include content/training_summary.html %}

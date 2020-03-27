@@ -1,18 +1,21 @@
-#Widevine#
+# Widevine
 
 This project uses Gulp, Webpack, Jekyll, React
 
-##Getting Started##
+## Getting Started
+
 1. Install Bundler: `gem install bundler`
 2. Install dependencies: `bundle install`
 3. Install Node packages: `npm install`
 
-##Local Startup##
+## Local Startup
+
 1. `cd` to project directory
 2. Start environment: `npm start`
 3. Navigate to [http://localhost:9999/](http://localhost:9999/)
 
-##Publish##
+## Deploy
+
 1. `cd` to project directory
-2. Start environment: `npm run publish`
+2. Deploy site to Firebase: `npm run deploy`
 

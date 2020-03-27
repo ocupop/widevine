@@ -1,9 +1,9 @@
 # Site settings
 title: Widevine
-email: dev@ocupop.com
+email: info@widevine.com
 description: ''
 permalink: pretty
-analytics_code: UA-000000000-1 # accessible via dev@ocupop.com
+analytics_code: 
 
 collections:
   posts:
@@ -17,7 +17,6 @@ source: src
 plugins:
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-lunr-js-search
   - jekyll-archives
   - jekyll-paginate-v2 
@@ -99,5 +98,6 @@ general_questions_link: 'https://support.google.com/widevine/troubleshooter/6027
 documentation_link:
 documentation_shaka_player_link: 'https://github.com/google/shaka-player'
 integration_console_link: 'https://integration.widevine.com'
+login_link: 'https://accounts.google.com/signin/v2/sl/pwd?service=ah&passive=true&continue=https%3A%2F%2Fappengine.google.com%2F_ah%2Fconflogin%3Fcontinue%3Dhttps%3A%2F%2Fcwip-portal.appspot.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin'
 terms_of_service_link: 'https://policies.google.com/terms'
 privacy_policy_link: 'https://policies.google.com/privacy'

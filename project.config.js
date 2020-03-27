@@ -10,12 +10,10 @@ module.exports = {
   publish: {
     src: dest,
     tasks: {
-      webpack:  true,
-      imagemin: true,
-      sass:     true,
       jekyll:   true,
     },
-    github: true,
+    github: false,
+    firebase: true,
   },
   tasks: {
     webpack:  true,
