@@ -1,0 +1,53 @@
+---
+layout: solution3pl
+title: Widevine Third Party Labs (3PL)
+permalink: /solutions/widevine-3pl/
+
+summary_html: >-
+  <p>As the demand for Widevine device integrations continues to grow quickly from partners, a scalable way to provide professional technical integration, support and verification services is required.</p>
+  <p>The Widevine 3PL program allows for licensed and authorized third party partners to assist with the implementation and approval of Widevine integrated devices. Additionally, the 3PL partner may assist with the following items:
+    <ul>
+      <li>Execution of test plans and submitting the results to Widevine for final review.</li>
+      <li>Providing product development support to OEMs and SoCs.</li>
+      <li>Providing upgrade and maintenance related assistance to OEMs and SoCs.</li>
+    </ul>
+  </p>
+  <p>Based on the device submission, integration needs can be supported by a Widevine 3PL to validate Widevine device integrations.</p>
+  <p>Please reach out to any of the Widevine 3PL partners below for further information:</p>
+---
+
+    <div class="container">
+        <div id="partners" class="row">
+            <div class="col">
+                <div class="content">
+                    <h2>Widevine 3PL Partners</h2>
+                    <ul class="table-list">
+                        <li class="heading-row">
+                            <div class="column-heading w-25">Partner</div>
+                            <div class="column-heading w-40">Contact</div>
+                            <div class="column-heading w-40">Android (AOSP)</div>
+<!--                            <div class="column-heading w-20">Browser CDM</div> -->
+                        </li>
+                        {% for partner in site.data.partners.3pl %}
+                        <li>
+                            <div class="item w-20">
+                                <a href="{{ partner.website_url }}" target="_new">
+                                    <img src="{{ partner.logo_image | relative_url }}" alt="{{ partner.name }} Logo" class="img-fluid"></a>
+                            </div>
+                            <div class="item w-40">
+                                {{ partner.contact_info_html }}
+                            </div>
+                            <div class="item w-40" align="center">
+                                <img src="{{ partner.aosp_certifications_image | relative_url }}" alt="Checkmark" class="img-fluid">
+                            </div>
+<!--                            <div class="item w-20" align="center">
+                                <img src="{{ partner.browser_certifications_image | relative_url }}" alt="Checkmark" class="img-fluid">
+                            </div> -->
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
