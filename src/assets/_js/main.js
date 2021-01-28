@@ -12,29 +12,31 @@ function magicNav() {
     var $activeItem = $(this).find(".active-item a");
     var $activeItemLeft = $activeItem.find(".nav-link").position();
 
-    $magicLine
-      .width($activeItem.width())
-      .css({
-        left: $activeItem.position().left,
-        opacity: 1
-      })
-      .data("origLeft", $activeItem.position().left)
-      .data("origWidth", $activeItem.width());
+    if($activeItemLeft){
+      $magicLine
+        .width($activeItem.width())
+        .css({
+          left: $activeItem.position().left,
+          opacity: 1
+        })
+        .data("origLeft", $activeItem.position().left)
+        .data("origWidth", $activeItem.width());
 
-    $(this).find("li a").hover(function() {
-        $el = $(this);
-        leftPos = $el.position().left;
-        newWidth = $el.parent().width();
-        $magicLine.stop().animate({
-            left: leftPos,
-            width: newWidth
-        });
-    }, function() {
-        $magicLine.stop().animate({
-            left: $magicLine.data("origLeft"),
-            width: $magicLine.data("origWidth")
-        });    
-    });
+      $(this).find("li a").hover(function() {
+          $el = $(this);
+          leftPos = $el.position().left;
+          newWidth = $el.parent().width();
+          $magicLine.stop().animate({
+              left: leftPos,
+              width: newWidth
+          });
+      }, function() {
+          $magicLine.stop().animate({
+              left: $magicLine.data("origLeft"),
+              width: $magicLine.data("origWidth")
+          });    
+      });
+    }
   });
 }
 
@@ -42,9 +44,6 @@ function magicNav() {
 
 $(document).ready(function() {
   magicNav();
-
-  //initiate tab collapse (if in use on this project)
-  $('#my-tab').tabCollapse();
 
   //scroll anchors
   $(document).on('click', 'a[href^="#"]', function (event) {
@@ -95,3 +94,5 @@ $(document).ready(function() {
 $(window).resize(function(){
   magicNav();
 });
+
+

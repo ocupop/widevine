@@ -1,35 +1,15 @@
-.search {
-  input {
-    padding: 5px 10px;
-    color: $white;
-    width: 250px;
-    background-color: $brand-primary;
-    border: 0;
-  }
-  ::-webkit-input-placeholder {
-    color: $white;
-    font-size: 14px;
-  }
-  ::-moz-placeholder {
-    color: $white;
-    font-size: 14px;
-  }
-  :-ms-input-placeholder {
-    color: $white;
-    font-size: 14px;
-  }
-}
-
-#news {
+#news, #post, #archive {
   h2 {
     font-size: 20px;
   }
   p {
     color: $brand-primary;
   }
+  .button {
+    margin: 10px 0;
+  }
   .post-details {
     color: $blue-light;
     font-family: 'Saira', sans-serif;
   }
 }
-
