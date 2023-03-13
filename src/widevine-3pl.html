@@ -23,10 +23,11 @@ summary_html: >-
                     <h2>Widevine 3PL Partners</h2>
                     <ul class="table-list">
                         <li class="heading-row">
-                            <div class="column-heading w-25">Partner</div>
-                            <div class="column-heading w-40">Contact</div>
-                            <div class="column-heading w-40">Android (AOSP)</div>
-<!--                            <div class="column-heading w-20">Browser CDM</div> -->
+                            <div class="column-heading w-20">Partner</div>
+                            <div class="column-heading w-20">Contact</div>
+                            <div class="column-heading w-20">Android (AOSP)</div>
+                            <div class="column-heading w-19">Linux</div>
+                            <div class="column-heading w-20">WV CAS</div>
                         </li>
                         {% for partner in site.data.partners.3pl %}
                         <li>
@@ -34,15 +35,26 @@ summary_html: >-
                                 <a href="{{ partner.website_url }}" target="_new">
                                     <img src="{{ partner.logo_image | relative_url }}" alt="{{ partner.name }} Logo" class="img-fluid"></a>
                             </div>
-                            <div class="item w-40">
+                            <div class="item w-20">
                                 {{ partner.contact_info_html }}
                             </div>
-                            <div class="item w-40" align="center">
+                            <div class="item w-20" align="center">
+                                {% if partner.aosp_certifications_image %}
                                 <img src="{{ partner.aosp_certifications_image | relative_url }}" alt="Checkmark" class="img-fluid">
+                                {% endif %}                                
                             </div>
-<!--                            <div class="item w-20" align="center">
-                                <img src="{{ partner.browser_certifications_image | relative_url }}" alt="Checkmark" class="img-fluid">
-                            </div> -->
+                            <div class="item w-19" align="center">
+                                {% if partner.linux_certifications_image %}
+                                <img src="{{ partner.linux_certifications_image | relative_url }}" alt="Checkmark" class="img-fluid">
+                                {% else %}
+                                <img src="/assets/img/pixel.png" height="40" width="43" class="img-fluid">
+                                {% endif %}
+                            </div>
+                            <div class="item w-20" align="center">
+                                {% if partner.cas_certifications_image %}
+                                <img src="{{ partner.cas_certifications_image | relative_url }}" alt="Checkmark" class="img-fluid">
+                                {% endif %}
+                            </div>
                         </li>
                         {% endfor %}
                     </ul>

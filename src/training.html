@@ -11,7 +11,7 @@ title: CWIP Training
       <div class="col">
         <div class="content">
           <h1>Certified Widevine Implementation Partner Overview</h1>
-          <p class="lead editable">The Certified Widevine Implementation Partner (CWIP) program is designed to allow highly qualified individuals and companies the ability to confidently and successfully install and configure Widevine systems for their clients. The goals of the program are:</p>
+          <p class="lead editable">The Certified Widevine Implementation Partner (CWIP) program is designed to allow highly qualified companies the ability to confidently and successfully install and configure Widevine systems for their clients. The goals of the program are to:</p>
           <div class="editable">
             <ul>
               <li>Teach CWIP candidates how to install, configure and troubleshoot the Widevine system</li>
@@ -26,23 +26,23 @@ title: CWIP Training
     <div class="row">
       <div class="col">
         <div class="content">
-          <h3>In order to become a CWIP the following obligations must be completed:</h3>
+          <h3>In order to become a CWIP the following must be completed:</h3>
           <ul>
-            <li>Execution of legal agreements (Note: Individuals will be unable to register for classes until this step is complete)
+            <li>Execution of CWIP agreements (Note: Individuals will be unable to register for classes until this step is complete)
               <ul class="dashed">
                 <li>Non-Disclosure Agreement</li>
-                <li>Product Licensing Agreement</li>
-                <li>Certified Widevine Implementation Partner Agreement</li>
+                <li>Master Licensing Agreement</li>
+                <li>Certified Widevine Implementation Partner Agreement and Order Form</li>
               </ul>
             </li>
-            <li>Training
+            <li>The 3-DayTraining Session
               <ul class="dashed">
                 <li>Lecture</li>
-                <li>Hands on lab time</li>
+                <li>Hands on lab time (not applicable until in-person classes resume)</li>
               </ul>
             </li>
-            <li>Completion of an online exam with a score of 80% or greater</li>
-            <li>It should be noted that the class is difficult and the requirements for passing are high to ensure the highest quality and customer satisfaction with implementations performed by CWIPs.</li>
+            <li>Completion of an online exam with a score of 90% or greater</li>
+            <li>It should be noted the class is difficult and the requirements for passing are high to ensure the highest quality and customer satisfaction with implementations performed by CWIPs.</li>
           </ul>
         </div>
       </div>
@@ -52,9 +52,10 @@ title: CWIP Training
         <div class="content">
           <h3>To maintain CWIP certification, CWIPs must:</h3>
           <ul>
-            <li>Have on staff a minimum of 2 individuals that are CWIP certified</li>
-            <li>Pass audits of end user sites conducted by Widevine to ensure proper and secure installations</li>
+            <li>Have on staff a minimum of two individuals that are CWIP certified</li>
+            <li>Pass audits of end user sites if conducted by Widevine to ensure proper and secure installations</li>
             <li>End user and content owner experience must remain satisfactory</li>
+              <li>Remain in good standing with their annual CWIP fees</li>
           </ul>
         </div>
       </div>
@@ -66,35 +67,95 @@ title: CWIP Training
           <h2>CWIP Prerequisites</h2>
           <h3>Required skills and background knowledge for training and certification:</h3>
           <ol>
-            <li><span>You must be able to communicate in English (verbally and written)</span>
-              <p>The classes are taught in English exclusively.</p>
+            <li><span>Must be proficient in English (verbal and written) as the classes are in English</span><p></p>
             </li>
-            <li><span>You must bring a laptop with Chrome browser installed to participate in and complete the lab sessions</span>
+            <li><span>Must have a laptop with Chrome browser installed to participate in and complete the lab sessions</span>
 				<p>Please ensure you are using the latest version of Chrome browser.</p>
             </li>
             <li>
               <span>Systems and Network Administration</span>
               <p>The individual should have a good understanding of networks, including CDN setup and maintenance, setup and maintenance of web servers, video content flow to the Internet, firewalls, routing, subnets, TCP and UDP communications.</p>
             </li>
-			<li><span>Experience with Video encoding and Video Encoding Standards (Understand DASH, GOP, iframe, H.264, VP9, MP2TS, etc…)</span>
+			<li><span>Experience with Video encoding and Video Encoding Standards (Understand DASH, GOP, iframe, H.264, VP9, MP2TS, etc.)</span>
 			  <p>Video encoding is one of the most time consuming and complicated portions of an integration and CWIP students should have a very good understanding of video encoding standards, such as IDR frame structure, encoding profiles like baseline, main, high, and which platforms support which profile, video muxing, HLS, etc.</p>
 			</li>
 			<li><span>Experience with Linux</span>
-			<p>Widevine's supported OS is Ubuntu, therefore, all students are expected to have an intermediate knowledge of the Ubuntu environment and working from the command line to complete the lab exercises.</p>
+			<p>Widevine's supported OS is Ubuntu, therefore, all students are expected to have an intermediate knowledge of the Ubuntu environment and work from the command line to complete the lab exercises.</p>
 			</li>
 			<li><span>Experience with Python and XML</span>
 			  <p>Ability to read and edit XML files.  Students should also have an intermediate knowledge of working with Python, including the command line interpreter and reading python code.</p>
 			</li>
 
           </ol>
+            <br>
+        <h2>Requirements for Visitors to Google Offices</h2>
+            <h3>All visitors to Google Offices must provide:</h3>
+            <ol>
+                <li>A government issued photo ID.</li>
+                <li>Proof of Covid-19 vaccination.</li>
+            </ol>
+            <h3 class="text-red">Failure to provide either of these items will prevent you from being allowed to enter a Google office.</h3>
+
         </div>
       </div>
-    </div>
+    </div>                  
+    <hr class="divider">
     <div id="schedule" class="row">
       <div class="col">
         <div class="content">
+          <h2>Upcoming Course Schedule</h2>
+          <p class="text-red"><!--In-person training sessions have been temporarily suspended. Until sessions resume, we now offer a self-study session followed by an online exam. Please register for one of the scheduled courses below, this will place those registered on the list for the next available virtual exam. Exams are offered every other month.<br><br>-->* Class schedules are subject to change</p>
+          <ul class="table-list">
+            <li class="heading-row">
+              <div class="column-heading w-20">Course Title</div>
+              <div class="column-heading w-20">Course Date(s)</div>
+              <div class="column-heading w-20">Location</div>
+              <div class="column-heading w-20">Time</div>
+              <div class="column-heading w-20">Registration Deadline</div>
+            </li>
+            {% for course in site.data.course-schedule %}
+            <li>
+              <div class="item w-20">{{ course.course_title }}</div>
+              <div class="item w-20">{{ course.course_dates }}</div>
+              <div class="item w-20">
+                {% if course.location_line_1 %}
+                  {{ course.location_line_1 }}<br>
+                {% endif %}
+                {% if course.location_line_2 %}
+                  {{ course.location_line_2 }}<br>
+                {% endif %}
+                {% if course.location_line_3 %}
+                  {{ course.location_line_3 }}<br>
+                {% endif %}
+                {% if course.location_line_4 %}
+                  {{ course.location_line_4 }}
+                {% endif %}
+
+                {% if course.map_link %}
+                  <div class="map-link">
+                  <a href="{{ course.map_link }}" class="button" target="_blank">Map</a>
+                </div>  
+                {% endif %}
+              </div>
+              <div class="item w-20">{{ course.course_time }}</div>
+              <div class="item w-20">
+                <span class="deadline">{{ course.registration_deadline }}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+            <a href="{{ site.cwip_registration_link }}" class="button">Apply</a>
+                      
+                  
+
+            
+            
+        </div>
+          
+
+<!--        <div class="content">
           <h3>Upcoming Course Schedule</h3>
-          <p class="text-red">* Class schedules are subject to change</p>
+          <p class="text-red">Due to the COVID-19 pandemic, all in-person training sessions have been cancelled. To become certified we now offer a self-study session followed by an online exam.  Please register in our Upcoming Course Schedule below, this will place those registered on the list for the next available virtual exam.  Exams are offered every other month.<br>* Class schedules are subject to change</p>
           <ul class="table-list">
             <li class="heading-row">
               <div class="column-heading w-20">Course Title</div>
@@ -135,7 +196,7 @@ title: CWIP Training
             </li>
             {% endfor %}
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
     <hr class="divider">
@@ -145,16 +206,18 @@ title: CWIP Training
           <h2>Training Topics</h2>
           <p class="text-red">* Please note course description and content are subject to change</p>
           <h3>Widevine DRM Training</h3>
+<!--            <p>Below is the in-Person Widevine DRM Training schedule. Remote sessions are self-study and do not include the live labs.</p> -->
           <div class="day">
             <strong>Day 1:</strong>
             <ul class="dashed">
-              <li>Lecture
+              <li>Lecture: Widevine Overview
                 <ul>
                   <li>Modular DRM Framework</li>
                   <li>Description of DASH</li>
                   <li>What are Encrypted Media Extensions</li>
                   <li>What are Media Source Extensions</li>
 				  <li>Common Encryption (CENC)</li>
+                  <li>Encoding and Packaging</li>
 				  <li>Packaging and Packaging Options</li>
                   <li>The Widevine Ecosystem</li>
                   <li>The Widevine Client (CDM), Security, and Integration</li>
@@ -166,60 +229,52 @@ title: CWIP Training
           <div class="day">
             <strong>Day 2:</strong>
             <ul class="dashed">
-              <li>Lecture  
+              <li>Lecture: Widevine License Proxy SDK
                 <ul>
-                  <li>Encoding and Packaging</li>
-                    <li>Basics of Encoding</li>
-                    <li>The Video Strean and GOPs</li>
-                    <li>DASH, HLS, and CMAF</li>
-                    <li>Media Formats</li>
-                    <li>Shaka Packager</li>
-                    <li>Best Practices</li>
-                </ul>
-              </li>
-              <li>Lab
-                <ul>
-                  <li>Media Encoding</li>
-                  <li>e-Building the Shaka Packager</li>
-                  <li>Content Encryption</li>
-                  <li>Integration Console</li>
-                </ul>
-              </li>
-              <li>Lecture
-                <ul>
-					<li>Widevine License Proxy</li>
-                  	   <li>Overview and Workflox</li>
-                  	   <li>License requests, enforcement of business rules, and renewals</li>
- 					   <li>Using third party keys</li>
-					   <li>Using Service Certificates</li>
-					   <li>Verified Media Path (VMP)</li>
+                  	   <li>Overview and Workflow</li>
+                       <li>Inspection of a license request</li>
+                  	   <li>Management of Policies and Keys</li>
+					   <li>Returning device information and client capabilities</li>
 				</ul>
               </li>
-              <li>Lab
+              <li>Lab: Widevine License Proxy SDK
                 <ul>
-                  <li>Proxy and Cloud Setup</li>
-                  <li>Content playback using a custom proxy</li>
+                  <li>Proxy SDK Setup</li>
+                  <li>Content playback</li>
                   <li>License Diagnostics</li>
-                  <li>Using custom content keys</li>
+                  <li>Offline playback and license renewals</li>
                 </ul>
+              </li><br>
+              <li>Lecture: Widevine License Server SDK
+                <ul>
+                  	   <li>Overview and Workflow</li>
+                       <li>Installation and Setup</li>
+                  	   <li>Generating a License</li>
+					   <li>Device Security Policies (DSP)</li>
+                       <li>Playback Policies</li>
+				</ul>
               </li>
+              <li>Lab: Widevine License Server SDK
+                <ul>
+                  <li>License SDK Setup</li>
+                  <li>Content playback</li>
+                </ul>
+                </li>            
 			 </ul>
           </div>
 			<div class="day">
             <strong>Day 3:</strong>
             <ul class="dashed">
               <li>
-                Lecture
+                Lecture: Shaka Player
                 <ul>
-                  <li>Shaka Player</li>
                     <li>Overview</li>
                     <li>Setup</li>
                     <li>Code Labs</li>
                 </ul>
               </li>
-              <li>Lecture  
+              <li>Lecture: Android
                 <ul>
-                  <li>Android</li>
                     <li>CDM and Java Classes</li>
                     <li>Certificate Provisioning</li>
                     <li>Key Rotation</li>

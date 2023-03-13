@@ -1,0 +1,49 @@
+---
+layout: solution3pl
+title: Widevine Third Party License Service Providers
+permalink: /solutions/widevine-providers/
+
+summary_html: >-
+  <p>The Widevine Cloud License Service is a no-fee service provided to any Widevine licensee. As a free offerring, Google does not provide any SLA (service level agreement) for the Widevine License service. In addition, Google does not provide 24/7 emergency support for the Widevine License service.</p>
+  
+  <p>If the current Widevine cloud service levels are not appropriate for your needs, you can choose to use a third party license service from a <a href="https://www.widevine.com/training">Widevine certified partner</a>. These multi-DRM services offer SLA commitments above what Widevine can provide, for a fee.</p>
+
+  <p>Please reach out to any of the multi-DRM service partners below for further information.</p>
+---
+
+    <div class="container">
+        <div id="partners" class="row">
+            <div class="col">
+                <div class="content">
+                    <h2>Widevine Third Party License Service Providers</h2>
+                    <p class="text-red">* Widevine has not verified and does not guarantee the services listed below.</p>
+                    <ul class="table-list">
+                        <li class="heading-row">
+                            <div class="column-heading w-20">Partner</div>
+                            <div class="column-heading w-40">Contact</div>
+                            <div class="column-heading w-20">Region</div>                            
+                            <div class="column-heading w-20">SLA</div>
+                        </li>
+                        {% for partner in site.data.partners.license_providers %}
+                        <li>
+                            <div class="item w-20">
+                                <a href="{{ partner.website_url }}" target="_new">
+                                    <img src="{{ partner.logo_image | relative_url }}" alt="{{ partner.name }} Logo" class="img-fluid"></a>
+                            </div>
+                            <div class="item w-40">
+                                {{ partner.contact_info_html }}
+                            </div>
+                            <div class="item w-20" align="center">
+                                {{ partner.region }}
+                            </div>
+                            <div class="item w-20" align="center">
+                                {{ partner.sla }}
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
