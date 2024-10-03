@@ -101,7 +101,7 @@ license_providers:
     website_url: https://www.axinom.com/contact
     logo_image: /uploads/axinom_logo.png
     contact_info_html: >-
-      <p>Email: <a href="mailto:sales@axinom.com">sales@axinom.com</a></p>
+      <p>Web: <a href="https://www.axinom.com/contact">Web Contact</a></p>
     region: Global
     sla: 99.999%
 
@@ -118,6 +118,14 @@ license_providers:
     logo_image: /uploads/3PL_castlabs_logo.svg
     contact_info_html: >-
       <p>Email: <a href="mailto:3pl@castlabs.com">3pl@castlabs.com</a></p>
+    region: Global
+    sla: 99.999%
+
+  - name: EZDRM
+    website_url: https://www.ezdrm.com/
+    logo_image: /uploads/ezdrm_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:simplify@EZDRM.com">simplify@EZDRM.com</a></p>
     region: Global
     sla: 99.999%
 
@@ -149,7 +157,7 @@ license_providers:
     website_url: https://www.inisoft.tv/
     logo_image: /uploads/inisoft_logo.png
     contact_info_html: >-
-      <p><a href="https://www.inisoft.tv/contact.html">Web Contact</a></p>
+      <p>Web: <a href="https://www.inisoft.tv/contact.html">www.inisoft.tv/contact.html</a></p>
     region: Global
     sla: 99.999%
 
@@ -157,7 +165,7 @@ license_providers:
     website_url: http://www.inka.co.kr/
     logo_image: /uploads/inka_logo.jpg
     contact_info_html: >-
-      <p><a href="https://inka.co.kr/contact-us/">Web Contact</a></p>
+      <p>Web: <a href="https://inka.co.kr/contact-us/">inka.co.kr/contact-us/</a></p>
     region: Global
     sla: 99.95%
 
@@ -173,7 +181,7 @@ license_providers:
     website_url: https://www.nagra.com/
     logo_image: /uploads/nagra_kudelski_logo.png
     contact_info_html: >-
-      <p><a href="https://dtv.nagra.com/">Web Contact</a></p>
+      <p>Web: <a href="https://dtv.nagra.com/">dtv.nagra.com</a></p>
     region: Global
     sla: 99.95%
 
@@ -197,7 +205,7 @@ license_providers:
     website_url: https://cloud.redge.media/
     logo_image: /uploads/redge_logo.jpg
     contact_info_html: >-
-      <p><a href="https://cloud.redge.media/">Web Contact</a></p>
+      <p>Web: <a href="https://cloud.redge.media/">cloud.redge.media</a></p>
     region: Global
     sla: 99.999%
 
@@ -208,6 +216,14 @@ license_providers:
 #      <p>Email: <a href="mailto:kyoji@up-stream.tv">kyoji@up-stream.tv</a></p>
 #    region: APAC (Japan)
 #    sla: 99.999%
+
+  - name: VdoCipher
+    website_url: https://vdocipher.com
+    logo_image: /uploads/vdocipher_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="support@vdocipher.com">support@vdocipher.com</a></p>
+    region: Global
+    sla: 99.99%
 
   - name: VisionTech Solutions
     website_url: https://visionts.io/
@@ -239,12 +255,12 @@ integrators:
       <p>Widevine Classic VOD Packaging</p><p>Widevine Modular
       DRM</p>
 
-  - name: ADB
-    website_url: https://www.adbglobal.com/
-    logo_image: /uploads/adb_logo.png
-    contact_info_html: >-
-      <p>Name: Arkadiusz Zdanowiczo</p><p>Name: Czeslaw Zubowicz</p><br><p>Email: <a href="mailto:cwip@adbglobal.com">cwip@adbglobal.com</a></p>
-    certifications_html: <p>Widevine Modular DRM</p>
+#  - name: ADB
+#    website_url: https://www.adbglobal.com/
+#    logo_image: /uploads/adb_logo.png
+#    contact_info_html: >-
+#      <p>Name: Arkadiusz Zdanowiczo</p><p>Name: Czeslaw Zubowicz</p><br><p>Email: <a href="mailto:cwip@adbglobal.com">cwip@adbglobal.com</a></p>
+#    certifications_html: <p>Widevine Modular DRM</p>
 
   - name: Agile Content
     website_url: http://www.agilecontent.com/
@@ -259,6 +275,14 @@ integrators:
     contact_info_html: >-
       <p>Name: YoungMi Shin</p><p>Name: EunJung Seo&nbsp;</p><p>Phone: +82 2 2007
       7700</p><p>Email: <a href="mailto:cwip@alticast.com">cwip@alticast.com</a></p>
+    certifications_html: <p>Widevine Modular DRM</p>
+
+  - name: Altimedia
+    website_url: http://www.altimedia.com
+    logo_image: /uploads/altimedia_logo.png
+    contact_info_html: >-
+      <p>Name: Sunyoung Kang</p><p>Name: Hamin Choi</p>
+      <p>Email: <a href="mailto:widevine@altimedia.com">widevine@altimedia.com</a></p>
     certifications_html: <p>Widevine Modular DRM</p>
 
   - name: Antena 3
@@ -461,14 +485,6 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
-  - name: Cornea Aero Systems
-    website_url: http://cornea.aero/
-    logo_image: /uploads/cornea_logo.png
-    contact_info_html: >-
-      <p>Halil Enver Soylu</p><p>Mehmet Çavdar</p><p>Mahmud Rasih Çelenlioğlu</p><p>Email: <a href="mailto:contentsecurity@cornea.aero">contentsecurity@cornea.aero</a></p>
-    certifications_html: >-
-      <p>Widevine Modular DRM</p>
-
   - name: Coretrust
     website_url: http://coretrust.com/en/main/index.asp
     logo_image: /uploads/coretrust_logo.png
@@ -506,6 +522,14 @@ integrators:
     logo_image: /uploads/csg_logo.png
     contact_info_html: >-
       <p>Name: Jim Benz</p><p>Phone: 1-312-660-5667</p><p>Email: <a href="mailto:Jim.Benz@csgi.com">Jim.Benz@csgi.com</a></p><br><p>Name: Qynn Christenson</p><p>Phone: 1-312-980-5561</p><p>Email: <a href="mailto:Qynn.Christenson@csgi.com">Qynn.Christenson@csgi.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: CVTE
+    website_url: https://www.cvte.com
+    logo_image: /uploads/cvte_logo.jpg
+    contact_info_html: >-
+      <p>Email: <a href="mailto:zengqingkai@cvte.com">zengqingkai@cvte.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -829,14 +853,6 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Modular DRM</p>
 
-  - name: io83
-    website_url: https://www.io83.tv/
-    logo_image: /uploads/io83_logo.svg
-    contact_info_html: >-
-      <p>Email: <a href="mailto:cwip@io83.tv">cwip@io83.tv</a></p>
-    certifications_html: >-
-      <p>Widevine Modular DRM</p>
-
   - name: Irdeto
     website_url: http://irdeto.com/
     logo_image: /uploads/irdeto_logo.png
@@ -869,6 +885,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Classic VOD Packaging</p><p>Widevine Classic License Server</p><p>Widevine Modular DRM</p>
 
+  - name: Kinescope
+    website_url: http://kinescope.io/
+    logo_image: /uploads/kinescope_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:hello@kinescope.io">hello@kinescope.io</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: KKBox
     website_url: http://www.kkbox.com/
     logo_image: /uploads/kkbox_logo.png
@@ -890,6 +914,14 @@ integrators:
     logo_image: /uploads/ltts_logo.png
     contact_info_html: >-
       <p>Name: Mallikarjuna MV</p><p>Phone: 9845019634</p><p>Email: <a href="mailto:Mallikarjuna.MV@Ltts.com">Mallikarjuna.MV@Ltts.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Learnyst
+    website_url: https://www.learnyst.com
+    logo_image: /uploads/learnyst_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:support@learnyst.com">support@learnyst.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1074,6 +1106,14 @@ integrators:
     logo_image: /uploads/movidone_logo.png
     contact_info_html: >-
       <p>Email: <a href="mailto:contact@movidone.com">contact@movidone.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: MSI
+    website_url: http://www.msi.com/
+    logo_image: /uploads/msi_logo.jpg
+    contact_info_html: >-
+      <p>Email: <a href="mailto:funtoro@msi.com">funtoro@msi.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1434,7 +1474,7 @@ integrators:
     website_url: https://streamvx.com/
     logo_image: /uploads/streamvx_logo.png
     contact_info_html: >-
-      <p>Name: Szymon Karbowski</p><p>Phone: +48 797 005 059</p><p>Email: <a href="mailto:sk@streamvx.com">sk@streamvx.com</a></p><br><p>Name: Dariusz Błaszczak</p><p>Phone: +48 511 096 085</p><p>Email: <a href="mailto:db@streamvx.com">db@streamvx.com</a></p>
+      <p>Name: Szymon Karbowski</p><p>Phone: +48 797 005 059</p><p>Email: <a href="mailto:sk@streamvx.com">sk@streamvx.com</a></p><br><p>Name: Aleksander Dutkowski</p><p>Email: <a href="mailto:ad@streamvx.com">ad@streamvx.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1515,6 +1555,22 @@ integrators:
     logo_image: /uploads/tti_logo.png
     contact_info_html: >-
       <p>Name: Jim Yang</p><p>Email: <a href="mailto:jim01_yang@tti.tv">jim01_yang@tti.tv</a></p>Phone: +886-919-095-079</p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: TCC
+    website_url:  https://www.tcc.com.uy/
+    logo_image: /uploads/tcc_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:tcc@tcc.com.uy">tcc@tcc.com.uy</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: TCI Aircraft Interiors
+    website_url: https://tci.aero/
+    logo_image: /uploads/tci_logo.png
+    contact_info_html: >-
+      <p>Name: Berhan Z. Yazıcılar</p><p>Email: <a href="mailto:byazicilar@tci.aero">byazicilar@tci.aero</a></p>Phone: +90 534 062 00 01</p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1694,6 +1750,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: Vision Four
+    website_url: https://www.visionfour.com/
+    logo_image: /uploads/visionfour_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:widevine@visionfour.com">widevine@visionfour.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: VisionTech Solutions
     website_url: https://visionts.io/
     logo_image: /uploads/visiontech_logo.jpg
@@ -1778,6 +1842,6 @@ integrators:
     website_url: https://www.zte.com.cn/global/
     logo_image: /uploads/zte_logo.png
     contact_info_html: >-
-      <p>Name: Yanmin Xu</p><p>Phone: +86 18603028006</p><p>Email: <a href="mailto:xu.yanmin@zte.com.cn">xu.yanmin@zte.com.cn</a></p>
+      <p>Name: Yanmin Xu</p><p>Phone: +86 18603028006</p><p>Email: <a href="mailto:widevine@zte.com.cn">widevine@zte.com.cn</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
