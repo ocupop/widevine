@@ -49,7 +49,7 @@ device_vendors:
   - name: Playstation
     logo_image: /assets/img/logo-playstation.png
 
-3pl:
+threepl:
   - name: Castlabs
     website_url: https://castlabs.com/
     logo_image: /uploads/3PL_castlabs_logo.svg
