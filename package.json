@@ -1,6 +1,6 @@
 {
   "name": "widevine",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Widevine’s DRM solution provides the capability to license, securely distribute and protect playback of content on any consumer device. Content owners, multiple service operators and digital media providers can utilize Widevine’s solutions to ensure revenue generating services keep flowing to whatever device consumers desire.",
   "private": true,
   "repository": {
