@@ -50,6 +50,13 @@ device_vendors:
     logo_image: /assets/img/logo-playstation.png
 
 3pl:
+  - name: Altimedia
+    website_url: https://www.altimedia.com/
+    logo_image: /uploads/3PL_altimedia_logo.jpg
+    contact_info_html: >-
+      <p><a href="mailto:contact@altimedia.com">contact@altimedia.com</a></p>
+    cas_certifications_image: /assets/img/blue-checkmark.png
+
   - name: Castlabs
     website_url: https://castlabs.com/
     logo_image: /uploads/3PL_castlabs_logo.svg
@@ -75,26 +82,6 @@ device_vendors:
     contact_info_html: >-
       <p><a href="mailto:3plwidevine@seirobotics.net">3plwidevine@seirobotics.net</a></p>
     cas_certifications_image: /assets/img/blue-checkmark.png
-
-  - name: Smartlabs
-    website_url: https://www.smartlabs.tv
-    logo_image: /uploads/3PL_smartlabs_logo.png
-    contact_info_html: >-
-      <p><a href="mailto:3plwidevine@smartlabs.tv">3plwidevine@smartlabs.tv</a></p>
-    aosp_certifications_image: /assets/img/blue-checkmark.png
-#    browser_certifications_image: /assets/img/blue-checkmark.png
-    linux_certifications_image: /assets/img/blue-checkmark.png
-
-  - name: Tata Elxsi
-    website_url: https://www.tataelxsi.com/Widevine/index.html
-    logo_image: /uploads/3PL_tata exlsi_logo.png
-    contact_info_html: >-
-      <p><a href="mailto:te_widevine@tataelxsi.co.in">te_widevine@tataelxsi.co.in</a></p>
-    aosp_certifications_image: /assets/img/blue-checkmark.png
-#    browser_certifications_image: /assets/img/blue-checkmark.png
-    linux_certifications_image: /assets/img/blue-checkmark.png
-    cas_certifications_image: /assets/img/blue-checkmark.png
-
 
 license_providers:
   - name: Axinom
@@ -685,6 +672,15 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: Globant
+    website_url: https://www.globant.com/
+    logo_image: /uploads/globant_logo.png
+    contact_info_html: >-
+      <p>Name: Leon Garzon<br>Name: Manuela Quesada</p>
+      <p>Email: <a href="mailto:widevine@globant.com">widevine@globant.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: GoMedia
     website_url: http://gomedia.io
     logo_image: /uploads/gomedia_logo.png
@@ -833,7 +829,7 @@ integrators:
     website_url: https://www.intertrust.com/
     logo_image: /uploads/intertrust_logo.jpg
     contact_info_html: >-
-      <p>Name: Manas Ranjan Mati</p><p>Email: <a href="mailto:manas@intertrust.com">manas@intertrust.com</a></p>
+      <p>Name: Tejaswini Bommireddy</p><p>Email: <a href="mailto:tbommireddy@intertrust.com">tbommireddy@intertrust.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1698,7 +1694,7 @@ integrators:
     website_url: https://www.verimatrix.com/
     logo_image: /uploads/verimatrix_logo.png
     contact_info_html: >-
-      <p>Name: Nikolai Keychenko</p><p>Email: <a href="mailto:nkeychenko@verimatrix.com">nkeychenko@verimatrix.com</a></p>
+      <p>Name: Thomas Cross</p><p>Email: <a href="mailto:tcross@verimatrix.com">tcross@verimatrix.com</a></p><br><p>Name: Juan Martinez</p><p>Email: <a href="mailto: jmartinez@verimatrix.com">jmartinez@verimatrix.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
