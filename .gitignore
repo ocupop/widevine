@@ -1,15 +1,24 @@
 .DS-Store
+.DS_Store
 .sass-cache
 .bundle
 .jekyll-metadata
+.jekyll-cache
 
-# Site build
+# Site build & Distribution
+dist
 _site
-.publish
 
 # Logs
 *.log
 
+# Environment Variables
+.env
+.env.*
 
 # Packages
 node_modules
+vendor/**/*
+
+# Notes
+notes.txt
