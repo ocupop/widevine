@@ -49,6 +49,7 @@ device_vendors:
   - name: Playstation
     logo_image: /assets/img/logo-playstation.png
 
+<<<<<<< HEAD
 3pl:
   - name: Altimedia
     website_url: https://www.altimedia.com/
@@ -57,6 +58,9 @@ device_vendors:
       <p><a href="mailto:contact@altimedia.com">contact@altimedia.com</a></p>
     cas_certifications_image: /assets/img/blue-checkmark.png
 
+=======
+threepl:
+>>>>>>> 3adb12c85118cac1bf825efbcc2fc031efeb5b01
   - name: Castlabs
     website_url: https://castlabs.com/
     logo_image: /uploads/3PL_castlabs_logo.svg
