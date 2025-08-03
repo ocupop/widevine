@@ -1,39 +1,40 @@
+# Home Page Partner List
 service_providers:
   - name: Netflix
     logo_image: /assets/img/logo-netflix.png
   - name: HBO
-    logo_image: /assets/img/logo-hbo.png
+    logo_image: /assets/img/max_logo.png
   - name: Disney
     logo_image: /assets/img/logo-disney.png
   - name: WB
-    logo_image: /assets/img/logo-wb.png
+    logo_image: /assets/img/warner_bros_logo.png
   - name: Amazon Prime Video
     logo_image: /assets/img/logo_primevideo.png
   - name: Showtime
-    logo_image: /assets/img/logo-showtime.png
+    logo_image: /assets/img/spotify_logo.png
   - name: Hulu
-    logo_image: /assets/img/logo_hulu.png
+    logo_image: /assets/img/dazn_logo.png
   - name: Reliance Jio
-    logo_image: /assets/img/logo_reliancejio.png
+    logo_image: /assets/img/jio_logo.png
   - name: DirecTV
-    logo_image: /assets/img/logo_directv.png
+    logo_image: /assets/img/tencent_logo.png
   - name: Starz
-    logo_image: /assets/img/logo_starz.png
+    logo_image: /assets/img/paramount_plus_logo.png
   - name: Sling TV
-    logo_image: /assets/img/logo_slingtv.png
+    logo_image: /assets/img/youtube_logo.png
   - name: Facebook
-    logo_image: /assets/img/logo_facebook.png
+    logo_image: /assets/img/meta_logo.png
 device_vendors:
   - name: Android
-    logo_image: /assets/img/logo-android.png
+    logo_image: /assets/img/android_logo.png
   - name: Samsung
     logo_image: /assets/img/logo-samsung.png
   - name: Chrome
     logo_image: /assets/img/logo-chrome.png
   - name: Intel
-    logo_image: /assets/img/logo-intel.png
+    logo_image: /assets/img/nvidia_logo.png
   - name: Sony
-    logo_image: /assets/img/logo-sony.png
+    logo_image: /assets/img/google_pixel_logo.png
   - name: Mozilla
     logo_image: /assets/img/logo-mozilla.png
   - name: LG
@@ -41,9 +42,9 @@ device_vendors:
   - name: Qualcomm
     logo_image: /assets/img/logo-qualcomm.png
   - name: Google Home
-    logo_image: /assets/img/logo-google-home.png
+    logo_image: /assets/img/tesla_logo.png
   - name: Vizio
-    logo_image: /assets/img/logo-vizio.png
+    logo_image: /assets/img/mediatek_logo.png
   - name: Roku
     logo_image: /assets/img/logo-roku.png
   - name: Playstation
@@ -84,6 +85,16 @@ threepl:
       <p><a href="mailto:3plwidevine@seirobotics.net">3plwidevine@seirobotics.net</a></p>
     cas_certifications_image: /assets/img/blue-checkmark.png
 
+  - name: Smartlabs
+    website_url: https://www.smartlabs.tv
+    logo_image: /uploads/3PL_smartlabs_logo.png
+    contact_info_html: >-
+      <p><a href="mailto:3plwidevine@smartlabs.tv">3plwidevine@smartlabs.tv</a></p>
+    aosp_certifications_image: /assets/img/blue-checkmark.png
+#    browser_certifications_image: /assets/img/blue-checkmark.png
+    linux_certifications_image: /assets/img/blue-checkmark.png
+
+# License Service Providers
 license_providers:
   - name: Axinom
     website_url: https://www.axinom.com/contact
@@ -109,6 +120,15 @@ license_providers:
     region: Global
     sla: 99.999%
 
+  - name: Doverunner
+    website_url: https://doverunner.com
+    logo_image: /uploads/doverunner_logo.png
+    contact_info_html: >-
+      <p>Name: Daniel Kim</p>Email: <a href="mailto:daniel.kim@doverunner.com">daniel.kim@doverunner.com</a><br><br><p>Name: Joseph An</p>Email: <a href="mailto:joseph.an@doverunner.com>joseph.an@doverunner.com"joseph.an@doverunner.com>joseph.an@doverunner.com</a></p>
+    certifications_html: >-
+    region: Global
+    sla: 99.95%
+
   - name: EZDRM
     website_url: https://www.ezdrm.com/
     logo_image: /uploads/ezdrm_logo.png
@@ -116,6 +136,22 @@ license_providers:
       <p>Email: <a href="mailto:simplify@EZDRM.com">simplify@EZDRM.com</a></p>
     region: Global
     sla: 99.999%
+
+  - name: Fastevo
+    website_url: https://fastevo.com/
+    logo_image: /uploads/fastevo_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:admin@fastevo.com">admin@fastevo.com</a></p>
+    region: Global
+    sla: 99.999%
+
+  - name: Gumlet
+    website_url: https://www.gumlet.com/
+    logo_image: /uploads/gumlet_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:sales@gumlet.com">sales@gumlet.com</a></p>
+    region: Global
+    sla: 99.95%
 
   - name: IdeaNova Technologies
     website_url: http://www.ideanovatech.com
@@ -149,13 +185,13 @@ license_providers:
     region: Global
     sla: 99.999%
 
-  - name: Inka Networks
-    website_url: http://www.inka.co.kr/
-    logo_image: /uploads/inka_logo.jpg
+  - name: Intertrust
+    website_url: https://www.inisoft.tv/
+    logo_image: /uploads/intertrust_logo.jpg
     contact_info_html: >-
-      <p>Web: <a href="https://inka.co.kr/contact-us/">inka.co.kr/contact-us/</a></p>
+      <p>Email: <a href="mailto:operations@expressplay.com">operations@expressplay.com</a></p>
     region: Global
-    sla: 99.95%
+    sla: 99.99%
 
   - name: Irdeto
     website_url: http://irdeto.com/
@@ -173,14 +209,6 @@ license_providers:
     region: Global
     sla: 99.95%
 
-#  - name: Nextscape
-#    website_url: https://www.nextscape.net/solutions/multiDRM
-#    logo_image: /uploads/nextscape_logo.jpg
-#    contact_info_html: >-
-#      <p><a href="https://www.multidrmkit.net/">https://www.multidrmkit.net/</a></p>
-#    region: APAC
-#    sla: 
-
   - name: Proexe
     website_url: https://proexe.co/
     logo_image: /uploads/proexe_logo.png
@@ -197,14 +225,6 @@ license_providers:
     region: Global
     sla: 99.999%
 
-#  - name: Upstream
-#    website_url: #
-#    logo_image: /uploads/upstream_logo.png
-#    contact_info_html: >-
-#      <p>Email: <a href="mailto:kyoji@up-stream.tv">kyoji@up-stream.tv</a></p>
-#    region: APAC (Japan)
-#    sla: 99.999%
-
   - name: VdoCipher
     website_url: https://vdocipher.com
     logo_image: /uploads/vdocipher_logo.png
@@ -213,26 +233,26 @@ license_providers:
     region: Global
     sla: 99.99%
 
-  - name: VisionTech Solutions
-    website_url: https://visionts.io/
-    logo_image: /uploads/visiontech_logo.jpg
+  - name: Verimatrix
+    website_url: https://www.verimatrix.com/
+    logo_image: /uploads/verimatrix_logo.png
     contact_info_html: >-
-      <p>Email: <a href="mailto:drm@visionts.io">drm@visionts.io</a></p>
+      <p>Email: <a href="https://www.verimatrix.com/contact/">www.verimatrix.com/contact/</a></p>
     region: Global
     sla: 99.999%
 
-#  - name: Yandex
-#    website_url: https://yandex.com/company/
-#    logo_image: /uploads/yandex_logo.png
-#    contact_info_html: >-
-#      <p>Email: <a href="mailto:rikunov@yandex-team.ru">rikunov@yandex-team.ru</a></p>
-#    region: Global
-#    sla: 99.99%
 
-
-
-
+# Certified CWIP Partners
 integrators:
+#  - name: AAFiber
+#    website_url: https://aafiber.com
+#    logo_image: /uploads/aafiber_logo.png
+#    contact_info_html: >-
+#      <p>Email: <a
+#      href="mailto:Andrew@kiwitelecom.com">Andrew@kiwitelecom.com</a></p>
+#    certifications_html: >-
+#      <p>Widevine Modular DRM</p>
+
   - name: Accenture
     website_url: http://www.accenture.com
     logo_image: /uploads/accenture_logo.png
@@ -243,18 +263,18 @@ integrators:
       <p>Widevine Classic VOD Packaging</p><p>Widevine Modular
       DRM</p>
 
-#  - name: ADB
-#    website_url: https://www.adbglobal.com/
-#    logo_image: /uploads/adb_logo.png
-#    contact_info_html: >-
-#      <p>Name: Arkadiusz Zdanowiczo</p><p>Name: Czeslaw Zubowicz</p><br><p>Email: <a href="mailto:cwip@adbglobal.com">cwip@adbglobal.com</a></p>
-#    certifications_html: <p>Widevine Modular DRM</p>
-
   - name: Agile Content
     website_url: http://www.agilecontent.com/
     logo_image: /uploads/agile_content_logo.png
     contact_info_html: >-
       <p>Name: Filipe Badaro</p><p>Name: Thiago Bessa</p><p>Phone: +55 11 3045-5010</p><p>Email: <a href="mailto:cwip@agilecontent.com">cwip@agilecontent.com</a></p>
+    certifications_html: <p>Widevine Modular DRM</p>
+
+  - name: Aion Streaming
+    website_url: https://aionmedia.com/
+    logo_image: /uploads/aion_streaming_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="hello@aionmedia.com">hello@aionmedia.com</a></p>
     certifications_html: <p>Widevine Modular DRM</p>
 
   - name: Alticast
@@ -601,6 +621,14 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
+  - name: Doverunner
+    website_url: https://doverunner.com
+    logo_image: /uploads/doverunner_logo.png
+    contact_info_html: >-
+      <p>Name: Daniel Kim</p>Email: <a href="mailto:daniel.kim@doverunner.com">daniel.kim@doverunner.com</a><br><br><p>Name: Joseph An</p>Email: <a href="mailto:joseph.an@doverunner.com>joseph.an@doverunner.com"joseph.an@doverunner.com>joseph.an@doverunner.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
   - name: EBOX
     website_url: http://ebox.ca
     logo_image: /uploads/ebox_logo.png
@@ -654,6 +682,14 @@ integrators:
     logo_image: /uploads/ezdrm_logo.png
     contact_info_html: >-
       <p>Email: <a href="simplify@ezdrm.com">simplify@ezdrm.com</a></p>
+    certifications_html: >-
+      <p>Widevine Modular DRM</p>
+
+  - name: Fastevo
+    website_url: https://fastevo.com/
+    logo_image: /uploads/fastevo_logo.png
+    contact_info_html: >-
+      <p>Email: <a href="mailto:admin@fastevo.com">admin@fastevo.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -770,14 +806,6 @@ integrators:
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
-  - name: Inka Networks
-    website_url: http://www.inka.co.kr/
-    logo_image: /uploads/inka_logo.jpg
-    contact_info_html: >-
-      <p>Name: Daniel Kim</p><p>Email: <a href="mailto:daniel@inka.co.kr">daniel@inka.co.kr</a></p><br><p>Name: Joseph Ahn</p><p>Email: <a href="mailto:mraws@inka.co.kr">mraws@inka.co.kr</a></p>
-    certifications_html: >-
-      <p>Widevine Modular DRM</p>
-
   - name: Inkrypt
     website_url: https://inkryptvideos.com/
     logo_image: /uploads/inkrypt_logo.png
@@ -830,7 +858,7 @@ integrators:
     website_url: https://www.intertrust.com/
     logo_image: /uploads/intertrust_logo.jpg
     contact_info_html: >-
-      <p>Name: Tejaswini Bommireddy</p><p>Email: <a href="mailto:tbommireddy@intertrust.com">tbommireddy@intertrust.com</a></p>
+      <p>Name: Chetan Babuta</p><p>Email: <a href="mailto:cbabuta@intertrust.com">cbabuta@intertrust.com</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 
@@ -1752,14 +1780,6 @@ integrators:
     logo_image: /uploads/visionfour_logo.png
     contact_info_html: >-
       <p>Email: <a href="mailto:widevine@visionfour.com">widevine@visionfour.com</a></p>
-    certifications_html: >-
-      <p>Widevine Modular DRM</p>
-
-  - name: VisionTech Solutions
-    website_url: https://visionts.io/
-    logo_image: /uploads/visiontech_logo.jpg
-    contact_info_html: >-
-      <p>Email: <a href="mailto:drm@visionts.io">drm@visionts.io</a></p>
     certifications_html: >-
       <p>Widevine Modular DRM</p>
 

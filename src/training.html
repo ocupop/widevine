@@ -103,7 +103,7 @@ title: CWIP Training
       <div class="col">
         <div class="content">
           <h2>Upcoming Course Schedule</h2>
-          <p class="text-red"><!--In-person training sessions have been temporarily suspended. Until sessions resume, we now offer a self-study session followed by an online exam. Please register for one of the scheduled courses below, this will place those registered on the list for the next available virtual exam. Exams are offered every other month.<br><br>-->* Class schedules are subject to change</p>
+          <p class="text-red">* Class schedules are subject to change</p>
           <ul class="table-list">
             <li class="heading-row">
               <div class="column-heading w-20">Course Title</div>
@@ -114,7 +114,7 @@ title: CWIP Training
             </li>
             {% for course in site.data.course-schedule %}
             <li>
-              <div class="item w-20">{{ course.course_title }} <br><p align="center"><a href="{{ site.cwip_registration_link }}" target="_blank" class="button">Register</a></p></div>
+              <div class="item w-20">{{ course.course_title }} <br><p align="center"><a href="{{ course.registration_link }}" target="_blank" class="button">Register</a></p></div>
               <div class="item w-20">{{ course.course_dates }}</div>
               <div class="item w-20">
                 {% if course.location_line_1 %}
@@ -154,7 +154,6 @@ title: CWIP Training
           <h2>Training Topics</h2>
           <p class="text-red">* Please note course description and content are subject to change</p>
           <h3>Widevine DRM Training</h3>
-<!--            <p>Below is the in-Person Widevine DRM Training schedule. Remote sessions are self-study and do not include the live labs.</p> -->
           <div class="day">
             <strong>Day 1:</strong>
             <ul class="dashed">
@@ -177,22 +176,6 @@ title: CWIP Training
           <div class="day">
             <strong>Day 2:</strong>
             <ul class="dashed">
-              <li>Lecture: Widevine License Proxy SDK
-                <ul>
-                  	   <li>Overview and Workflow</li>
-                       <li>Inspection of a license request</li>
-                  	   <li>Management of Policies and Keys</li>
-					   <li>Returning device information and client capabilities</li>
-				</ul>
-              </li>
-              <li>Lab: Widevine License Proxy SDK
-                <ul>
-                  <li>Proxy SDK Setup</li>
-                  <li>Content playback</li>
-                  <li>License Diagnostics</li>
-                  <li>Offline playback and license renewals</li>
-                </ul>
-              </li><br>
               <li>Lecture: Widevine License Server SDK
                 <ul>
                   	   <li>Overview and Workflow</li>
@@ -206,6 +189,7 @@ title: CWIP Training
                 <ul>
                   <li>License SDK Setup</li>
                   <li>Content playback</li>
+                  <li>Common Use Cases</li>
                 </ul>
                 </li>            
 			 </ul>
@@ -218,7 +202,6 @@ title: CWIP Training
                 <ul>
                     <li>Overview</li>
                     <li>Setup</li>
-                    <li>Code Labs</li>
                 </ul>
               </li>
               <li>Lecture: Android
@@ -243,88 +226,8 @@ title: CWIP Training
         </div>
       </div>
     </div>
+
     <hr class="divider">
-<!-- TODO
-	  <div id="travel-info" class="row">
-      <div class="col">
-        <div class="content">
-          <h2>CWIP Travel Information</h2>
-          <h3>The following arrival information can help you prepare for your on-site visit for CWIP training.</h3>
-          <address>
-            <strong>Google Site Address:</strong><br>
-            Google Kirkland<br>
-            747 6th Street South<br>
-            Kirkland, WA 98033
-          </address>
-          <a href="https://www.google.com/maps/place/Google/@47.6697163,-122.1999892,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x94ca4b8d5cc5fb58!8m2!3d47.6697163!4d-122.1978005?hl=en" class="button button-teal" target="_blank">Map</a>
-          <p class="mb-0"><strong>CWIP Training Check-in</strong></p>
-          <p><strong class="text-uppercase text-red">Important: </strong>Each day, please check-in at the reception desk in <strong class="text-red">Building B</strong> between <strong class="text-red">9:00am - 9:15am PT</strong> to receive your visitor's badge.</p>
-          <ul>
-            <li>A Google escort is required at all times.</li>
-            <li>Training takes place in <strong class="text-red">Building B</strong>, beginning at <strong class="text-red">9:30am PST</strong></li>
-          </ul>
-          <p class="mb-0"><strong>Airport Information</strong></p>
-          <p>We recommend flying into Seattle-Tacoma International Airport <strong class="text-red">(Airport code: SEA)</strong>. From the airport you can rent a car or take a taxi as needed.</p>
-        </div>
-      </div>
-    </div>
-    <div id="hotel-info" class="row">
-      <div class="col">
-        <div class="content">
-          <p class="mb-0"><strong>Hotel Information</strong></p>
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <address>
-                  Heathman Hotel<br>
-                  220 Kirkland Ave<br>
-                  Kirkland, WA<br>
-                  +1-425-284-5800<br>
-                  GOOGLE RATE CODE: GOOVA<br>
-                  Distance: 0.6 miles
-                </address>
-              </div>
-              <div class="card-footer">
-                <a href="https://www.google.ca/maps/place/The+Heathman+Hotel+Kirkland/@47.6757541,-122.2060432,17z/data=!3m1!4b1!4m7!3m6!1s0x549012dd66e984fb:0xad49bdd9fdecc900!5m1!1s2018-04-27!8m2!3d47.6757541!4d-122.2038545" class="button button-teal button-block" target="_blank">Map</a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <address>
-                  Woodmark Hotel<br>
-                  1200 Carillon Point<br>
-                  Kirkland WA<br>
-                  +1-425-822-3700<br>
-                  GOOGLE RATE CODE:<br>
-                  CPGOOGLEWH<br>
-                  Distance: 1.0 miles
-                </address>
-              </div>
-              <div class="card-footer">
-                <a href="https://www.google.ca/maps/place/Woodmark+Hotel+%26+Still+Spa/@47.6569353,-122.2093004,17z/data=!3m1!4b1!4m7!3m6!1s0x5490132c6efdf2db:0xedfdb8ff31eac508!5m1!1s2018-04-27!8m2!3d47.6569353!4d-122.2071117" class="button button-teal button-block" target="_blank">Map</a>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <address>
-                  Courtyard Seattle Kirkland<br>
-                  <strong>Contact: Kate Stringfield<br>
-                  Director of Sales<br>
-                  +1-425-602-3205</strong><br>
-                  11215 NE 124th St<br>
-                  Kirkland WA<br>
-                  GOOGLE RATE CODE: GGL<br>
-                  Distance: 2.9 miles
-                </address>
-              </div>
-              <div class="card-footer">
-                <a href="https://www.google.ca/maps/place/Courtyard+by+Marriott+Seattle+Kirkland/@47.710926,-122.1933951,17z/data=!3m1!4b1!4m7!3m6!1s0x549012785d798205:0x90e436fd0796b5a5!5m1!1s2018-04-27!8m2!3d47.710926!4d-122.1912011" class="button button-teal button-block" target="_blank">Map</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div id="partners" class="row">
       <div class="col">
         <div class="content">
